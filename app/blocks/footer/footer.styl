@@ -1,0 +1,57 @@
+.footer
+	color #FFF
+	&__in
+		@extends .in
+	.footer__in_top
+		padding-top 26px
+		padding-bottom 26px
+		display flex
+		flex-flow row wrap
+		justify-content flex-start
+		align-items center
+	.footer__in_body
+		display flex
+		flex-flow row wrap
+		justify-content space-between
+		align-items flex-start
+	&__top
+		background-color #0790d1
+
+	&__copyright
+		font-size 18px
+		+r($tL)
+			margin-bottom 18px
+			width 100%
+	&__nav_top
+		margin-left auto
+		max-width 570px
+		+r($tL)
+			margin-left 0
+	&__body
+		padding-top 30px
+		padding-bottom 30px
+	&__nav-w
+		max-width 804px
+		display flex
+		flex-flow row wrap
+		justify-content space-between
+		+r($tL)
+			max-width 510px
+	&__nav
+		margin-right 30px
+		&:last-child
+			margin-right 0
+	&__social
+		max-width 208px
+
+	&__bottom
+		margin-bottom 42px
+		padding-top 10px
+		padding-bottom 12px
+		background-color #f3f3f3
+		color #6a7381
+	&__cert
+		max-width 820px
+		font-size 14px
+		font-family $hL
+		line-height 1.5

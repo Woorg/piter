@@ -1,0 +1,43 @@
+.social
+	display flex
+	flex-flow row wrap
+	justify-content space-between
+	&__item
+		margin-right 16px
+		width 40px
+		height 40px
+		background-color #0790d1
+		border-radius 50%
+		&:last-child
+			margin-right 0
+	&__item_twit
+		.social__icon
+			width 19px
+			height 16px
+	&__item_vk
+		.social__icon
+			width 23px
+			height 14px
+	&__item_fb
+		.social__icon
+			width 9px
+			height 19px
+	&__item_inst
+		.social__icon
+			width 16px
+			height 16px
+	&__link
+		position relative
+		display block
+		height 100%
+		&:hover
+			.social__icon
+				fill darken(#fff, 10)
+	&__icon
+		position absolute
+		top 50%
+		left 50%
+		fill #fff
+		transform translate(-50%, -50%)
+
+

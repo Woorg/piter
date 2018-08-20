@@ -1,0 +1,118 @@
+.broadcast
+	&__top
+		margin-bottom 26px
+		display flex
+		flex-flow row wrap
+		justify-content space-between
+		align-items center
+	&__title
+		@extends .title
+	&__all
+		position relative
+		padding-right 23px
+		font-size 18px
+		color #007fc6
+		text-decoration none
+		tr(all .3s ease)
+		&:hover
+			color darken(#007fc6, 10)
+			tr(all .3s ease)
+			.broadcast__all-icon
+				fill #fafafa
+				stroke darken(#0790D1, 10)
+	&__all-icon
+		position absolute
+		top 50%
+		right 0
+		width 8px
+		height 15px
+		fill #fafafa
+		stroke #0790D1
+		transform translateY(-50%)
+
+
+	&__list-w
+		overflow hidden
+	&__list
+		margin-left -25px
+		// margin-right -25px
+		display flex
+		flex-flow row wrap
+		justify-content flex-start
+		align-items flex-start
+		+r($tL)
+			margin-left -14px
+
+
+	&__item
+		margin-left 24px
+		margin-bottom 30px
+		// width 240px
+		width 192px
+		width ratio-percentage(192, 1315)
+		+r($d)
+			width ratio-percentage(148, 1036)
+		+r($tL)
+			margin-left 14px
+			width ratio-percentage(170, 750)
+	&__item_hidden
+		display none
+		+r($tL)
+			display block
+	&__link
+		display block
+		color #001d49
+		text-decoration none
+	&__image
+		position relative
+		margin-bottom 8px
+		max-height 108px
+		border-radius 3px
+		+r($d)
+			max-height 88px
+
+		+r($tL)
+			margin-bottom 10px
+			max-height 103px
+		img
+			respimg()
+
+
+	&__meta
+		margin-bottom 7px
+		display flex
+		flex-flow row wrap
+		justify-content flex-start
+		align-items center
+		color #a0a7b2
+		font-size 14px
+		line-height 1.571
+		+r($tL)
+			margin-bottom 10px
+
+	&__date,
+	&__views,
+	&__comments
+		position relative
+	&__date-icon,
+	&__views-icon,
+	&__comments-icon
+		position absolute
+		top 50%
+		left 0
+		transform translateY(-50%)
+	&__date
+		margin-right 14px
+		// min-width 114px
+	&__views
+		// min-width 62px
+		padding-left 24px
+	&__views-icon
+		width 18px
+		height 12px
+		fill #a0a7b2
+		line-height 1
+	&__item-title
+		font-size 15px
+		line-height 1.2
+		// letter-spacing tracking(-30)

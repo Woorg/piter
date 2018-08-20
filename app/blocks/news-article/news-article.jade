@@ -1,0 +1,59 @@
+include ../icon/icon
+
+mixin news-article()
+	article.news-article.news-article_big
+		a.news-article__link(href="#" title='В "Зените" прокомментировали переход Дзюбы в "Арсенал"')
+			.news-article__image
+				img(src="assets/images/content/news-big.jpg", alt="")
+				+icon('video-icon', true).news-article__video-icon
+
+			.news-article__w
+				.news-article__title В "Зените" прокомментировали переход Дзюбы в "Арсенал"
+				.news-article__meta
+					.news-article__date Вчера в 18:56
+					.news-article__views
+						+icon('views-icon', true).news-article__views-icon
+						| 256
+					.news-article__comments
+						+icon('comments-icon', true).news-article__comments-icon
+						| 12
+					.news-article__category Лента новостей
+
+	article.news-article
+		a.news-article__link(href="#" title='Петербург примет "Aльтернативную Олимпиаду"')
+			.news-article__image
+				img(src="assets/images/content/news-img.jpg", alt="")
+				+icon('video-icon', true).news-article__video-icon
+
+			.news-article__w
+				.news-article__title Петербург примет "Aльтернативную Олимпиаду"
+				.news-article__meta
+					.news-article__date
+						+icon('date-icon', true).news-article__date-icon
+						| Вчера 18:56
+					.news-article__views
+						+icon('views-icon', true).news-article__views-icon
+						| 256
+					.news-article__comments
+						+icon('comments-icon', true).news-article__comments-icon
+						| 12
+
+	article.news-article
+		a.news-article__link(href="#" title='Рэпер Мот о своем самом романтическом свидании')
+			.news-article__image
+				img(src="assets/images/content/news-img-2.jpg", alt="")
+				+icon('video-icon', true).news-article__video-icon
+
+			.news-article__w
+				.news-article__title Рэпер Мот о своем самом романтическом свидании
+				.news-article__meta
+					.news-article__date
+						+icon('date-icon', true).news-article__date-icon
+						| Вчера 18:56
+					.news-article__views
+						+icon('views-icon', true).news-article__views-icon
+						| 256
+					.news-article__comments
+						+icon('comments-icon', true).news-article__comments-icon
+						| 12
+

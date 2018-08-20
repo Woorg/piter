@@ -1,0 +1,41 @@
+.main
+	&__in
+		@extends .in
+		clr()
+
+	&__news-article,
+	&__day-pic,
+	&__latest-news,
+	&__map,
+	&__chanels,
+	&__where,
+	&__polls,
+	&__broadcast,
+	&__u-video,
+	&__movie
+		padding-top $sP
+		padding-bottom $sP
+		+r($tL)
+			padding-top ($sP - 10)
+			padding-bottom ($sP - 10)
+		+r($tM)
+			padding-top 16px
+			padding-bottom 16px
+	&__news-article
+		clr()
+
+	&__day-pic,
+	&__map,
+	&__where,
+	&__broadcast,
+	&__movie
+		background-color #fafafa
+
+	&__chanels
+		+r($tL)
+			padding-bottom 0
+
+	&__map
+		+r($tM)
+			overflow hidden
+

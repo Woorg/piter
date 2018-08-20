@@ -1,0 +1,97 @@
+include ../icon/icon
+
+mixin broadcast()
+	section.broadcast&attributes(attributes)
+		.broadcast__top
+			h2.broadcast__title Наши трансляции
+			a.broadcast__all(href="")
+				+icon('arrow-right', true).broadcast__all-icon
+				| Все прямые трансляции
+
+		.broadcast__list-w
+			ul.broadcast__list
+				li.broadcast__item
+					.broadcast__image
+						img(src="assets/images/content/broadcast-img-1.jpg", alt="")
+					.broadcast__meta
+						.broadcast__date 10 февраля
+						.broadcast__views
+							+icon('views-icon', true).broadcast__views-icon
+							| 256
+					.broadcast__item-title Пресс-конференция Северо-Западного банка ПАО Сбербанк
+
+				li.broadcast__item
+					.broadcast__image
+						img(src="assets/images/content/broadcast-img-2.jpg", alt="")
+
+					.broadcast__meta
+						.broadcast__date 6 февраля
+						.broadcast__views
+							+icon('views-icon', true).broadcast__views-icon
+							| 256
+					.broadcast__item-title Место встречи - Невский,70. Новая газета
+
+				li.broadcast__item
+					.broadcast__image
+						img(src="assets/images/content/broadcast-img-3.jpg", alt="")
+
+					.broadcast__meta
+						.broadcast__date 3 февраля
+						.broadcast__views
+							+icon('views-icon', true).broadcast__views-icon
+							| 256
+					.broadcast__item-title 3 февраля 8 ТУР Премьер-лига 17/18
+
+				li.broadcast__item
+					.broadcast__image
+						img(src="assets/images/content/broadcast-img-3.jpg", alt="")
+					.broadcast__meta
+						.broadcast__date 27 января
+						.broadcast__views
+							+icon('views-icon', true).broadcast__views-icon
+							| 256
+					.broadcast__item-title 27 января 7 ТУР Премьер-лига 17/18
+
+				li.broadcast__item
+					.broadcast__image
+						img(src="assets/images/content/broadcast-img-3.jpg", alt="")
+					.broadcast__meta
+						.broadcast__date 20 января
+						.broadcast__views
+							+icon('views-icon', true).broadcast__views-icon
+							| 256
+					.broadcast__item-title 20 января 6 ТУР Премьер-лига 17/18
+
+				li.broadcast__item
+					.broadcast__image
+						img(src="assets/images/content/broadcast-img-4.jpg", alt="")
+
+					.broadcast__meta
+						.broadcast__date 19 января
+						.broadcast__views
+							+icon('views-icon', true).broadcast__views-icon
+							| 256
+					.broadcast__item-title LAKHTA VIEW: Дизайн
+
+				li.broadcast__item.broadcast__item_hidden
+					.broadcast__image
+						img(src="assets/images/content/broadcast-img-3.jpg", alt="")
+					.broadcast__meta
+						.broadcast__date 20 января
+						.broadcast__views
+							+icon('views-icon', true).broadcast__views-icon
+							| 256
+					.broadcast__item-title 20 января 6 ТУР Премьер-лига 17/18
+
+				li.broadcast__item.broadcast__item_hidden
+					.broadcast__image
+						img(src="assets/images/content/broadcast-img-4.jpg", alt="")
+
+					.broadcast__meta
+						.broadcast__date 19 января
+						.broadcast__views
+							+icon('views-icon', true).broadcast__views-icon
+							| 256
+					.broadcast__item-title LAKHTA VIEW: Дизайн
+
+

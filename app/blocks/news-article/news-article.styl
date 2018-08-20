@@ -1,0 +1,260 @@
+.news-article
+	position relative
+	margin-bottom 20px
+	padding-top ratio-percentage(170, 1315)
+	float left
+	// width 640px
+	width ratio-percentage(628, 1315)
+	background-size cover
+	border-radius 3px
+	box-shadow 0 4px 14px rgba(0, 0, 0, 0.2)
+	+r($d)
+		margin-bottom 13px
+		padding-top ratio-percentage(184, 1036)
+		width ratio-percentage(330, 1036)
+	+r($tL)
+		margin-bottom 8px
+		padding-top ratio-percentage(134, 750)
+	+r($tM)
+		float none
+		padding-top ratio-percentage(171, 304)
+		width 100%
+	&:last-child
+		margin-bottom 0
+
+	&__link
+		position absolute
+		z-index 1
+		top 0
+		right 0
+		bottom 0
+		left 0
+		content ''
+		display flex
+		flex-flow row wrap
+		justify-content flex-start
+		text-decoration none
+		cursor pointer
+	&__image
+		position relative
+		// max-width 100%
+		border-radius 3px
+		overflow hidden
+		+r($d)
+			width 100%
+		&:after
+			position absolute
+			top 0
+			right 0
+			bottom 0
+			left 0
+			content ''
+			background-image linear-gradient(to top, rgba(0, 0, 0, 0.48) 0%, rgba(0, 0, 0, 0) 100%)
+		img
+			respimg()
+			+r($d)
+				width 100%
+
+	&__video-icon
+		position absolute
+		top 8px
+		right 8px
+		width 47px
+		height 32px
+		fill #fff
+
+	&__w
+		position static
+		z-index 1
+		// width 640px
+		width ratio-percentage(314,640)
+		padding-top 16px
+		padding-left 16px
+		padding-right 16px
+		padding-bottom 16px
+		display flex
+		flex-flow column
+		border-radius 0 0 3px 3px
+		+r($d)
+			position absolute
+			left 0
+			bottom 0
+			top auto
+			padding-left 16px
+			padding-right 16px
+			padding-bottom 16px
+			width 100%
+			display block
+		+r($tL)
+			padding-left 10px
+			padding-right 10px
+			padding-bottom 10px
+			max-width 320px
+			width auto
+		+r($tM)
+			padding-left 8px
+			padding-right 8px
+			padding-bottom 8px
+	&__title
+		margin-bottom auto
+		display block
+		color #001d49
+		font-size 22px
+		line-height 1.136
+		text-decoration none
+		+r($d)
+			margin-bottom 10px
+			color #fff
+			font-size 20px
+			line-height 1.2
+		+r($tL)
+			margin-bottom 10px
+			color #FFF
+			font-size 20px
+			line-height 1.2
+	&__meta
+		display flex
+		flex-flow row wrap
+		justify-content flex-start
+		align-items center
+		color #a0a7b2
+		font-size 14px
+		line-height 1.571
+		+r($d)
+			color #d4d5d6
+	&__date
+		margin-right 14px
+		padding-left 28px
+		+r($tL)
+			margin-right 8px
+			padding-left 22px
+			max-width 110px
+		+r($tM)
+			margin-right 20px
+
+	&__date,
+	&__views,
+	&__comments
+		position relative
+	&__date-icon,
+	&__views-icon,
+	&__comments-icon
+		position absolute
+		top calc(50% - 1px)
+		left 0
+		transform translateY(-50%)
+
+	&__date-icon
+		width 16px
+		height 16px
+		fill #d4d5d6
+		+r($tM)
+			fill #d4d5d2
+	&__views
+		margin-right 20px
+		padding-left 24px
+		+r($tL)
+			margin-right 10px
+		+r($tM)
+			margin-right 20px
+	&__views-icon
+		width 18px
+		height 12px
+		fill #a0a7b2
+
+		line-height 1
+		+r($d)
+			fill #d4d5d6
+		+r($tM)
+			fill #d4d5d2
+	&__comments
+		padding-left 23px
+	&__comments-icon
+		width 14px
+		height 13px
+		fill #a0a7b2
+		line-height 1
+		+r($d)
+			fill #d4d5d6
+		+r($tM)
+			fill #d4d5d2
+	&__category
+		+r($tM)
+			display none
+
+
+.news-article_big
+	padding-top ratio-percentage(356, 1315)
+	margin-right 30px
+	margin-bottom 0
+	float left
+	width ratio-percentage(634, 1315)
+	color #FFF
+	+r($d)
+		margin-right 25px
+		padding-top ratio-percentage(382, 1036)
+		width 680px
+		width ratio-percentage(678, 1036)
+	+r($tL)
+		margin-right 16px
+		padding-top ratio-percentage(276, 750)
+	+r($tM)
+		margin-bottom 9px
+		float none
+		width 100%
+		padding-top ratio-percentage(171, 304)
+	.news-article__link
+		display block
+		+r($d)
+			display block
+	.news-article__image
+		max-width 100%
+	.news-article__w
+		position absolute
+		top auto
+		right 0
+		bottom 0
+		left 0
+		z-index 1
+		padding-left 30px
+		padding-right 60px
+		padding-bottom 30px
+		max-width 100%
+		width 100%
+		+r($tL)
+			padding-right 26px
+			padding-bottom 24px
+			padding-left 24px
+		+r($tM)
+			padding-left 8px
+			padding-right 8px
+			padding-bottom 8px
+	.news-article__title
+		margin-bottom 20px
+		color #FFF
+		font-size 32px
+		line-height 1.031
+		+r($tL)
+			margin-bottom 10px
+		+r($tM)
+			font-size 18px
+			line-height 1.388
+	.news-article__meta
+		+r($d)
+			color #d4d5d6
+	.news-article__comments
+		margin-right 50px
+
+	.news-article__date-icon,
+	.news-article__views-icon,
+	.news-article__comments-icon
+		fill #d4d5d6
+		+r($tM)
+			fill #d4d5d2
+
+	.news-article__date
+		padding-left 0
+
+	.news-article__date-icon
+		width 16px
+		height 16px

@@ -1,0 +1,126 @@
+.movie
+	&__top
+		margin-bottom 26px
+		display flex
+		flex-flow row wrap
+		justify-content space-between
+		align-items center
+	&__title
+		@extends .title
+	&__all
+		position relative
+		padding-right 23px
+		font-size 18px
+		color #007fc6
+		text-decoration none
+		tr(all .3s ease)
+		&:hover
+			color darken(#007fc6, 10)
+			tr(all .3s ease)
+			.movie__all-icon
+				fill #fafafa
+				stroke darken(#0790D1, 10)
+
+	&__all-icon
+		position absolute
+		top 50%
+		right 0
+		width 8px
+		height 15px
+		fill #fafafa
+		stroke #0790D1
+		transform translateY(-50%)
+
+	&__list-w
+		overflow hidden
+	&__list
+		margin-left -25px
+		display flex
+		flex-flow row wrap
+		justify-content flex-start
+		align-items flex-start
+		+r($tL)
+			margin-left -16px
+
+	&__item
+		margin-left 30px
+
+		margin-bottom 37px
+		width ratio-percentage(233, 1315)
+		+r($d)
+			margin-left 25px
+			width ratio-percentage(234, 1036)
+
+		+r($tL)
+			margin-left 16px
+			width ratio-percentage(234, 750)
+	&__item_hidden
+		+r($tL)
+			display none
+
+	&__link
+		display block
+		color #001d49
+		text-decoration none
+	&__img
+		position relative
+		margin-bottom 8px
+		max-height 141px
+		border-radius 3px
+		+r($tL)
+			max-height 141px
+
+		img
+			respimg()
+
+	&__video-icon
+		position absolute
+		top 11px
+		right 11px
+		width 47px
+		height 32px
+		fill #fff
+
+	&__meta
+		margin-bottom 7px
+		display flex
+		flex-flow row wrap
+		justify-content flex-start
+		align-items center
+		color #a0a7b2
+		font-size 14px
+		line-height 1.571
+
+	&__date,
+	&__views,
+	&__comments
+		position relative
+	&__date-icon
+	&__views-icon,
+	&__comments-icon
+		position absolute
+		top 50%
+		left 0
+		transform translateY(-50%)
+	&__date
+		min-width 114px
+	&__views
+		min-width 62px
+		padding-left 24px
+	&__views-icon
+		width 18px
+		height 12px
+		fill #a0a7b2
+		line-height 1
+	&__comments
+		min-width 56px
+		padding-left 23px
+	&__comments-icon
+		width 14px
+		height 13px
+		fill #a0a7b2
+		line-height 1
+	&__item-title
+		font-size 16px
+		line-height 1.5
+

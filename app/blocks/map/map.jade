@@ -1,0 +1,12 @@
+mixin map()
+	section.map&attributes(attributes)
+		.map__top
+			h2.map__title Интерактивная карта города
+			a.map__all-news(href="#")
+				+icon('arrow-right', true).map__all-icon
+				| Все новости
+
+		.map__object-w
+			#map.map__object
+
+

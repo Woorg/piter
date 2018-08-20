@@ -1,0 +1,78 @@
+.polls
+	&__top
+		margin-bottom 26px
+		display flex
+		flex-flow row wrap
+		justify-content space-between
+		align-items center
+	&__title
+		@extends .title
+	&__all-polls
+		position relative
+		padding-right 23px
+		font-size 18px
+		color #007fc6
+		text-decoration none
+		tr(all .3s ease)
+		&:hover
+			color darken(#007fc6, 10)
+			tr(all .3s ease)
+			.polls__all-icon
+				fill #fafafa
+				stroke darken(#0790D1, 10)
+	&__all-icon
+		position absolute
+		top 50%
+		right 0
+		width 8px
+		height 15px
+		fill #fafafa
+		stroke #0790D1
+		transform translateY(-50%)
+	&__body
+		display flex
+		flex-flow row wrap
+		justify-content flex-start
+		+r($tL)
+			justify-content space-between
+	&__poll
+		margin-right 55px
+		padding-top 30px
+		padding-left 30px
+		padding-right 0
+		padding-bottom 0
+		max-width 640px
+		max-width ratio-percentage(640,1315)
+
+		height 352px
+		background-color #ffffff
+		box-shadow 0 2px 24px rgba(0, 0, 0, 0.1)
+		overflow hidden
+		+r($d)
+			max-width 416px
+			max-width ratio-percentage(416,1036)
+		+r($tL)
+			margin-right 0
+			max-width ratio-percentage(368,750)
+	&__list
+		padding-right 72px
+		+r($tL)
+			padding-right 0
+			max-width ratio-percentage(337,750)
+
+	&__list-item
+		margin-bottom 30px
+	&__item-title
+		color #001d49
+		line-height 1.4
+	&__item-result
+		color #757575
+		font-family $hL
+		font-size 14px
+		line-height 1
+
+	.simplebar-scrollbar
+		width 8px
+		&:before
+			border-radius 30px
+			background-color #f2f2f2

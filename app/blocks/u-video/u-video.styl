@@ -1,0 +1,109 @@
+.u-video
+	&__top
+		margin-bottom 26px
+		display flex
+		flex-flow row wrap
+		justify-content space-between
+		align-items center
+	&__title
+		@extends .title
+
+	&__list-w
+		overflow hidden
+	&__list
+		margin-left -25px
+		// margin-right -25px
+		display flex
+		flex-flow row wrap
+		justify-content flex-start
+		align-items flex-start
+		+r($tL)
+			margin-left -16px
+	&__item
+		margin-left 25px
+		margin-bottom 30px
+		// width 240px
+		width 192px
+		width ratio-percentage(192, 1315)
+		+r($d)
+			width ratio-percentage(148, 1036)
+		+r($tL)
+			margin-left 16px
+			width ratio-percentage(170, 750)
+
+	&__category
+		position relative
+		margin-bottom 3px
+		padding-left 14px
+		display block
+		color #001d49
+		font-family $hM
+		font-size 12px
+		line-height 1
+		text-transform uppercase
+		text-decoration none
+		&:after
+			position absolute
+			top 50%
+			left 0
+			content ''
+			width 8px
+			height 8px
+			border-radius 50%
+			background-color #0790d1
+			transform translateY(-50%)
+	&__link
+		display block
+		color #001d49
+		text-decoration none
+
+	&__image
+		position relative
+		margin-bottom 8px
+		max-height 108px
+		border-radius 3px
+		+r($d)
+			max-height 88px
+		+r($tL)
+			max-height 103px
+		img
+			respimg()
+
+	&__video-icon
+		position absolute
+		top 11px
+		right 11px
+		width 47px
+		height 32px
+		fill #fff
+
+	&__meta
+		margin-bottom 7px
+		display flex
+		flex-flow row wrap
+		justify-content flex-start
+		align-items center
+		color #a0a7b2
+		font-size 14px
+		line-height 1.571
+
+	&__user,
+	&__views
+		position relative
+	&__views-icon
+		position absolute
+		top 50%
+		left 0
+		transform translateY(-50%)
+	&__user
+		margin-right 12px
+	&__views
+		padding-left 24px
+	&__views-icon
+		width 18px
+		height 12px
+		fill #a0a7b2
+		line-height 1
+	&__item-title
+		font-size 15px
+		line-height 1.2

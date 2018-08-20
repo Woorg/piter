@@ -1,0 +1,133 @@
+.nav
+	&__list
+		display flex
+		flex-flow row nowrap
+		justify-content space-between
+		align-items flex-start
+	&__item
+		&:last-child
+			margin-bottom 0
+	&__item_active
+		.nav__link
+			color #FBB727
+	&__item_more
+		display none
+		+rmin($tM)
+			display none
+	&__link
+		padding-top 13px
+		padding-bottom 22px
+		display block
+		color #ffffff
+		font-size 18px
+		line-height 1
+		text-decoration none
+		white-space nowrap
+		cursor pointer
+		tr(all .3s ease)
+		+r($tM)
+			padding-bottom 12px
+		&:hover
+			color #fbb727
+			tr(all .3s ease)
+	&__overflow
+		position absolute
+		right 0
+		display none
+		li
+			display block
+
+	&__more-icon
+		width 17px
+		height 17px
+		fill transparent
+		stroke #Fff
+
+.nav_main
+	position relative
+	.nav__item_more
+		position relative
+		.nav__link
+			position relative
+			padding-right 27px
+			+r($tM)
+				text-indent -9999px
+		ul
+			position absolute
+			z-index 1
+			top 100%
+			right 0
+			padding-left 10px
+			padding-right 10px
+			display none
+			background-color #5b6e99
+			border-radius 0 0 3px 3px
+			// +r($tM)
+			// 	left 0
+		// &:hover
+		// 	ul
+		// 		display block
+
+	.nav__more-icon
+		position absolute
+		top 12px
+		right 0
+
+.nav__more-show
+	&.nav__item_more
+		.nav__link
+			color #fff
+			tr(all .3s ease)
+		.nav__more-icon
+			fill transparent
+			stroke #fff
+			tr(all .3s ease)
+		ul
+			display block
+			li.nav__item
+				a
+
+					color #FFF
+					+r($tM)
+						text-indent 0
+
+.nav_sub
+	+r($tL)
+		max-width 800px
+		overflow hidden
+	.nav__list
+		+r($tL)
+			justify-content flex-start
+
+	.nav__item
+		+r($tL)
+			margin-right 30px
+			&:last-child
+				margin-right 0
+
+	.nav__link
+		padding-top 10px
+		padding-bottom 10px
+		color #cdd3e0
+		font-size 16px
+
+.nav_bottom
+	.nav__item
+		margin-right 36px
+	.nav__link
+		padding-top 0
+		padding-bottom 0
+		font-family $hL
+		font-size 16px
+
+.nav_vert
+	min-width 220px
+	+r($tL)
+		min-width 200px
+	.nav__list
+		display block
+	.nav__link
+		padding-top 0
+		padding-bottom 15px
+		font-family $hL
+		color #0790d1

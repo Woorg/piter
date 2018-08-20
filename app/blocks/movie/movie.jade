@@ -1,0 +1,85 @@
+include ../icon/icon
+
+mixin movie()
+	section.movie&attributes(attributes)
+		.movie__top
+			h2.movie__title Кино
+			a.movie__all(href="#")
+				+icon('arrow-right', true).movie__all-icon
+				| Все прямые трансляции
+
+		.movie__list-w
+			ul.movie__list
+				li.movie__item
+					a.movie__link(href="#")
+						.movie__img
+							img(src="assets/images/content/movie-img-1.jpg", alt="")
+
+						.movie__meta
+							.movie__date Вчера 18:56
+							.movie__views
+								+icon('views-icon', true).movie__views-icon
+								| 256
+							.movie__comments
+								+icon('comments-icon', true).movie__comments-icon
+								| 2
+						.movie__item-title Андерсон: как я мечтал о любви в 12 лет
+				li.movie__item
+					a.movie__link(href="#")
+						.movie__img
+							img(src="assets/images/content/movie-img-2.jpg", alt="")
+
+						.movie__meta
+							.movie__date Вчера 18:56
+							.movie__views
+								+icon('views-icon', true).movie__views-icon
+								| 256
+							.movie__comments
+								+icon('comments-icon', true).movie__comments-icon
+								| 2
+						.movie__item-title В Интернете появился трейлер нового фильма про Дэдпула
+
+				li.movie__item
+					a.movie__link(href="#")
+						.movie__img
+							img(src="assets/images/content/movie-img-3.jpg", alt="")
+
+						.movie__meta
+							.movie__date Вчера 18:56
+							.movie__views
+								+icon('views-icon', true).movie__views-icon
+								| 256
+							.movie__comments
+								+icon('comments-icon', true).movie__comments-icon
+								| 2
+						.movie__item-title "Тоня против всех": у каждого своя правда
+				li.movie__item.movie__item_hidden
+					a.movie__link(href="#")
+						.movie__img
+							img(src="assets/images/content/movie-img-1.jpg", alt="")
+
+						.movie__meta
+							.movie__date Вчера 18:56
+							.movie__views
+								+icon('views-icon', true).movie__views-icon
+								| 256
+							.movie__comments
+								+icon('comments-icon', true).movie__comments-icon
+								| 2
+						.movie__item-title Королевство полной луны Андерсона: «как я мечтал о любви в 12 лет»
+
+				li.movie__item.movie__item_hidden
+					a.movie__link(href="#")
+						.movie__img
+							img(src="assets/images/content/movie-img-1.jpg", alt="")
+
+						.movie__meta
+							.movie__date Вчера 18:56
+							.movie__views
+								+icon('views-icon', true).movie__views-icon
+								| 256
+							.movie__comments
+								+icon('comments-icon', true).movie__comments-icon
+								| 2
+						.movie__item-title Королевство полной луны Андерсона: «как я мечтал о любви в 12 лет»
+

@@ -1,0 +1,145 @@
+include ../icon/icon
+
+mixin day-pic()
+	section.day-pic&attributes(attributes)
+		.day-pic__top
+			h2.day-pic__title Картина дня
+			a.day-pic__all-news(href="#")
+				+icon('arrow-right', true).day-pic__all-icon
+				| Все новости
+
+		.day-pic__list-w
+			ul.day-pic__list
+				li.day-pic__item
+					a.day-pic__link(href="#")
+						.day-pic__img
+							img(src="assets/images/content/day-pic-1.jpg", alt="")
+							+icon('video-icon', true).day-pic__video-icon
+						.day-pic__item-w
+							.day-pic__meta
+								.day-pic__date
+									+icon('date-icon', true).day-pic__date-icon
+									| Вчера 18:56
+								.day-pic__views
+									+icon('views-icon', true).day-pic__views-icon
+									| 256
+								.day-pic__comments
+									+icon('comments-icon', true).day-pic__comments-icon
+									| 2
+							.day-pic__item-title Появилось видео с места нападения на кассира "Дикси"
+
+				li.day-pic__item
+					a.day-pic__link(href="#")
+						.day-pic__img
+							img(src="assets/images/content/day-pic-2.jpg", alt="")
+							+icon('video-icon', true).day-pic__video-icon
+						.day-pic__item-w
+							.day-pic__meta
+								.day-pic__date
+									+icon('date-icon', true).day-pic__date-icon
+									| Вчера 18:56
+								.day-pic__views
+									+icon('views-icon', true).day-pic__views-icon
+									| 256
+								.day-pic__comments
+									+icon('comments-icon', true).day-pic__comments-icon
+									| 2
+							.day-pic__item-title Пхёнчхан: В месте проведения ОИ 2018 начался ураган
+				li.day-pic__item
+					a.day-pic__link(href="#")
+						.day-pic__img
+							img(src="assets/images/content/day-pic-3.jpg", alt="")
+						.day-pic__item-w
+							.day-pic__meta
+								.day-pic__date
+									+icon('date-icon', true).day-pic__date-icon
+									| Вчера 18:56
+								.day-pic__views
+									+icon('views-icon', true).day-pic__views-icon
+									| 256
+								.day-pic__comments
+									+icon('comments-icon', true).day-pic__comments-icon
+									| 2
+							.day-pic__item-title "Зенит" неожиданно проиграл датскому "Вайле" на сборах
+				li.day-pic__item
+					a.day-pic__link(href="#")
+						.day-pic__img
+							img(src="assets/images/content/day-pic-4.jpg", alt="")
+							+icon('video-icon', true).day-pic__video-icon
+						.day-pic__item-w
+							.day-pic__meta
+								.day-pic__date
+									+icon('date-icon', true).day-pic__date-icon
+									| Вчера 18:56
+								.day-pic__views
+									+icon('views-icon', true).day-pic__views-icon
+									| 256
+								.day-pic__comments
+									+icon('comments-icon', true).day-pic__comments-icon
+									| 2
+							.day-pic__item-title Петербургский метрополитен выпустил ролик "Мы соединяем"
+				li.day-pic__item
+					a.day-pic__link(href="#")
+						.day-pic__img
+							img(src="assets/images/content/day-pic-5.jpg", alt="")
+						.day-pic__item-w
+							.day-pic__meta
+								.day-pic__date
+									+icon('date-icon', true).day-pic__date-icon
+									| Вчера 18:56
+								.day-pic__views
+									+icon('views-icon', true).day-pic__views-icon
+									| 256
+								.day-pic__comments
+									+icon('comments-icon', true).day-pic__comments-icon
+									| 2
+							.day-pic__item-title Появилось видео с места нападения на кассира "Дикси"
+				li.day-pic__item
+					a.day-pic__link(href="#")
+						.day-pic__img
+							img(src="assets/images/content/day-pic-6.jpg", alt="")
+						.day-pic__item-w
+							.day-pic__meta
+								.day-pic__date
+									+icon('date-icon', true).day-pic__date-icon
+									| Вчера 18:56
+								.day-pic__views
+									+icon('views-icon', true).day-pic__views-icon
+									| 256
+								.day-pic__comments
+									+icon('comments-icon', true).day-pic__comments-icon
+									| 2
+							.day-pic__item-title На Туристской улице построят туннель в обход "дороги смерти"
+
+				li.day-pic__item.day-pic__item_hidden
+					a.day-pic__link(href="#")
+						.day-pic__img
+							img(src="assets/images/content/day-pic-7.jpg", alt="")
+						.day-pic__item-w
+							.day-pic__meta
+								.day-pic__date
+									+icon('date-icon', true).day-pic__date-icon
+									| Вчера 18:56
+								.day-pic__views
+									+icon('views-icon', true).day-pic__views-icon
+									| 256
+								.day-pic__comments
+									+icon('comments-icon', true).day-pic__comments-icon
+									| 2
+							.day-pic__item-title На Лиговке рабочие сломали автобусную остановку
+				li.day-pic__item.day-pic__item_hidden
+					a.day-pic__link(href="#")
+						.day-pic__img
+							img(src="assets/images/content/day-pic-8.jpg", alt="")
+						.day-pic__item-w
+							.day-pic__meta
+								.day-pic__date
+									+icon('date-icon', true).day-pic__date-icon
+									| Вчера 18:56
+								.day-pic__views
+									+icon('views-icon', true).day-pic__views-icon
+									| 256
+								.day-pic__comments
+									+icon('comments-icon', true).day-pic__comments-icon
+									| 2
+							.day-pic__item-title В "Балтийском доме" рассказали что такое любовь

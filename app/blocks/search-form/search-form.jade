@@ -1,0 +1,8 @@
+include ../icon/icon
+
+mixin search-form()
+	.search-form&attributes(attributes)
+		form(action="", method="get").search-form__w
+				input.search-form__input(type="text", value="", placeholder="Поиск по сайту", name="")
+				button.search-form__submit(type="submit")
+					+icon('search-icon', true).search-form__submit-icon

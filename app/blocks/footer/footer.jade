@@ -1,0 +1,65 @@
+include ../icon/icon
+
+mixin footer()
+	footer.footer&attributes(attributes)
+		.footer__top
+			.footer__in.footer__in_top
+				.footer__copyright &copy; Интернет-телевидение «Piter.TV»
+				nav.footer__nav.footer__nav_top.nav.nav_bottom
+					ul.nav__list
+						li.nav__item
+							a.nav__link(href="#link") О проекте
+						li.nav__item
+							a.nav__link(href="#link") Редакторам
+						li.nav__item
+							a.nav__link(href="#link") Редакторам
+						li.nav__item
+							a.nav__link(href="#link") Реклама на сайте
+
+		.footer__body
+			.footer__in.footer__in_body
+				.footer__nav-w
+					nav.footer__nav.nav.nav_vert
+						ul.nav__list
+							li.nav__item
+								a.nav__link(href="#link") Новости
+							li.nav__item
+								a.nav__link(href="#link") 112
+							li.nav__item
+								a.nav__link(href="#link") Новостная карта города
+
+					nav.footer__nav.nav.nav_vert
+						ul.nav__list
+							li.nav__item
+								a.nav__link(href="#link") Каналы
+							li.nav__item
+								a.nav__link(href="#link") Ваше видео
+							li.nav__item
+								a.nav__link(href="#link") Статьи
+
+
+					nav.footer__nav.nav.nav_vert
+						ul.nav__list
+							li.nav__item
+								a.nav__link(href="#link") Пользовательское соглашение
+							li.nav__item
+								a.nav__link(href="#link") Справочник
+
+				ul.footer__social.social
+					li.social__item.social__item_twit
+						a.social__link(href="#")
+							+icon('twitter-icon', true).social__icon
+					li.social__item.social__item_vk
+						a.social__link(href="#")
+							+icon('vk-icon', true).social__icon
+					li.social__item.social__item_fb
+						a.social__link(href="#")
+							+icon('fb-icon', true).social__icon
+					li.social__item.social__item_inst
+						a.social__link(href="#")
+							+icon('inst-icon', true).social__icon
+
+		.footer__bottom
+			.footer__in
+				p.footer__cert Свидетельство о регистрации СМИ ЭЛ № ФС77-43314 от 27.12.2010 выдано Федеральной службой по надзору в сфере связи, информационных технологий и массовых коммуникаций (РОСКОМНАДЗОР)
+

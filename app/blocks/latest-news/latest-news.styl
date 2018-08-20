@@ -1,0 +1,186 @@
+.latest-news
+	&__top
+		margin-bottom 26px
+		display flex
+		flex-flow row wrap
+		justify-content space-between
+		align-items center
+	&__title
+		@extends .title
+	&__all-news
+		position relative
+		padding-right 23px
+		display none
+		font-size 18px
+		color #007fc6
+		text-decoration none
+		tr(all .3s ease)
+		+r($d)
+			display block
+		+r($tL)
+			display none
+		+r($tM)
+			display block
+			text-indent -9999px
+		&:hover
+			color darken(#007fc6, 10)
+			tr(all .3s ease)
+			.latest-news__all-icon
+				fill #fafafa
+				stroke darken(#0790D1, 10)
+
+	&__all-icon
+		position absolute
+		top 50%
+		right 0
+		width 8px
+		height 15px
+		fill #fafafa
+		stroke #0790D1
+		transform translateY(-50%)
+
+	&__body
+		position relative
+		padding-top 27px
+		padding-bottom 64px
+		background #FFF
+		box-shadow 0 2px 24px rgba(0, 0, 0, .1)
+		+r($tL)
+			background transparent
+			box-shadow none
+
+	&__list
+		margin-bottom 22px
+		padding-left 40px
+		padding-right 40px
+		+r($tL)
+			padding-left 0
+			padding-right 0
+	&__item
+		margin-bottom 10px
+		display flex
+		flex-flow row wrap
+		justify-content flex-start
+		align-items center
+		white-space nowrap
+		overflow hidden
+		+r($tM)
+			justify-content space-between
+			align-items flex-start
+			white-space normal
+		&:hover
+
+			.latest-news__date,
+			.latest-news__news-title
+				color #001D49
+			.latest-news__date
+				color #FFF
+				+r($tM)
+					color #0790d1
+			.latest-news__news-title
+				+r($tM)
+					color #0790d1
+	&__meta
+		min-width 108px
+		display flex
+		flex-flow row wrap
+		justify-content space-between
+		align-items flex-start
+		+r($tM)
+			min-width 40px
+			min-height 40px
+	&__date
+		width 54px
+		height 18px
+		color #fff
+		font-size 15px
+		text-align center
+		border-radius 8px 8px 8px 0
+		background-color #ff3055
+
+		+r($tM)
+			margin-bottom 8px
+			background-color transparent
+			color #001d49
+	&__video-w
+		position relative
+		margin-left 14px
+		margin-right 18px
+		width 41px
+		height 18px
+		+r($tL)
+			width ratio-percentage(41,750)
+		+r($tM)
+			margin-left 0
+			margin-right 0
+			width 100%
+			height 18px
+	&__video
+		position absolute
+		top 50%
+		left 50%
+		width 0
+		height 0
+		border-style solid
+		border-width 7.5px 0 7.5px 14px
+		border-color transparent transparent transparent #a0a7b2
+		transform translate(-50%, -50%)
+	&__sep
+		margin-left 14px
+		margin-right 18px
+		width 41px
+		height 1px
+		background #f3f3f3
+		+r($tL)
+			width ratio-percentage(41,750)
+		+r($tM)
+			display none
+			width 100%
+
+	&__news-title
+		color #001d49
+		font-family $hL
+		font-size 16px
+		text-decoration none
+		tr(all .3s ease)
+		+r($tL)
+			max-width 607px
+			overflow hidden
+		+r($tM)
+			margin-top -2px
+			max-width 240px
+			font-size 14px
+			overflow auto
+		&:hover
+			color lighten(#001d49, 10)
+			tr(all .3s ease)
+
+	&__day-w
+		position relative
+		margin-bottom 18px
+		height 1px
+		background #f3f3f3
+		+r($tM)
+			margin-bottom 24px
+	&__day
+		position absolute
+		top 50%
+		left 50%
+		padding-left 25px
+		padding-right 25px
+		height 24px
+		color #001d49
+		font-size 16px
+		text-align center
+		background-color #f3f3f3
+		border-radius 20px
+		transform translate(-50%, -50%)
+
+	&__more
+		@extends .button
+		position absolute
+		bottom 0
+		left 50%
+		transform translate(-50%, -50%)
+		+r($tM)
+			white-space nowrap

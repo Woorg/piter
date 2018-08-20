@@ -1,0 +1,68 @@
+mixin polls()
+	section.polls&attributes(attributes)
+		.polls__top
+			h2.polls__title Опросы
+			.polls__all-polls(href="#")
+				+icon('arrow-right', true).polls__all-icon
+				| Все опросы
+
+		.polls__body
+			.polls__poll.poll(data-simplebar data-simplebar-auto-hide="false")
+				.poll__title Город засыпает снегом. Как вам погода, петербуржцы???
+				ul.poll__list
+					li.poll__item
+						.poll__item-w
+							.poll__item-title Круто! Нужно больше снега!
+							.poll__item-result-w
+								.poll__item-result(style='width:10%;')
+						.poll__item-percent 10%
+					li.poll__item
+						.poll__item-w
+							.poll__item-title Красиво, но слишком много проблем на дорогах.
+							.poll__item-result-w
+								.poll__item-result(style='width:80%;')
+						.poll__item-percent 80%
+					li.poll__item
+						.poll__item-w
+							.poll__item-title Круто! Нужно больше снега!
+							.poll__item-result-w
+								.poll__item-result(style='width:20%;')
+						.poll__item-percent 10%
+					li.poll__item
+						.poll__item-w
+							.poll__item-title Круто! Нужно больше снега!
+							.poll__item-result-w
+								.poll__item-result(style='width:30%;')
+						.poll__item-percent 10%
+
+					li.poll__item
+						.poll__item-w
+							.poll__item-title Круто! Нужно больше снега!
+							.poll__item-result-w
+								.poll__item-result(style='width:50%;')
+						.poll__item-percent 10%
+
+					li.poll__item
+						.poll__item-w
+							.poll__item-title Круто! Нужно больше снега!
+							.poll__item-result-w
+								.poll__item-result(style='width:70%;')
+						.poll__item-percent 10%
+
+
+			ul.polls__list
+				li.polls__list-item
+					.polls__item-title МОК не допустил к Олимпиаде главных звезд
+					.polls__item-result Проголосовало: 15
+				li.polls__list-item
+					.polls__item-title Как оцениваете работы по очистке Петербурга от снега?
+					.polls__item-result Проголосовало: 15
+				li.polls__list-item
+					.polls__item-title Нужно ли уволить Манчини из "Зенита"
+					.polls__item-result Проголосовало: 15
+				li.polls__list-item
+					.polls__item-title Как вы относитесь к рэп-баттлам?
+					.polls__item-result Проголосовало: 15
+				li.polls__list-item
+					.polls__item-title Следите ли вы за современной модой?
+					.polls__item-result Проголосовало: 15

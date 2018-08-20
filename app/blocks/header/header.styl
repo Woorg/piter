@@ -1,0 +1,122 @@
+.header
+	&__in
+		position relative
+		@extends .in
+		+r($tM)
+			z-index 2
+	&__top
+		padding-top 16px
+		padding-bottom 16px
+		background-color #40527b
+		.header__in
+			display flex
+			flex-flow row wrap
+			justify-content flex-start
+			align-items flex-start
+	&__logo-w
+		margin-right 28px
+	&__slogan
+		margin-bottom 7px
+		color #6377a2
+		font-size 14px
+		line-height 1
+		+r($tM)
+			display none
+	&__banner
+		// margin-right 22px
+		max-width 531px
+		min-height 72px
+		display block
+		background-color #20335d
+		+r($tL)
+			display none
+	&__control
+		margin-left auto
+		max-width 240px
+		+r($tM)
+			margin-top 3px
+			max-width 60px
+			display flex
+			flex-flow row nowrap
+			justify-content flex-start
+			align-items center
+	&__auth
+		margin-top 2px
+		margin-bottom 10px
+		font-size 15px
+		line-height 1.4
+		color #253c6c
+		+r($tM)
+			position relative
+			margin-top 0
+			margin-bottom 0
+			order 1
+			width 24px
+			height 24px
+			text-indent -9999px
+	&__auth-sep
+		+r($tM)
+			display none
+	&__auth-icon
+		display none
+		+r($tM)
+			display block
+			width 24px
+			height 24px
+			fill #ffffff
+	&__auth-link
+		color #FFF
+		font-size 15px
+		line-height 1
+		text-decoration none
+		+r($tM)
+			text-indent -9999px
+	&__auth-link_enter
+		+r($tM)
+			position absolute
+			top 0
+			left 0
+			display block
+			width 100%
+			height 100%
+			text-indent -9999px
+	&__auth-link_reg
+		+r($tM)
+			display none
+	&__search
+		+r($tM)
+			position absolute
+			top -1px
+			right 44px
+			left 8px
+			max-width 320px
+			tr(all .3s ease)
+		&:hover
+			+r($tM)
+				tr(all .3s ease)
+			.search-form__input
+				+r($tM)
+					background-color #20335d
+					text-indent 0
+					tr(all .3s ease)
+
+	&__body
+		background-color #40527b
+		+r($tM)
+			background-color #5b6e99
+			box-shadow 0 2px 8px rgba(0, 0, 0, 0.3)
+	&__nav
+		width 100%
+		+r($tL)
+			max-width 750px
+	&__bottom
+		background-color #5b6e99
+		box-shadow 0 2px 8px rgba(0, 0, 0, 0.3)
+		+r($tM)
+			display none
+
+.logo
+	display block
+	width 210px
+	+r($tM)
+		width 144px

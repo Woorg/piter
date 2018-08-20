@@ -1,0 +1,71 @@
+include /../node_modules/bemto.jade/bemto
+include /../node_modules/jade-injected/jade-injected
+include ../page/page
+include ../scripts/scripts
+
+doctype html
+html(lang='ru')
+	include ../head/head
+	+page
+		block content
+		+scripts(['https://maps.googleapis.com/maps/api/js?key=AIzaSyAhZzO9IX_HC9UNK7zprYBqGYPCzTI8nPE&callback=initMap', 'app.min.js'])
+
+		script.
+			var map;
+			function initMap() {
+				map = new google.maps.Map(document.getElementById('map'), {
+					zoom: 13,
+					center: new google.maps.LatLng(59.931825, 30.325333),
+					mapTypeId: 'roadmap',
+					disableDefaultUI: true
+				});
+
+				var iconBase = 'assets/images/general/';
+				var icons = {
+					parking: {
+						icon: iconBase + 'parking.png'
+					},
+					library: {
+						icon: iconBase + 'map-icon-3.png'
+					},
+					info: {
+						icon: iconBase + 'map-icon-4.png'
+					}
+				};
+
+				var features = [
+					{
+						position: new google.maps.LatLng(59.932139, 30.292192),
+						type: 'parking'
+					},
+					{
+						position: new google.maps.LatLng(59.931390, 30.293924),
+						type: 'parking'
+					},
+					{
+						position: new google.maps.LatLng(59.919874, 30.300226),
+						type: 'info'
+					},
+					{
+						position: new google.maps.LatLng(59.924721, 30.351303),
+						type: 'info'
+					},
+					{
+						position: new google.maps.LatLng(59.933204, 30.332891),
+						type: 'parking'
+					},
+					{
+						position: new google.maps.LatLng(59.930559, 30.348161),
+						type: 'info'
+					}
+				];
+
+				// Create markers.
+				features.forEach(function(feature) {
+					var marker = new google.maps.Marker({
+						position: feature.position,
+						icon: icons[feature.type].icon,
+						map: map
+					});
+				});
+			}

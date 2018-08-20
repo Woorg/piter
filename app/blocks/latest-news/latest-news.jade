@@ -1,0 +1,70 @@
+mixin latest-news()
+	section.latest-news&attributes(attributes)
+		.latest-news__top
+			h2.latest-news__title Последние новости
+			a.latest-news__all-news(href="")
+				+icon('arrow-right', true).latest-news__all-icon
+				| Все новости
+
+		.latest-news__body
+			ul.latest-news__list
+				li.latest-news__item
+					.latest-news__meta
+						.latest-news__date 23:33
+						.latest-news__video-w
+							a.latest-news__video(href="")
+					a.latest-news__news-title(href="") Олимпиада в Пхенчхане 2018: расписание соревнований на 14 февраля
+				li.latest-news__item
+					.latest-news__meta
+						.latest-news__date 23:33
+						.latest-news__sep
+					a.latest-news__news-title(href="") Появилось видео ДТП с участием автобуса и легкового автомобиля на Дороге Жизни
+				li.latest-news__item
+					.latest-news__meta
+						.latest-news__date 23:33
+						.latest-news__sep
+					a.latest-news__news-title(href="") Дети могут: школьники обнаружили новый остров в Арктике
+				li.latest-news__item
+					.latest-news__meta
+						.latest-news__date 23:33
+						.latest-news__sep
+					a.latest-news__news-title(href="") Голландский министр подал в отставку из-за мечты встретиться с Путиным
+				li.latest-news__item
+					.latest-news__meta
+						.latest-news__date 23:33
+						.latest-news__sep
+					a.latest-news__news-title(href="") Юные спортсмены из Выборга отличились на турнире в Новороссийске и Вологде
+				li.latest-news__item
+					.latest-news__meta
+						.latest-news__date 23:33
+						.latest-news__sep
+					a.latest-news__news-title(href="") Дети могут: школьники обнаружили новый остров в Арктике
+				li.latest-news__item
+					.latest-news__meta
+						.latest-news__date 23:33
+						.latest-news__video-w
+							a.latest-news__video(href="")
+					a.latest-news__news-title(href="") Дети могут: школьники обнаружили новый остров в Арктике
+
+			.latest-news__day-w
+				.latest-news__day Вчера
+
+			ul.latest-news__list
+				li.latest-news__item
+					.latest-news__meta
+						.latest-news__date 23:33
+						.latest-news__video-w
+							a.latest-news__video(href="")
+					a.latest-news__news-title(href="") Олимпиада в Пхенчхане 2018: расписание соревнований на 14 февраля
+				li.latest-news__item
+					.latest-news__meta
+						.latest-news__date 23:33
+						.latest-news__sep
+					a.latest-news__news-title(href="") Дети могут: школьники обнаружили новый остров в Арктике
+				li.latest-news__item
+					.latest-news__meta
+						.latest-news__date 23:33
+						.latest-news__sep
+					a.latest-news__news-title(href="") Дети могут: школьники обнаружили новый остров в Арктике
+
+				a.latest-news__more(href="#") Показать еще 10

@@ -1,0 +1,73 @@
+include ../icon/icon
+include ../search-form/search-form
+
+mixin header()
+	header.header&attributes(attributes)
+		.header__top
+			.header__in
+				.header__logo-w
+					.header__slogan Все, что интересно!
+					a.header__logo.logo(href="#")
+						img(src="assets/images/general/logo.png", alt="Piter.tv")
+
+				a.header__banner(href="")
+					img(src="assets/images/content/banner.png", alt="Закажи прямой эфир На Piter.TV")
+
+				.header__control
+					.header__auth
+						+icon('auth-icon', true).header__auth-icon
+						a.header__auth-link.header__auth-link_enter(href="#") Войти
+						span.header__auth-sep |
+						a.header__auth-link.header__auth-link_reg(href="#") Зарегистрироваться
+
+					+search-form.header__search
+
+		.header__body
+			.header__in
+				nav.header__nav.nav.nav_main
+					ul.nav__list#main-nav
+						li.nav__item
+							a.nav__link(href="#" title="") Новости
+						li.nav__item
+							a.nav__link(href="#" title="") Новости по районам
+						li.nav__item.nav__item_active
+							a.nav__link(href="#" title="") Справочник
+						li.nav__item
+							a.nav__link(href="#" title="") Опросы
+						li.nav__item
+							a.nav__link(href="#" title="") Лица
+						li.nav__item
+							a.nav__link(href="#" title="") Видеохостинг
+						li.nav__item
+							a.nav__link(href="#" title="") Наши трансляции
+						li.nav__item
+							a.nav__link(href="#" title="") Невский 70
+						li.nav__item.nav__item_more(data-width="43")
+							a.nav__link Еще
+								+icon('arrow-down', true).nav__more-icon
+							ul
+
+
+		.header__bottom
+			.header__in
+				nav.header__nav.nav.nav_sub
+					ul.nav__list
+						li.nav__item
+							a.nav__link(href="#link") Новости СПб
+						li.nav__item
+							a.nav__link(href="#link") Новости России
+						li.nav__item
+							a.nav__link(href="#link") Новости в мире
+						li.nav__item
+							a.nav__link(href="#link") Проишествия
+						li.nav__item
+							a.nav__link(href="#link") Спорт
+						li.nav__item
+							a.nav__link(href="#link") Авто
+						li.nav__item
+							a.nav__link(href="#link") Кино
+						li.nav__item
+							a.nav__link(href="#link") Футбол
+						li.nav__item
+							a.nav__link(href="#link") Предложить новость
+

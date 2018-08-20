@@ -1,0 +1,59 @@
+.map
+	&__top
+		margin-bottom 26px
+		display flex
+		flex-flow row wrap
+		justify-content space-between
+		align-items center
+	&__title
+		@extends .title
+		+r($tM)
+			max-width 210px
+	&__all-news
+		position relative
+		padding-right 23px
+		font-size 18px
+		color #007fc6
+		text-decoration none
+		tr(all .3s ease)
+		+r($tM)
+			text-indent -9999px
+			display block
+		&:hover
+			color darken(#007fc6, 10)
+			tr(all .3s ease)
+			.map__all-icon
+				fill #fafafa
+				stroke darken(#0790D1, 10)
+	&__all-icon
+		position absolute
+		top 50%
+		right 0
+		width 8px
+		height 15px
+		fill #fafafa
+		stroke #0790D1
+		transform translateY(-50%)
+
+	&__object-w
+		position relative
+		padding-top ratio-percentage(467,1315)
+		overflow hidden
+		// height 467px
+		+r($d)
+			padding-top ratio-percentage(467,1036)
+
+		+r($tL)
+			padding-top ratio-percentage(344,750)
+
+		+r($tM)
+			margin-left -8px
+			margin-right -8px
+			padding-top ratio-percentage(237, 304)
+
+	&__object
+		position absolute
+		top 0
+		left 0
+		right 0
+		bottom 0
