@@ -1,0 +1,26 @@
+include ../icon/icon
+
+mixin pagination()
+	.pagination&attributes(attributes)
+		.pagination__buttons
+			a.pagination__button.pagination__button_prev(href="#") Назад
+				+icon('arrow-right', true).pagination__button-icon
+			a.pagination__button.pagination__button_next(href="#") Вперед
+				+icon('arrow-right', true).pagination__button-icon
+		ul.pagination__list
+			li.pagination__item
+				a.pagination__link(href="#") 1
+			li.pagination__item.pagination__item_active
+				a.pagination__link(href="#") 2
+			li.pagination__item
+				a.pagination__link(href="#") 3
+			li.pagination__item
+				a.pagination__link(href="#") 4
+			li.pagination__item
+				a.pagination__link(href="#") 5
+			li.pagination__item
+				span.pagination__sep …
+			li.pagination__item
+				a.pagination__link(href="#") 320
+
+		a.pagination__more(href="#") Показать еще 10

@@ -3,7 +3,6 @@
 	margin-bottom 20px
 	padding-top ratio-percentage(170, 1315)
 	float left
-	// width 640px
 	width ratio-percentage(628, 1315)
 	background-size cover
 	border-radius 3px
@@ -21,7 +20,6 @@
 		width 100%
 	&:last-child
 		margin-bottom 0
-
 	&__link
 		position absolute
 		z-index 1
@@ -66,7 +64,6 @@
 	&__w
 		position static
 		z-index 1
-		// width 640px
 		width ratio-percentage(314,640)
 		padding-top 16px
 		padding-left 16px
@@ -182,6 +179,7 @@
 		+r($tM)
 			display none
 
+// news article big
 
 .news-article_big
 	padding-top ratio-percentage(356, 1315)
@@ -258,3 +256,119 @@
 	.news-article__date-icon
 		width 16px
 		height 16px
+
+// news article category
+
+.news-article_category
+	padding-top 0
+	float none
+	width 100%
+	box-shadow none
+	.news-article__link
+		position static
+	.news-article__image
+		margin-right 32px
+		width 192px
+		width ratio-percentage(190,974)
+		max-height 121px
+		+r($d)
+			width ratio-percentage(190,680)
+		+r($tL)
+			width ratio-percentage(192,750)
+		+r($tM)
+			margin-right 0
+			margin-bottom 11px
+			width 100%
+			max-height 171px
+
+		&:after
+			display none
+	.news-article__w
+		position static
+		padding-top 0
+		padding-left 0
+		padding-right 0
+		padding-bottom 0
+		width 752px
+		width ratio-percentage(750,974)
+		+r($d)
+			width ratio-percentage(456,680)
+		+r($tL)
+			max-width 100%
+			width ratio-percentage(512,750)
+		+r($tM)
+			width 100%
+	.news-article__title
+		margin-bottom 12px
+		color #001d49
+		+r($d)
+			margin-bottom 4px
+		+r($tM)
+			margin-bottom 14px
+			font-size 18px
+			line-height 1.333
+	.news-article__text
+		margin-bottom 15px
+		color #6a7381
+		+r($d)
+			font-size 14px
+	.news-article__meta
+		color #A0A7B2
+		+r($tM)
+			justify-content space-between
+		+r($d)
+			padding-right 30px
+			margin-top auto
+
+	.news-article__date-icon,
+	.news-article__views-icon,
+	.news-article__comments-icon
+		fill #a0a7b2
+
+// news-article_side
+
+.news-article_side
+	padding-top 0
+	float none
+	width 100%
+	box-shadow none
+	.news-article__link
+		position static
+	.news-article__image
+		margin-right 14px
+		width 192px
+		width ratio-percentage(110,288)
+		max-height 66px
+		&:after
+			display none
+	.news-article__video-icon
+		top 5px
+		right 5px
+		width 33px
+		height 22px
+	.news-article__w
+		position static
+		padding-top 0
+		padding-left 0
+		padding-right 0
+		padding-bottom 0
+		width 752px
+		width ratio-percentage(160,288)
+	.news-article__title
+		margin-bottom 8px
+		color #001d49
+		font-size 16px
+		line-height 1.25
+	.news-article__text
+		margin-bottom 15px
+		color #6a7381
+	.news-article__meta
+		color #a0a7b2
+	.news-article__date
+		padding-left 0
+	.news-article__views
+		margin-right 0
+	.news-article__date-icon,
+	.news-article__views-icon,
+	.news-article__comments-icon
+		fill #a0a7b2

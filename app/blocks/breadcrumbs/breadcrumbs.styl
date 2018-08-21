@@ -1,2 +1,118 @@
 .breadcrumbs
-	display block
+	&__list
+		display flex
+		flex-flow row wrap
+		justify-content flex-start
+		align-items center
+	&__item
+		margin-right 14px
+		margin-bottom 10px
+		font-size 14px
+		&:last-child
+			margin-right 0
+			&:after
+				display none
+	&__item_siblings
+		position relative
+		margin-right 28px
+		+r($tL)
+			display none
+		&:after
+			position absolute
+			top 50%
+			right -14px
+			content ''
+			width 1px
+			height 16px
+			background #e3e5e8
+			transform translateY(-50%)
+
+		.breadcrumbs__link
+			color #979DA7
+
+	&__item_active
+		+r($tL)
+			display block
+		&:after
+			+r($tL)
+				display none
+		.breadcrumbs__link
+			padding-top 8px
+			padding-right 10px
+			padding-bottom 8px
+			padding-left 10px
+			background #eceef2
+			color #6a7381
+			border-radius 8px
+			+r($tL)
+				padding-left 15px
+				padding-right 45px
+		span
+			display inline-block
+			vertical-align middle
+			max-width 600px
+			overflow hidden
+			text-overflow ellipsis
+	&__item_more
+		&:hover
+			.breadcrumbs__sub
+				+r($tL)
+					display block
+
+		.breadcrumbs__link
+			position relative
+
+	&__item_hide
+		+r($tM)
+			display none
+
+
+
+	&__link
+		color #6a7381
+		text-decoration none
+	&__icon
+		margin-left 12px
+		width 6px
+		height 10px
+		fill #fff
+		stroke #808080
+
+
+	&__more-icon
+		position absolute
+		top 50%
+		right 12px
+		display none
+		width 17px
+		height 10px
+		fill #eceef2
+		stroke #6a7381
+		transform translateY(-50%)
+		+r($tL)
+			display block
+
+	&__sub
+		position absolute
+		top 100%
+		right 0
+		padding-top 10px
+		padding-right 12px
+		padding-bottom 10px
+		padding-left 15px
+		background #ECEEF2
+		display none
+		// +r($tL)
+
+	&__sub-item
+		position relative
+		margin-right 0
+		margin-bottom 5px
+
+		&:last-child
+			margin-right 0
+			&:after
+				display none
+	&__sub-link
+		color #6a7381
+		text-decoration none

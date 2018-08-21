@@ -11,8 +11,6 @@ import 'simplebar';
 	svg4everybody();
 
 
-
-
 	$(function() {
 
 
@@ -33,7 +31,7 @@ import 'simplebar';
 			$('#main-nav > li:not(.nav__item_more)').each(function() {
 				navwidth += $(this).outerWidth( true );
 			});
-			var availablespace = $('.nav_main').outerWidth(true) - morewidth;
+			var availablespace = $('.nav_main').outerWidth(true) - (morewidth + 100) ;
 
 			if (navwidth > availablespace) {
 				var lastItem = $('#main-nav > li:not(.nav__item_more)').last();
@@ -53,16 +51,18 @@ import 'simplebar';
 				$('.nav__item_more').css('display','none');
 			}
 		}
-		$(window).on('resize load',function(){
+
+		$(window).on('load resize',function(){
 			calcWidth();
 		});
+
+
+
 
 
 		$('.nav__item_more').on('click', function () {
 			$(this).toggleClass('nav__more-show');
 		});
-
-
 
 
 
@@ -333,7 +333,7 @@ import 'simplebar';
 		widgetStilization.prependTo(".widget_wrap");
 	}
 
-	pageWidget(['index']);
+	pageWidget(['index', 'category', 'article']);
 
 	});
 

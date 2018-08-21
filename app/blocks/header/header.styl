@@ -1,9 +1,11 @@
 .header
+	position relative
+	z-index 2
 	&__in
 		position relative
 		@extends .in
-		+r($tM)
-			z-index 2
+		// +r($tM)
+		// 	z-index 2
 	&__top
 		padding-top 16px
 		padding-bottom 16px
@@ -14,6 +16,8 @@
 			justify-content flex-start
 			align-items flex-start
 	&__logo-w
+		position relative
+		z-index 1
 		margin-right 28px
 	&__slogan
 		margin-bottom 7px
@@ -88,11 +92,12 @@
 			position absolute
 			top -1px
 			right 44px
-			left 8px
 			max-width 320px
 			tr(all .3s ease)
 		&:hover
 			+r($tM)
+				z-index 1
+				left 8px
 				tr(all .3s ease)
 			.search-form__input
 				+r($tM)

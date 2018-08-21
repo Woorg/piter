@@ -40,4 +40,45 @@
 	&__polls
 		+r($tM)
 			overflow hidden
+	&__w
+		display flex
+		flex 1
+		// flex-flow row wrap
+		// justify-content space-between
 
+	&__breadcrumbs
+		position relative
+		z-index 1
+		padding-top 24px
+		padding-bottom 30px
+		+r($tM)
+			padding-bottom 20px
+	&__content
+		width 976px
+		width ratio-percentage(976,1315)
+		+r($d)
+			width ratio-percentage(680,1036)
+		+r($tL)
+			width 100%
+
+	&__content_middle
+		margin-right ratio-percentage(30,1315)
+		margin-left ratio-percentage(30,1315)
+		width ratio-percentage(640,1315)
+		// flex 1
+		order 2
+
+	&__sidebar
+		width 304px
+		width ratio-percentage(304,1315)
+		+r($d)
+			width ratio-percentage(304,1036)
+
+	&__sidebar_first
+		order 1
+	&__sidebar_second
+		order 3
+
+
+	&__pagination
+		margin-bottom 27px

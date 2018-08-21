@@ -1,0 +1,34 @@
+mixin sidenav()
+	.sidenav&attributes(attributes)
+		header.sidenav__header
+			h2.sidenav__title.title.title_side Категории
+		ul.sidenav__list
+			li.sidenav__item
+				a.sidenav__link(href="#") Картина дня
+			li.sidenav__item
+				a.sidenav__link(href="#") Лента новостей
+			li.sidenav__item
+				a.sidenav__link(href="#") Куда сходить в петербурге
+				ul.sidenav__sub
+					li.sidenav__sub-item
+						a.sidenav__sub-link(href="#") Происшествия
+					li.sidenav__sub-item
+						a.sidenav__sub-link(href="#") Новости СПб
+					li.sidenav__sub-item.sidenav__sub-item_active
+						a.sidenav__sub-link(href="#") Новости России
+					li.sidenav__sub-item
+						a.sidenav__sub-link(href="#") Мировые новости
+					li.sidenav__sub-item
+						a.sidenav__sub-link(href="#") Культура
+					li.sidenav__sub-item
+						a.sidenav__sub-link(href="#") Спорт
+					li.sidenav__sub-item
+						a.sidenav__sub-link(href="#") Общество
+			li.sidenav__item
+				a.sidenav__link(href="#") Новости шоу-бизнеса России
+			li.sidenav__item
+				a.sidenav__link(href="#") Блокада Ленинграда
+			li.sidenav__item
+				a.sidenav__link(href="#") Музыка
+			li.sidenav__item
+				a.sidenav__link(href="#") Статьи

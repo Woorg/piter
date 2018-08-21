@@ -1,0 +1,69 @@
+.pagination
+	&__buttons
+		margin-bottom 27px
+		display flex
+		flex-flow row
+		justify-content center
+		+r($tM)
+			display none
+	&__button
+		@extends .button
+		position relative
+		margin-right 12px
+		padding-top 10px
+		font-family $hL
+		line-height 1
+		&:last-child
+			margin-right 0
+	&__button_prev
+		padding-left 47px
+		.pagination__button-icon
+			left 17px
+			transform translateY(-50%) rotate(180deg)
+	&__button_next
+		padding-right 47px
+		.pagination__button-icon
+			right 17px
+	&__button-icon
+		position absolute
+		top 50%
+		width 9px
+		height 16px
+		fill #fff
+		stroke #001d49
+		transform translateY(-50%)
+	&__list
+		display flex
+		flex-flow row wrap
+		justify-content center
+		align-items baseline
+		+r($tM)
+			display none
+	// &__item
+
+	&__item_active
+		.pagination__link
+			background-color #fbb727
+			color #fff
+	&__link,
+	&__sep
+		padding-top 12px
+		padding-right 8px
+		padding-bottom 10px
+		padding-left 8px
+		display block
+		min-width 40px
+		color #001d49
+		font-size 18px
+		text-decoration none
+		line-height 1
+		text-align center
+		border-radius 5px
+	// &__sep
+
+	&__more
+		@extends .button
+		margin-bottom 44px
+		display none
+		+r($tM)
+			display block

@@ -1,0 +1,18 @@
+mixin article()
+	article.article&attributes(attributes)
+		.article__image
+			img(src="assets/images/content/news-big.jpg", alt="")
+
+		.article__meta
+			.article__date
+				+icon('date-icon', true).article__date-icon
+				| Вчера 18:56
+			.article__views
+				+icon('views-icon', true).article__views-icon
+				| 256
+			a.article__author(href="#") pitertv218
+
+		h1.article__title В Петербурге открылась выставка современного искусства
+
+		.article__social
+			img(src="assets/images/general/social-buttons.png", alt="")

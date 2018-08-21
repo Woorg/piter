@@ -14,6 +14,9 @@
 		display none
 		+rmin($tM)
 			display none
+	// &__item_hide
+	// 	+r($tM)
+	// 		display none
 	&__link
 		padding-top 13px
 		padding-bottom 22px
@@ -73,6 +76,7 @@
 		top 12px
 		right 0
 
+
 .nav__more-show
 	&.nav__item_more
 		.nav__link
@@ -86,11 +90,11 @@
 			display block
 			li.nav__item
 				a
-
 					color #FFF
 					+r($tM)
 						text-indent 0
-
+					&:hover
+						color #fbb727
 .nav_sub
 	+r($tL)
 		max-width 800px

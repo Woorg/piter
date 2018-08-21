@@ -54,12 +54,14 @@ img
 		color darken(#40527b, 10)
 		tr(all .3s ease)
 
+
 // Titles
 
 .title
 	position relative
 	padding-bottom 12px
 	max-width 600px
+	display inline-block
 	font-size 26px
 	font-family $hM
 	line-height 1.076
@@ -76,18 +78,39 @@ img
 		content ''
 		background-color #fbb727
 
+.title_side
+	padding-bottom 8px
+	color #001d49
+	font-size 22px
+	font-family $hL
+	line-height 1.136
+	&:after
+		background-color #40527b
+
+.title_full
+	max-width 100%
+	+r($tM)
+		font-size 26px
+
 // wysiwyg editor styles
 
 .wysiwyg
 	p
-		margin-bottom 30px
-		font-size 16px
-		line-height 1.5
+		margin-bottom 24px
+		font-size 14px
+		line-height 1.714
 		&:last-child
 			margin-bottom 0
 
+		a
+			color #0790d1
+			font-family $hL
+			text-decoration none
+			&:hover
+				text-decoration underline
+
 	img
-		margin-bottom 30px
+		margin-bottom 24px
 		max-width 100%
 		height auto
 

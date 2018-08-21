@@ -1,2 +1,30 @@
 .category
-	display block
+	&__title-w
+		border-bottom 1px solid #f3f3f3
+		padding-bottom 1px
+		margin-bottom 24px
+	// &__title
+	&__text
+		@extends .wysiwyg
+		padding-bottom 24px
+		color #6a7381
+		font-size 14px
+		line-height 1.714
+		+r($tL)
+			padding-right 112px
+		+r($tM)
+			padding-right 0
+	&__list
+		margin-bottom 43px
+		+r($tM)
+			margin-bottom 28px
+
+	&__item
+		border-top 1px solid #f3f3f3
+		border-bottom 1px solid #f3f3f3
+		padding-top 23px
+		padding-bottom 23px
+		+r($tM)
+			border-top none
+			padding-top 16px
+			padding-bottom 12px
