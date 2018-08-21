@@ -14,6 +14,8 @@
 		color #007fc6
 		text-decoration none
 		tr(all .3s ease)
+		+r($tM)
+			text-indent -9999px
 		&:hover
 			color darken(#007fc6, 10)
 			tr(all .3s ease)
@@ -35,6 +37,9 @@
 		justify-content flex-start
 		+r($tL)
 			justify-content space-between
+		+r($tM)
+			margin-left -8px
+			margin-right -8px
 	&__poll
 		margin-right 55px
 		padding-top 30px
@@ -43,7 +48,6 @@
 		padding-bottom 0
 		max-width 640px
 		max-width ratio-percentage(640,1315)
-
 		height 352px
 		background-color #ffffff
 		box-shadow 0 2px 24px rgba(0, 0, 0, 0.1)
@@ -54,17 +58,27 @@
 		+r($tL)
 			margin-right 0
 			max-width ratio-percentage(368,750)
+		+r($tM)
+			margin-bottom 20px
+			max-width 100%
 	&__list
 		padding-right 72px
 		+r($tL)
 			padding-right 0
 			max-width ratio-percentage(337,750)
+		+r($tM)
+			padding-right 15px
+			padding-left 15px
+			max-width 100%
 
 	&__list-item
 		margin-bottom 30px
 	&__item-title
 		color #001d49
 		line-height 1.4
+		text-decoration none
+		&:hover
+			text-decoration none
 	&__item-result
 		color #757575
 		font-family $hL

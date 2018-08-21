@@ -14,6 +14,8 @@
 		color #007fc6
 		text-decoration none
 		tr(all .3s ease)
+		+r($tM)
+			display none
 		&:hover
 			color darken(#007fc6, 10)
 			tr(all .3s ease)
@@ -42,12 +44,13 @@
 		align-items flex-start
 		+r($tL)
 			margin-left -14px
+		+r($tM)
+			margin-left 0
 
 
 	&__item
 		margin-left 24px
 		margin-bottom 30px
-		// width 240px
 		width 192px
 		width ratio-percentage(192, 1315)
 		+r($d)
@@ -55,6 +58,11 @@
 		+r($tL)
 			margin-left 14px
 			width ratio-percentage(170, 750)
+		+r($tM)
+			margin-left 0
+			margin-right 16px
+			width ratio-percentage(176, 304)
+			// width 100%
 	&__item_hidden
 		display none
 		+r($tL)
@@ -76,7 +84,6 @@
 			max-height 103px
 		img
 			respimg()
-
 
 	&__meta
 		margin-bottom 7px
@@ -115,4 +122,31 @@
 	&__item-title
 		font-size 15px
 		line-height 1.2
-		// letter-spacing tracking(-30)
+		+r($tM)
+			padding-right 20px
+
+	.slick-list
+		+r($tM)
+			padding:0 30% 0 0
+
+	.slick-dots
+		bottom 0
+		li
+			margin 0
+			margin-right 12px
+			width 12px
+			height 12px
+			border-radius 10px
+			background-color #d8d8d8
+			&:last-child
+				margin-right 0
+		button
+			padding 0
+			width 12px
+			height 12px
+			&:before
+				display none
+
+		.slick-active
+			background-color #40527b
+

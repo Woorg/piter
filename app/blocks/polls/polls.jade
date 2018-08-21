@@ -2,7 +2,7 @@ mixin polls()
 	section.polls&attributes(attributes)
 		.polls__top
 			h2.polls__title Опросы
-			.polls__all-polls(href="#")
+			a.polls__all-polls(href="#")
 				+icon('arrow-right', true).polls__all-icon
 				| Все опросы
 
@@ -52,17 +52,17 @@ mixin polls()
 
 			ul.polls__list
 				li.polls__list-item
-					.polls__item-title МОК не допустил к Олимпиаде главных звезд
+					a.polls__item-title(href="#") МОК не допустил к Олимпиаде главных звезд
 					.polls__item-result Проголосовало: 15
 				li.polls__list-item
-					.polls__item-title Как оцениваете работы по очистке Петербурга от снега?
+					a.polls__item-title(href="#") Как оцениваете работы по очистке Петербурга от снега?
 					.polls__item-result Проголосовало: 15
 				li.polls__list-item
-					.polls__item-title Нужно ли уволить Манчини из "Зенита"
+					a.polls__item-title(href="#") Нужно ли уволить Манчини из "Зенита"
 					.polls__item-result Проголосовало: 15
 				li.polls__list-item
-					.polls__item-title Как вы относитесь к рэп-баттлам?
+					a.polls__item-title(href="#") Как вы относитесь к рэп-баттлам?
 					.polls__item-result Проголосовало: 15
 				li.polls__list-item
-					.polls__item-title Следите ли вы за современной модой?
+					a.polls__item-title(href="#") Следите ли вы за современной модой?
 					.polls__item-result Проголосовало: 15

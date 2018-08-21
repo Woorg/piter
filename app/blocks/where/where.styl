@@ -7,6 +7,8 @@
 		align-items center
 	&__title
 		@extends .title
+		+r($tM)
+			max-width 210px
 	&__all-news
 		position relative
 		padding-right 23px
@@ -14,6 +16,8 @@
 		color #007fc6
 		text-decoration none
 		tr(all .3s ease)
+		+r($tM)
+			text-indent -9999px
 		&:hover
 			color darken(#007fc6, 10)
 			tr(all .3s ease)
@@ -33,8 +37,12 @@
 	&__body
 		box-shadow 0 2px 24px rgba(0, 0, 0, 0.1)
 		background-color #ffffff
-
-	// &__days
+		+r($tM)
+			margin-left -8px
+			margin-right -8px
+	&__days
+		+r($tM)
+			padding-bottom 40px
 
 	&__days-item
 		// border-top 1px solid #f3f3f3
@@ -45,6 +53,11 @@
 		align-items flex-start
 		font-size 0
 		line-height 1
+		+r($tM)
+			border-bottom 1px solid #e9ebf0
+			display block
+			height 268px
+
 	&__day
 		position relative
 		margin-right 37px
@@ -56,22 +69,44 @@
 		+r($tL)
 			margin-right 17px
 			width ratio-percentage(112,750)
+		+r($tM)
+			margin-right 0
+			padding-top 20px
+			padding-left 17px
+			padding-right 17px
+			width 100%
+			height auto
+			background-color #fff
+			font-size 0
 	&__day,
 	&__day-list-w
 		border-bottom 1px solid #f3f3f3
 		display inline-block
 		vertical-align top
+		+r($tM)
+			border-bottom none
 	&__day-w
 		position absolute
 		top 50%
 		left 50%
 		text-align center
 		transform translate(-50%, -50%)
+		+r($tM)
+			position static
+			transform none
+			text-align left
+
 	&__day-val
 		color #001d49
 		font-size 24px
 		line-height 1
-
+		+r($tM)
+			margin-right 10px
+	&__day-val,
+	&__day-t
+		+r($tM)
+			display inline-block
+			vertical-align middle
 	&__day-t
 		color #6a7381
 		font-size 13px
@@ -91,6 +126,10 @@
 		+r($tL)
 			// width 623px
 			max-width ratio-percentage(620,750)
+		+r($tM)
+			padding-left 17px
+			max-width 100%
+			width 100%
 
 	&__day-controls
 		position absolute
@@ -160,6 +199,8 @@
 		height 205px
 		// line-height 215px
 		overflow hidden
+		+r($tM)
+			height 220px
 
 	&__day-list
 		height 100%
@@ -213,6 +254,8 @@
 	.slick-slide
 		line-height 0
 		height 215px
+		+r($tM)
+			height 268px
 
 
 	.slick-current
@@ -237,6 +280,21 @@
 		background url('../images/general/arrow-down.svg') 0 0 / cover no-repeat
 		+r($tL)
 			left 42px
+		+r($tM)
+			left 50%
+			width 110px
+			background none
+			transform translate(-50%, 0)
+			&:after
+				position absolute
+				top 0
+				left 0
+				width 100%
+				height 100%
+				content 'Показать еще'
+				color #001d49
+				font-family $hL
+				font-size 16px
 
 	.slick-next
 		&:before

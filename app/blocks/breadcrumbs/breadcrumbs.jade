@@ -1,0 +1,42 @@
+include ../icon/icon
+
+mixin breadcrumbs()
+	.breadcrumbs&attributes(attributes)
+		ol.breadcrumbs__list(itemscope='', itemtype='http://schema.org/BreadcrumbList')
+			li.breadcrumbs__item(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a.breadcrumbs__link(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books')
+					span(itemprop='name') Главная
+
+			meta(itemprop='position', content='1')
+			+icon('arrow-right').breadcrumbs__icon
+
+			li.breadcrumbs__item(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a.breadcrumbs__link(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books/sciencefiction')
+					span(itemprop='name') Лента новостей
+
+			meta(itemprop='position', content='2')
+			+icon('arrow-right').breadcrumbs__icon
+
+			li.breadcrumbs__item.breadcrumbs__item_siblings(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a.breadcrumbs__link(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books/sciencefiction/ancillaryjustice')
+					span(itemprop='name') Новости России
+
+			meta(itemprop='position', content='3')
+
+			li.breadcrumbs__item.breadcrumbs__item_siblings(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a.breadcrumbs__link(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books/sciencefiction/ancillaryjustice')
+					span(itemprop='name') Проишествия
+
+			meta(itemprop='position', content='4')
+
+			li.breadcrumbs__item.breadcrumbs__item_siblings(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a.breadcrumbs__link(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books/sciencefiction/ancillaryjustice')
+					span(itemprop='name') Криминальные проишествия
+
+			meta(itemprop='position', content='5')
+
+			li.breadcrumbs__item.breadcrumbs__item_siblings(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a.breadcrumbs__link(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books/sciencefiction/ancillaryjustice')
+					span(itemprop='name') Терроризм
+
+			meta(itemprop='position', content='6')

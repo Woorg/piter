@@ -10,20 +10,7 @@ import 'simplebar';
 
 	svg4everybody();
 
-	var styles = [
-		'padding: 2px 9px',
-		'background: #82B93C',
-		'color: #fff',
-		'display: inline-block',
-		'text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2)',
-		'box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.2) inset, 0 5px 3px -5px rgba(0, 0, 0, 0.5), 0 -13px 5px -10px rgba(255, 255, 255, 0.4) inset',
-		'line-height: 1.56',
-		'text-align: left',
-		'font-size: 19px',
-		'font-weight: 400'
-	].join(';');
 
-	console.log('%c developed by igor gorlov https://webjeb.ru', styles);
 
 
 	$(function() {
@@ -230,7 +217,37 @@ import 'simplebar';
 
 
 
+		if ( $(window).width() < 750 ) {
 
+			$('.broadcast__list').slick({
+				dots: true,
+				infinite: true
+
+			});
+
+			$('.u-video__list').slick({
+				dots: true,
+				infinite: true
+
+			});
+
+			$('.movie__list').slick({
+				dots: true,
+				infinite: true
+
+			});
+
+		}
+
+		if ( $(window).width() > 750 ) {
+
+			$('.broadcast__list').slick('unslick');
+
+			$('.u-video__list').slick('unslick');
+
+			$('.movie__list').slick('unslick');
+
+		}
 
 
 

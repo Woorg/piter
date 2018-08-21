@@ -31,6 +31,11 @@
 			margin-left 16px
 			width ratio-percentage(170, 750)
 
+		+r($tM)
+			margin-left 0
+			margin-right 16px
+			width ratio-percentage(176, 304)
+
 	&__category
 		position relative
 		margin-bottom 3px
@@ -107,3 +112,29 @@
 	&__item-title
 		font-size 15px
 		line-height 1.2
+
+
+	.slick-list
+		+r($tM)
+			padding:0 34% 0 0
+
+	.slick-dots
+		bottom 0
+		li
+			margin 0
+			margin-right 12px
+			width 12px
+			height 12px
+			border-radius 10px
+			background-color #d8d8d8
+			&:last-child
+				margin-right 0
+		button
+			padding 0
+			width 12px
+			height 12px
+			&:before
+				display none
+
+		.slick-active
+			background-color #40527b

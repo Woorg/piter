@@ -14,6 +14,8 @@
 		color #007fc6
 		text-decoration none
 		tr(all .3s ease)
+		+r($tM)
+			display none
 		&:hover
 			color darken(#007fc6, 10)
 			tr(all .3s ease)
@@ -54,6 +56,10 @@
 		+r($tL)
 			margin-left 16px
 			width ratio-percentage(234, 750)
+
+		+r($tM)
+			width ratio-percentage(234, 304)
+
 	&__item_hidden
 		+r($tL)
 			display none
@@ -123,4 +129,30 @@
 	&__item-title
 		font-size 16px
 		line-height 1.5
+		+r($tM)
+			padding-right 20px
 
+	.slick-list
+		+r($tM)
+			padding:0 18% 0 0
+
+	.slick-dots
+		bottom 10px
+		li
+			margin 0
+			margin-right 12px
+			width 12px
+			height 12px
+			border-radius 10px
+			background-color #d8d8d8
+			&:last-child
+				margin-right 0
+		button
+			padding 0
+			width 12px
+			height 12px
+			&:before
+				display none
+
+		.slick-active
+			background-color #40527b
