@@ -1,21 +1,84 @@
 .sidenav
 	display block
-	&__header
-		border-bottom 1px solid #f3f3f3
-		padding-bottom 1px
-		margin-bottom 24px
+	// &__header
+	// 	border-bottom 1px solid #f3f3f3
+	// 	padding-bottom 1px
+	// 	margin-bottom 24px
 	// &__title
 	// &__list
 
+	&__list
+		+r($d)
+			font-size 0
+	// 		display flex
+	// 		flex-flow row wrap
+	// 		justify-content space-between
+	// 		align-items flex-start
+
 	&__item
 		margin-bottom 10px
+		+r($d)
+			margin-bottom 20px
+			width 30%
+			display inline-block
+			vertical-align top
+			font-size 16px
+		+r($tL)
+			width 33%
+		+r($tM)
+			width 100%
+
 		&:last-child
 			margin-bottom 0
+	&__item_sub
+		+r($d)
+			position relative
+		.sidenav__link
+			display inline-block
+			vertical-align top
+			white-space nowrap
+			overflow hidden
+			text-overflow ellipsis
+			+r($d)
+				padding-right 25px
+			&:before
+				position absolute
+				top 50%
+				content ''
+				display none
+				transform translateY(-50%)
+				+r($d)
+					left auto
+					right 4px
+					width 12px
+					height 12px
+					display block
+					background url('../images/general/arrow-down.svg') 0 0 / cover no-repeat
+
+		.sidenav__sub
+			+r($d)
+				// display block
+				background #FFF
+				border-radius 3px
+
+		&:hover
+			.sidenav__sub
+				+r($d)
+					position absolute
+					z-index 1
+					top 100%
+					left 0
+					right 0
+					display block
+				+r($tM)
+					position static
 	&__link
 		position relative
 		padding-left 23px
 		color #001d49
 		text-decoration none
+		+r($d)
+			padding-left 0
 		&:after
 			position absolute
 			top 50%
@@ -26,12 +89,30 @@
 			background-color #fbb727
 			border-radius 50%
 			transform translateY(-50%)
-
+			+r($d)
+				display none
+		&:before
+			position absolute
+			top 50%
+			display none
+			+r($d)
+				left auto
+				right 0
+				width 11px
+				height 6px
+				background url('../images/general/arrow-down.svg') 0 0 / 11px 6px no-repeat
 	&__sub
 		margin-left 32px
 		padding-top 10px
 		padding-bottom 10px
-
+		// display none
+		+r($d)
+			margin-left 0
+			padding-left 5px
+			padding-right 5px
+			display none
+		+r($tL)
+			display none
 	&__sub-item
 		margin-bottom 5px
 		&:last-child
@@ -46,3 +127,36 @@
 		font-family $hL
 		font-size 15px
 		text-decoration none
+		tr(all .3s ease)
+		&:hover
+			color #001d49
+			font-family $hR
+			tr(all .3s ease)
+
+
+
+// Sidenav wide
+
+.sidenav_wide
+	
+	.sidenav__list
+		+r($d)
+			padding-left 7px
+	
+	.sidenav__item
+		width 100%
+
+	.sidenav__item_sub
+		.sidenav__link
+			&:before
+				display none
+	.sidenav__link
+		padding-right 0
+		&:after
+			display block
+		+r($d)
+			padding-left 23px
+	.sidenav__sub
+		position static
+		padding-left 26px
+		display block

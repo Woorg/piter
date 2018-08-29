@@ -1,0 +1,131 @@
+.best
+	display block
+	&__header
+		position relative
+		display flex
+		justify-content space-between
+		align-items center
+
+	&__list
+		box-shadow 0 2px 24px rgba(0, 0, 0, 0.1)
+
+
+	&__link
+		padding-top 30px
+		padding-right 24px
+		padding-bottom 30px
+		padding-left 24px
+		display block
+		background-color #ffffff
+		color #001d49
+		text-decoration none
+	&__image
+		margin-bottom 12px
+		max-height 141px
+		overflow hidden
+		border-radius 3px
+		img
+			respimg()
+
+	&__meta
+		margin-bottom 10px
+		display flex
+		flex-flow row wrap
+		justify-content flex-start
+		align-items center
+		color #a0a7b2
+		font-size 14px
+		line-height 1.571
+		+r($d)
+			// padding-right 30px
+			margin-top auto
+		+r($tL)
+			padding-right 0
+		+r($tM)
+			padding-right 0
+			justify-content space-between
+
+	&__date
+		margin-right 14px
+		padding-left 20px
+		+r($tL)
+			margin-right 8px
+			padding-left 22px
+			max-width 110px
+		+r($tM)
+			margin-right 20px
+
+	&__views
+		margin-right 20px
+		padding-left 24px
+		+r($tL)
+			margin-right 10px
+		+r($tM)
+			margin-right 20px
+
+	&__comments
+		padding-left 23px
+	&__date,
+	&__views,
+	&__comments
+		position relative
+
+	&__date-icon,
+	&__views-icon,
+	&__comments-icon
+		position absolute
+		top calc(50% - 1px)
+		left 0
+		transform translateY(-50%)
+		fill #a0a7b2
+
+	&__date-icon
+		width 17px
+		height 16px
+	&__views-icon
+		width 19px
+		height 12px
+	&__comments-icon
+		width 15px
+		height 14px
+	&__item-title
+		margin-bottom 12px
+		color #001d49
+		font-size 18px
+		line-height 1.333
+		+r($d)
+			margin-bottom 4px
+		+r($tM)
+			margin-bottom 14px
+			font-size 18px
+			line-height 1.333
+
+	&__nav
+		position relative
+		max-width 48px
+		display flex
+		justify-content space-between
+		align-items center
+	&__prev,
+	&__next
+		position relative
+		border none
+		padding-left 8px
+		padding-right 8px
+		height 26px
+		background transparent
+	&__prev
+		margin-right 16px
+
+	&__prev-icon,
+	&__next-icon
+		position absolute
+		top 50%
+		width 9px
+		height 17px
+		fill #fff
+		stroke #6a7381
+		transform translateY(-50%)
+	&__prev-icon
+		transform translateY(-50%) rotate(180deg)
+

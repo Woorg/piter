@@ -1,10 +1,68 @@
 .sidebar
-	display block
-	padding-top 8px
+	// padding-top 8px
+	&__header
+		border-bottom 1px solid #f3f3f3
+		padding-bottom 1px
+		margin-bottom 24px
+
+	&__related
+		display none
+		+r($tL)
+			display block
+	&__related_sec
+		+r($tL)
+			display none
+
+	&__best
+		display block
+		+r($tL)
+			display none
+
+	&__feed
+		display block
+
+	&__chanels
+		display block
+
+	&__ads
+		display block
+		+r($tL)
+			display none
 	&__row
 		margin-bottom 34px
-		&:last-child
-			margin-bottom 0
+		// &:last-child
+		// 	margin-bottom 0
+
+	// &__row_dh
+	// 	display none
+	// &__row_tlh
+	// 	+r($d)
+	// 		display none
+	// &__row_tmh
+	// 	display none
+	// 	+r($tL)
+	// 		display none
+	// &__row_sh
+	// 	+r($tM)
+	// 		display none
+
+	// &__row_dv
+	// 	display block
+	// &__row_tlv
+	// 	display none
+	// 	+r($d)
+	// 		display block
+	// 	+r($tL)
+	// 		display none
+	// &__row_tmv
+	// 	display none
+	// 	+r($tL)
+	// 		display block
+	// &__row_sv
+	// 	display none
+	// 	+r($tM)
+	// 		display block
+
 
 .sidebar__cat
 	+r($tL)

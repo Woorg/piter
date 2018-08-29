@@ -10,9 +10,7 @@ import 'simplebar';
 
 	svg4everybody();
 
-
 	$(function() {
-
 
 		/*Callback*/
 
@@ -57,16 +55,9 @@ import 'simplebar';
 		});
 
 
-
-
-
 		$('.nav__item_more').on('click', function () {
 			$(this).toggleClass('nav__more-show');
 		});
-
-
-
-
 
 		const $whereSlider = $('.where__days');
 
@@ -88,6 +79,26 @@ import 'simplebar';
 
 			});
 		}
+
+		const $bestSlider = $('.best__list');
+
+		if ($bestSlider.length) {
+			$bestSlider.slick({
+				slidesToShow: 1,
+				dots: false,
+				fade: true,
+				arrows: true,
+				appendArrows: $('.best__nav'),
+				speed: 300,
+				infinite: true,
+				adaptiveHeight: true,
+				prevArrow: $('.best__prev'),
+				nextArrow: $('.best__next')
+			});
+		}
+
+
+
 
 		var $frame = $('#where__day-basic-1');
 		var $wrap  = $frame.parent();
@@ -250,6 +261,45 @@ import 'simplebar';
 		}
 
 
+		// Comments
+
+		const $commReply = $('.comments__reply');
+
+		$commReply.on('click', function (e) {
+			e.preventDefault();
+			$(this).parent().parent().next('.comments__form').toggleClass('comments__form_hidden');
+		});
+
+
+		// Relative title tablet
+
+		const $relTitle = $('.related__title');
+
+		if( $(window).width() < 1025 ) {
+			$relTitle.text('Новости на эту тему');
+		}
+
+
+		// Main text more
+
+		const $textMore = $('.main__text-more');
+
+		$textMore.on('click', function (e) {
+			e.preventDefault();
+			$(this).toggleClass('main__text-more_active');
+			$(this).parent().toggleClass('main__text_full');
+		});
+
+
+		// Category text
+
+		// const $catTextMore = $('.category__text-more');
+
+		// $catTextMore.on('click', function (e) {
+		// 	e.preventDefault();
+		// 	$(this).parent().toggleClass('category__text_full');
+		// });
+
 
 		// Validation
 
@@ -333,7 +383,7 @@ import 'simplebar';
 		widgetStilization.prependTo(".widget_wrap");
 	}
 
-	pageWidget(['index', 'category', 'article']);
+	pageWidget(['index', 'category', 'article', 'videos']);
 
 	});
 

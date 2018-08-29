@@ -1,0 +1,66 @@
+mixin comments()
+	.comments&attributes(attributes)
+		header.comments__header
+			h3.comments__title.title.title_side Оставить комментарий
+		.comments__form.form
+			form(action="", method="post")
+				.form__row
+					.form__field
+						textarea.form__textarea(name="" )
+				.form__row
+					input.form__submit.button.button_form(type="submit", value="Отправить")
+
+		ul.comments__list
+			li.comments__item
+				.comments__item-top
+					.comments__user
+						a.comments__image(href="#")
+							img(src="assets/images/content/user/user-1.jpg", alt="")
+						.comments__rating
+							a.comments__rating-button.comments__rating-plus(href="#") Плюс
+							.comments__rating-num 0
+							a.comments__rating-button.comments__rating-minus(href="#") Минус
+
+					.comments__w
+						.comments__top
+							a.comments__name(href="#") Марина
+							.comments__date 21.03.2017 23:26
+						.comments__text
+							p комментариях тут же появились вопросы о состоянии здоровья звезды.
+
+						a.comments__reply(href="#") Ответить
+
+				.comments__form.comments__form_hidden.form
+					form(action="", method="post")
+						.form__row
+							.form__field
+								textarea.form__textarea(name="" )
+						.form__row
+							input.form__submit.button.button_form(type="submit", value="Отправить")
+
+			li.comments__item
+				.comments__item-top
+					.comments__user
+						a.comments__image(href="#")
+							img(src="assets/images/content/user/user-2.jpg", alt="")
+						.comments__rating
+							a.comments__rating-button.comments__rating-plus(href="#") Плюс
+							.comments__rating-num 0
+							a.comments__rating-button.comments__rating-minus(href="#") Минус
+
+					.comments__w
+						.comments__top
+							a.comments__name(href="#") Петр
+							.comments__date 21.03.2017 23:26
+						.comments__text
+							p Выставка продлится до 6 мая.
+
+						a.comments__reply(href="#") Ответить
+
+				.comments__form.comments__form_hidden.form
+					form(action="", method="post")
+						.form__row
+							.form__field
+								textarea.form__textarea(name="" )
+						.form__row
+							input.form__submit.button.button_form(type="submit", value="Отправить")

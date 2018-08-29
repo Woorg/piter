@@ -41,10 +41,19 @@
 		+r($tM)
 			overflow hidden
 	&__w
+		margin-bottom 40px
 		display flex
 		flex 1
 		// flex-flow row wrap
 		// justify-content space-between
+
+	&__w_3
+		position relative
+		// margin-right ratio-percentage(355,1315)
+		// margin-left ratio-percentage(355,1315)
+		width 100%
+		+r($d)
+			display block
 
 	&__breadcrumbs
 		position relative
@@ -54,19 +63,28 @@
 		+r($tM)
 			padding-bottom 20px
 	&__content
+		margin-right ratio-percentage(30,1315)
 		width 976px
 		width ratio-percentage(976,1315)
 		+r($d)
 			width ratio-percentage(680,1036)
 		+r($tL)
+			margin-right 0
 			width 100%
 
 	&__content_middle
-		margin-right ratio-percentage(30,1315)
-		margin-left ratio-percentage(30,1315)
+		// margin-right ratio-percentage(30,1315)
+		// margin-left ratio-percentage(30,1315)
+		margin auto
 		width ratio-percentage(640,1315)
-		// flex 1
 		order 2
+		+r($d)
+			margin-right 0
+			margin-bottom 100px
+			width ratio-percentage(680,1036)
+		+r($tL)
+			margin-bottom 40px
+			width 100%
 
 	&__sidebar
 		width 304px
@@ -75,10 +93,87 @@
 			width ratio-percentage(304,1036)
 
 	&__sidebar_first
+		position absolute
+		top 0
+		left 0
+		padding-right 16px
 		order 1
+		+r($tL)
+			position static
+			margin-left auto
+			padding-right 0
+			display flex
+			flex-flow column
+			// order 5
+			width ratio-percentage(680,1036)
+			width 100%
+		+r($tM)
+			margin auto
+
+
 	&__sidebar_second
+		position absolute
+		top 0
+		right 0
+		padding-left 16px
 		order 3
-
-
+		+r($d)
+			position static
+			margin-left auto
+			display flex
+			flex-flow column
+			// order 5
+			width ratio-percentage(680,1036)
+		+r($tL)
+			padding-left 0
+			width 100%
 	&__pagination
 		margin-bottom 27px
+
+
+	&__text
+		position relative
+		padding-bottom 40px
+		display none
+		+r($tL)
+			display block
+	&__text-w
+		+r($tL)
+			@extends .wysiwyg
+			max-height 280px
+			overflow hidden
+			color #6a7381
+			font-family $hL
+		+r($tM)
+			max-height 200px
+			p
+				color #6a7381
+				line-height 1.857
+	&__text_full
+		.main__text-w
+			max-height 100%
+
+	&__text-more
+		position relative
+		bottom -20px
+		left 0
+		color #001d49
+		font-family $hL
+		font-size 16px
+		text-decoration none
+	&__text-more_active
+		.main__more-icon
+			margin-bottom -4px
+			transform rotate(180deg)
+	&__more-icon
+		margin-right 16px
+		margin-bottom -2px
+		width 16px
+		height 16px
+		fill #fff
+		stroke #6a7381
+
+	&__category
+		+r($tM)
+			margin-bottom 34px
+

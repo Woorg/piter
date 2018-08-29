@@ -1,0 +1,57 @@
+mixin sidefeed()
+	.sidefeed.latest-news.latest-news_side&attributes(attributes)
+		header.sidefeed__header.sidebar__header
+			h2.sidefeed__title.title.title_side Лента новостей
+			a.sidefeed__all-news(href="")
+				+icon('arrow-right', true).sidefeed__all-icon
+				| Все новости
+
+		ul.sidefeed__list.latest-news__list
+			li.sidefeed__item.latest-news__item
+				.latest-news__meta
+					.latest-news__date 23:33
+					.latest-news__video-w
+							a.latest-news__video(href="")
+				a.latest-news__news-title(href="") Олимпиада в Пхенчхане 2018: расписание соревнований на 14 февраля
+
+			li.sidefeed__item.latest-news__item
+				.latest-news__meta
+					.latest-news__date 23:33
+					.latest-news__sep
+				a.latest-news__news-title(href="") За ВДВ: Шнуров поздравляет подписчиков с праздником 14 февраля
+			li.sidefeed__item.latest-news__item
+				.latest-news__meta
+					.latest-news__date 23:33
+					.latest-news__sep
+				a.latest-news__news-title(href="") В Петербурге оперативники обыскивают офисы компании "Теорема"
+
+			li.sidefeed__item.latest-news__item
+				.latest-news__meta
+					.latest-news__date 23:33
+					.latest-news__sep
+				a.latest-news__news-title(href="") Олимпиада в Пхенчхане 2018: расписание соревнований на 15 февраля
+
+		.latest-news__day-w
+				.latest-news__day Вчера
+
+
+		ul.latest-news__list
+			li.latest-news__item
+				.latest-news__meta
+					.latest-news__date 23:33
+					.latest-news__video-w
+						a.latest-news__video(href="")
+				a.latest-news__news-title(href="") Олимпиада в Пхенчхане 2018: расписание соревнований на 14 февраля
+			li.latest-news__item
+				.latest-news__meta
+					.latest-news__date 23:33
+					.latest-news__sep
+				a.latest-news__news-title(href="") Дети могут: школьники обнаружили новый остров в Арктике
+			li.latest-news__item
+				.latest-news__meta
+					.latest-news__date 23:33
+					.latest-news__sep
+				a.latest-news__news-title(href="") Дети могут: школьники обнаружили новый остров в Арктике
+
+		.latest-news__more-w
+			a.latest-news__more(href="#") Показать еще 10

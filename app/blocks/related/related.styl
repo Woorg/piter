@@ -1,15 +1,38 @@
 .related
-	display block
-	&__header
-		border-bottom 1px solid #f3f3f3
-		padding-bottom 1px
-		margin-bottom 24px
+	// &__header
+	// 	border-bottom 1px solid #f3f3f3
+	// 	padding-bottom 1px
+	// 	margin-bottom 24px
 
 	// &__list
+	+r($d)
+		order -1
+	&__list
+		+r($d)
+			display flex
+			flex-flow row wrap
+			justify-content space-between
 
 	&__item
 		border-top 1px solid #f3f3f3
 		border-bottom 1px solid #f3f3f3
-		padding-top 16px
-		padding-bottom 16px
+		padding-top 10px
+		padding-bottom 10px
+		+r($d)
+			width 336px
+			width ratio-percentage(336,680)
+		+r($tM)
+			width 100%
+		&:first-child
+			border-top none
+			padding-top 0
 
+
+
+.related_wide
+
+	.related__item
+		width 100%
+
+	.news-article__category
+		display none

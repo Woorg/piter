@@ -56,19 +56,158 @@
 	padding-right 0
 	padding-bottom 20px
 	box-shadow 0 2px 24px rgba(0, 0, 0, 0.1)
+	+r($d)
+		padding-top 0
+		padding-left 0
+		padding-right 0
+		padding-bottom 0
+		box-shadow none
+	.poll__header
+		display none
+		+r($d)
+			display block
 	.poll__title,
 	.poll__list
 		padding-right 15px
 	.poll__title
 		margin-bottom 10px
+		+r($d)
+			margin-bottom 25px
 	.poll__item
 		padding-right 44px
 	.poll__item-w
 		max-width 202px
+		+r($d)
+			max-width 300px
 	.poll__item-title
 		margin-bottom 13px
 		font-size 15px
 	.poll__item-result-w
 		height 8px
+		+r($d)
+			height 16px
+		+r($tM)
+			height 8px
 	.poll__item-percent
 		bottom -1px
+
+	.poll__w
+		display flex
+		max-height 350px
+		flex-flow row wrap
+		justify-content space-between
+
+		+r($tM)
+			display block
+
+	.poll
+		+r($d)
+			padding-top 20px
+			padding-left 24px
+			padding-right 0
+			padding-bottom 20px
+			width ratio-percentage(412, 680)
+			max-height 400px
+			box-shadow 0 2px 24px rgba(0, 0, 0, 0.1)
+		+r($tM)
+			margin-bottom 30px
+			width 100%
+	.polls__list
+		display none
+		+r($d)
+			padding-right 0
+			display block
+			width ratio-percentage(240, 680)
+		+r($tM)
+			width 100%
+
+	.simplebar-scrollbar
+		width 8px
+		&:before
+			border-radius 30px
+			background-color #f2f2f2
+
+
+
+.poll_s-wide
+	padding-top 20px
+	padding-left 24px
+	padding-right 0
+	padding-bottom 20px
+	box-shadow 0 2px 24px rgba(0, 0, 0, 0.1)
+	+r($d)
+		padding-top 0
+		padding-left 0
+		padding-right 0
+		padding-bottom 0
+		box-shadow none
+	.poll__header
+		display none
+		+r($d)
+			display none
+		+r($tL)
+			display block
+	.poll__title,
+	.poll__list
+		padding-right 15px
+	.poll__title
+		margin-bottom 10px
+		+r($d)
+			margin-bottom 25px
+	.poll__item
+		padding-right 44px
+	.poll__item-w
+		max-width 202px
+		+r($d)
+			// max-width 300px
+			max-width 202px
+	.poll__item-title
+		margin-bottom 13px
+		font-size 15px
+	.poll__item-result-w
+		height 8px
+		+r($d)
+			// height 16px
+			height 8px
+		+r($tM)
+			height 8px
+	.poll__item-percent
+		bottom -1px
+
+	.poll__w
+		display flex
+		max-height 350px
+		flex-flow row wrap
+		justify-content space-between
+
+		+r($tM)
+			display block
+
+	.poll
+		width 100%
+		+r($d)
+			padding-top 20px
+			padding-left 24px
+			padding-right 0
+			padding-bottom 20px
+			// width ratio-percentage(412, 680)
+			max-height 400px
+			box-shadow 0 2px 24px rgba(0, 0, 0, 0.1)
+		+r($tM)
+			margin-bottom 30px
+			width 100%
+	.polls__list
+		display none
+		width 100%
+		+r($d)
+			padding-right 0
+			width ratio-percentage(240, 680)
+		+r($tM)
+
+			width 100%
+
+	.simplebar-scrollbar
+		width 8px
+		&:before
+			border-radius 30px
+			background-color #f2f2f2

@@ -3,26 +3,130 @@ mixin poll()
 		block
 
 mixin poll-side()
-	.poll(data-simplebar data-simplebar-auto-hide="false")&attributes(attributes)
-		.poll__title Город засыпает снегом. Как вам погода, петербуржцы???
-		ul.poll__list
-			li.poll__item
-				.poll__item-w
-					.poll__item-title Круто! Нужно больше снега!
-					.poll__item-result-w
-						.poll__item-result(style='width:10%;')
-				.poll__item-percent 10%
-			li.poll__item
-				.poll__item-w
-					.poll__item-title Красиво, но слишком много проблем на дорогах.
-					.poll__item-result-w
-						.poll__item-result(style='width:80%;')
-				.poll__item-percent 80%
-			li.poll__item
-				.poll__item-w
-					.poll__item-title Круто! Нужно больше снега!
-					.poll__item-result-w
-						.poll__item-result(style='width:20%;')
-				.poll__item-percent 10%
+	.poll.poll_side&attributes(attributes)
+		header.poll__header.sidebar__header
+			h2.sidenav__title.title.title_side Опросы
+
+		.poll__w
+			.poll(data-simplebar data-simplebar-auto-hide="false")
+				.poll__title Город засыпает снегом. Как вам погода, петербуржцы???
+				ul.poll__list
+					li.poll__item
+						.poll__item-w
+							.poll__item-title Круто! Нужно больше снега!
+							.poll__item-result-w
+								.poll__item-result(style='width:10%;')
+						.poll__item-percent 10%
+					li.poll__item
+						.poll__item-w
+							.poll__item-title Красиво, но слишком много проблем на дорогах.
+							.poll__item-result-w
+								.poll__item-result(style='width:80%;')
+						.poll__item-percent 80%
+					li.poll__item
+						.poll__item-w
+							.poll__item-title Круто! Нужно больше снега!
+							.poll__item-result-w
+								.poll__item-result(style='width:20%;')
+						.poll__item-percent 10%
+
+					li.poll__item
+						.poll__item-w
+							.poll__item-title Красиво, но слишком много проблем на дорогах.
+							.poll__item-result-w
+								.poll__item-result(style='width:80%;')
+						.poll__item-percent 80%
+					li.poll__item
+						.poll__item-w
+							.poll__item-title Круто! Нужно больше снега!
+							.poll__item-result-w
+								.poll__item-result(style='width:20%;')
+						.poll__item-percent 10%
+
+					li.poll__item
+						.poll__item-w
+							.poll__item-title Красиво, но слишком много проблем на дорогах.
+							.poll__item-result-w
+								.poll__item-result(style='width:80%;')
+						.poll__item-percent 80%
+					li.poll__item
+						.poll__item-w
+							.poll__item-title Круто! Нужно больше снега!
+							.poll__item-result-w
+								.poll__item-result(style='width:20%;')
+						.poll__item-percent 10%
 
 
+			ul.polls__list
+				li.polls__list-item
+					a.polls__item-title(href="#") МОК не допустил к Олимпиаде главных звезд
+					.polls__item-result Проголосовало: 15
+				li.polls__list-item
+					a.polls__item-title(href="#") Как оцениваете работы по очистке Петербурга от снега?
+					.polls__item-result Проголосовало: 15
+				li.polls__list-item
+					a.polls__item-title(href="#") Нужно ли уволить Манчини из "Зенита"
+					.polls__item-result Проголосовало: 15
+				li.polls__list-item
+					a.polls__item-title(href="#") Как вы относитесь к рэп-баттлам?
+					.polls__item-result Проголосовало: 15
+				li.polls__list-item
+					a.polls__item-title(href="#") Следите ли вы за современной модой?
+					.polls__item-result Проголосовало: 15
+
+
+
+
+mixin poll-side-videos()
+	.poll.poll_side&attributes(attributes)
+		header.poll__header.sidebar__header
+			h2.sidenav__title.title.title_side Опросы
+
+		.poll__w
+			.poll(data-simplebar data-simplebar-auto-hide="false")
+				.poll__title Город засыпает снегом. Как вам погода, петербуржцы???
+				ul.poll__list
+					li.poll__item
+						.poll__item-w
+							.poll__item-title Круто! Нужно больше снега!
+							.poll__item-result-w
+								.poll__item-result(style='width:10%;')
+						.poll__item-percent 10%
+					li.poll__item
+						.poll__item-w
+							.poll__item-title Красиво, но слишком много проблем на дорогах.
+							.poll__item-result-w
+								.poll__item-result(style='width:80%;')
+						.poll__item-percent 80%
+					li.poll__item
+						.poll__item-w
+							.poll__item-title Круто! Нужно больше снега!
+							.poll__item-result-w
+								.poll__item-result(style='width:20%;')
+						.poll__item-percent 10%
+
+					li.poll__item
+						.poll__item-w
+							.poll__item-title Красиво, но слишком много проблем на дорогах.
+							.poll__item-result-w
+								.poll__item-result(style='width:80%;')
+						.poll__item-percent 80%
+
+
+
+			ul.polls__list
+				li.polls__list-item
+					a.polls__item-title(href="#") МОК не допустил к Олимпиаде главных звезд
+					.polls__item-result Проголосовало: 15
+				li.polls__list-item
+					a.polls__item-title(href="#") Как оцениваете работы по очистке Петербурга от снега?
+					.polls__item-result Проголосовало: 15
+				li.polls__list-item
+					a.polls__item-title(href="#") Нужно ли уволить Манчини из "Зенита"
+					.polls__item-result Проголосовало: 15
+				li.polls__list-item
+					a.polls__item-title(href="#") Как вы относитесь к рэп-баттлам?
+					.polls__item-result Проголосовало: 15
+				li.polls__list-item
+					a.polls__item-title(href="#") Следите ли вы за современной модой?
+					.polls__item-result Проголосовало: 15

@@ -43,6 +43,7 @@ img
 	padding-bottom 10px
 	padding-left 25px
 	height 40px
+
 	background-color #fff
 	color #40527b
 	font-size 16px
@@ -53,6 +54,22 @@ img
 	&:hover
 		color darken(#40527b, 10)
 		tr(all .3s ease)
+
+.button_form
+	padding-top 11px
+	padding-right 30px
+	padding-bottom 6px
+	padding-left 30px
+	height 40px
+	display inline-block
+	vertical-align top
+	background-color #0790d1
+	color #FFF
+	line-height 1
+	border-radius 8px
+	&:hover
+		background-color darken(#0790d1,10)
+		color #FFF
 
 
 // Titles
@@ -116,5 +133,35 @@ img
 
 .resp-image
 	img
+		max-width 100%
+		height auto
+
+
+.wysiwyg-entry
+	p
+		margin-bottom 30px
+		color #1f2630
+		font-size 15px
+		line-height 1.6
+		&:last-child
+			margin-bottom 0
+
+		a
+			color #0790d1
+			font-family $hL
+			text-decoration none
+			&:hover
+				text-decoration underline
+
+	figure
+		margin-bottom 16px
+
+	figcaption
+		margin-top 9px
+		margin-bottom 10px
+		font-size 15px
+
+	img
+		margin-bottom 16px
 		max-width 100%
 		height auto

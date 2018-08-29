@@ -177,3 +177,87 @@
 		line-height 1.5
 		+r($tM)
 			order -1
+
+
+.chanels_side
+	.sidechanels__header
+		+r($tL)
+			display flex
+			justify-content space-between
+	.chanels__nav
+		display none
+		+r($tL)
+			display flex
+		+r($tM)
+			display none
+	.chanels__list
+		margin-left 0
+		display block
+		+r($tL)
+			margin-left -16px
+			display flex
+		+r($tM)
+			margin-left 0
+	.chanels__item
+		margin-left 0
+		margin-bottom 0
+		width 100%
+		+r($tL)
+			border-bottom none
+			margin-left 16px
+			margin-bottom 30px
+			padding-top 0
+			padding-bottom 0
+			width 240px
+			width ratio-percentage(232, 750)
+		+r($tM)
+			border-bottom 1px solid #f3f3f3
+			margin-left 0
+			margin-bottom 0
+			padding-top 10px
+			padding-bottom 10px
+			width 100%
+	.chanels__link
+		display flex
+		justify-content space-between
+		+r($tL)
+			display block
+		+r($tM)
+			display flex
+	.chanels__image
+		width 112px
+		width ratio-percentage(110,288)
+		max-height 66px
+		+r($d)
+			width ratio-percentage(110,288)
+		+r($tL)
+			width 100%
+			max-height 100%
+		+r($tM)
+			// width 100%
+			width ratio-percentage(110,288)
+			max-height 100%
+
+	.chanels__video-icon
+		top 5px
+		right 5px
+		width 33px
+		height 22px
+	.chanels__w
+		width ratio-percentage(160,288)
+		+r($tL)
+			width 100%
+			display flex
+			flex-flow column
+		+r($tM)
+			// width 100%
+			width ratio-percentage(167,288)
+	.chanels__item-title
+		+r($tL)
+			order 1
+		+r($tM)
+			order 0
+	// .chanels__meta
+
+	.chanels__date
+		min-width 95px

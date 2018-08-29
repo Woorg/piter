@@ -1,12 +1,22 @@
 .category
-	&__title-w
+	&__header
 		border-bottom 1px solid #f3f3f3
 		padding-bottom 1px
 		margin-bottom 24px
+		display flex
+		flex-flow row wrap
+		justify-content space-between
+		align-items center
+		+r($tM)
+			margin-bottom 70px
 	// &__title
+	&__button
+		+r($tM)
+			margin-bottom -70px
 	&__text
 		@extends .wysiwyg
 		padding-bottom 24px
+		max-height 94px
 		color #6a7381
 		font-size 14px
 		line-height 1.714
@@ -14,6 +24,22 @@
 			padding-right 112px
 		+r($tM)
 			padding-right 0
+			max-height 196px
+		// +r($m)
+
+
+	&__text_full
+		max-height 100%
+
+	// &__text-more
+
+	&__videos
+		border-top 1px solid #f3f3f3
+		padding-top 36px
+		+r($tM)
+			border-top none
+			padding-top 0
+
 	&__list
 		margin-bottom 43px
 		+r($tM)

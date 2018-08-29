@@ -1,0 +1,60 @@
+include ../icon/icon
+
+mixin best()
+	.best&attributes(attributes)
+		header.best__header.sidebar__header
+			h2.best__title.title.title_side Лучшее
+			.best__nav
+				button.best__prev
+					+icon('arrow-right', true).best__prev-icon
+				button.best__next
+					+icon('arrow-right', true).best__next-icon
+		ul.best__list
+			li.best__item
+				a.best__link(href="#link")
+					.best__image
+						img(src="assets/images/content/side-best/side-best.jpg", alt="")
+					.best__w
+						.best__meta
+							.best__date
+								+icon('date-icon', true).best__date-icon
+								| Вчера в 18:56
+							.best__views
+								+icon('views-icon', true).best__views-icon
+								| 256
+							.best__comments
+								+icon('comments-icon', true).best__comments-icon
+								| 2
+						.best__item-title "Зенит" неожиданно проиграл датскому "Вайле" на сборах
+			li.best__item
+				a.best__link(href="#link")
+					.best__image
+						img(src="assets/images/content/side-best/side-best.jpg", alt="")
+					.best__w
+						.best__meta
+							.best__date
+								+icon('date-icon', true).best__date-icon
+								| Вчера в 18:56
+							.best__views
+								+icon('views-icon', true).best__views-icon
+								| 256
+							.best__comments
+								+icon('comments-icon', true).best__comments-icon
+								| 2
+						.best__item-title "Зенит" неожиданно проиграл датскому "Вайле" на сборах
+			li.best__item
+				a.best__link(href="#link")
+					.best__image
+						img(src="assets/images/content/side-best/side-best.jpg", alt="")
+					.best__w
+						.best__meta
+							.best__date
+								+icon('date-icon', true).best__date-icon
+								| Вчера в 18:56
+							.best__views
+								+icon('views-icon', true).best__views-icon
+								| 256
+							.best__comments
+								+icon('comments-icon', true).best__comments-icon
+								| 2
+						.best__item-title "Зенит" неожиданно проиграл датскому "Вайле" на сборах

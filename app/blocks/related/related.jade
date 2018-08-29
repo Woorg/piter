@@ -1,6 +1,6 @@
 mixin related()
 	.related&attributes(attributes)
-		header.related__header
+		header.related__header.sidebar__header
 			h2.related__title.title.title_side Связанные новости
 
 		ul.related__list
@@ -17,6 +17,7 @@ mixin related()
 								.news-article__views
 									+icon('views-icon', true).news-article__views-icon
 									| 256
+							.news-article__category Картина дня
 
 
 			li.related__item
@@ -32,6 +33,8 @@ mixin related()
 								.news-article__views
 									+icon('views-icon', true).news-article__views-icon
 									| 256
+							.news-article__category Картина дня
+
 
 			li.related__item
 				article.news-article.news-article_side
@@ -46,7 +49,7 @@ mixin related()
 								.news-article__views
 									+icon('views-icon', true).news-article__views-icon
 									| 256
-
+							.news-article__category Картина дня
 
 			li.related__item
 				article.news-article.news-article_side
@@ -61,4 +64,6 @@ mixin related()
 								.news-article__views
 									+icon('views-icon', true).news-article__views-icon
 									| 256
+
+							.news-article__category Картина дня
 

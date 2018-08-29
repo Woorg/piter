@@ -1,0 +1,91 @@
+.sidefeed
+	display block
+	&__header
+		display flex
+		flex-flow row wrap
+		justify-content space-between
+		align-items center
+	&__all-news
+		position relative
+		padding-right 23px
+		display none
+		font-family $hL
+		font-size 18px
+		color #007fc6
+		text-decoration none
+		tr(all .3s ease)
+		+r($d)
+			display none
+		+r($tL)
+			display block
+		+r($tM)
+			display block
+			text-indent -9999px
+		&:hover
+			color darken(#007fc6, 10)
+			tr(all .3s ease)
+			.sidefeed__all-icon
+				fill #fafafa
+				stroke darken(#0790D1, 10)
+
+	&__all-icon
+		position absolute
+		top 50%
+		right 0
+		width 8px
+		height 15px
+		fill #fafafa
+		stroke #0790D1
+		transform translateY(-50%)
+
+	&__video-w
+		position relative
+		margin-left 14px
+		margin-right 18px
+		height 18px
+		display none
+		+r($tL)
+			width ratio-percentage(41,750)
+			min-width 108px
+			display block
+		+r($tM)
+			margin-left 0
+			margin-right 0
+			width 100%
+			height 18px
+	&__video
+		position absolute
+		top 50%
+		left 50%
+		width 0
+		height 0
+		display none
+		border-style solid
+		border-width 7.5px 0 7.5px 14px
+		border-color transparent transparent transparent #a0a7b2
+		transform translate(-50%, -50%)
+		+r($tM)
+			display block
+	&__sep
+		margin-left 14px
+		margin-right 18px
+		width 41px
+		height 1px
+		background #f3f3f3
+		display none
+		+r($tL)
+			width ratio-percentage(41,750)
+			display block
+		+r($tM)
+			display none
+			width 100%
+
+
+	&__more
+		@extends .button
+		position absolute
+		bottom 0
+		left 50%
+		transform translate(-50%, -50%)
+		+r($tM)
+			white-space nowrap

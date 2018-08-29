@@ -1,0 +1,153 @@
+.videos
+	&__list-w
+		overflow hidden
+	&__list
+		margin-left -32px
+		display flex
+		flex-flow row wrap
+		justify-content flex-start
+		align-items flex-start
+		+r($tL)
+			margin-left -16px
+		+r($tM)
+			margin-left 0
+	&__item
+		margin-left 32px
+		margin-bottom 37px
+		// width ratio-percentage(234, 1036)
+		width ratio-percentage(304, 1036)
+		+r($d)
+			width ratio-percentage(290, 680)
+		+r($tL)
+			margin-left 16px
+			margin-bottom 27px
+			width ratio-percentage(234, 750)
+		+r($tM)
+			margin-left 0
+			margin-bottom 8px
+			width 100%
+			box-shadow 0 4px 20px rgba(0, 0, 0, 0.1)
+
+
+	&__item_hidden
+		+r($tL)
+			display none
+
+	&__item-w
+		+r($tM)
+			position absolute
+			left 0
+			right 0
+			bottom 0
+			display flex
+			flex-flow column
+			padding-left 15px
+			padding-right 15px
+			padding-bottom 3px
+
+	&__link
+		display block
+		color #001d49
+		text-decoration none
+		+r($tM)
+			position relative
+			padding-top ratio-percentage(171,304)
+	&__img
+		position relative
+		margin-bottom 8px
+		border-radius 3px
+		overflow hidden
+		+r($tM)
+			position absolute
+			top 0
+			right 0
+			bottom 0
+			left 0
+			height 100%
+		img
+			respimg()
+
+		&:after
+			+r($tM)
+				position absolute
+				top 0
+				right 0
+				bottom 0
+				left 0
+				content ''
+				background-image linear-gradient(2deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%)
+
+	&__video-icon
+		position absolute
+		z-index 1
+		top 11px
+		right 11px
+		display block
+		width 47px
+		height 32px
+		fill #fff
+		+r($d)
+			top 8px
+			right 8px
+
+	&__meta
+		margin-bottom 7px
+		display flex
+		flex-flow row wrap
+		justify-content flex-start
+		align-items center
+		color #a0a7b2
+		font-size 14px
+		line-height 1.571
+		+r($tM)
+			color #d5d3d2
+
+	&__date,
+	&__views,
+	&__comments
+		position relative
+	&__date-icon
+	&__views-icon,
+	&__comments-icon
+		position absolute
+		top 50%
+		left 0
+		transform translateY(-50%)
+	&__date
+		padding-left 20px
+		min-width 114px
+		+r($tM)
+			padding-left 0
+	&__date-icon
+		width 16px
+		height 16px
+		fill #a0a7b2
+		+r($tM)
+			display none
+	&__views
+		min-width 62px
+		padding-left 24px
+	&__views-icon
+		width 18px
+		height 12px
+		fill #a0a7b2
+		line-height 1
+		+r($tM)
+			fill #d5d3d2
+	&__comments
+		min-width 56px
+		padding-left 23px
+	&__comments-icon
+		width 14px
+		height 13px
+		fill #a0a7b2
+		line-height 1
+		+r($tM)
+			fill #d5d3d2
+	&__item-title
+		font-size 18px
+		line-height 1.333
+		+r($tM)
+			margin-bottom 8px
+			order -1
+			color #FFF

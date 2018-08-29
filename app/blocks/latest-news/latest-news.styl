@@ -184,3 +184,78 @@
 		transform translate(-50%, -50%)
 		+r($tM)
 			white-space nowrap
+
+
+.latest-news_side
+
+	.latest-news__list
+		margin-bottom 0
+		padding-left 0
+		padding-right 0
+	.latest-news__item
+		border-bottom 1px solid #f3f3f3
+		padding-top 10px
+		padding-bottom 10px
+		align-items flex-start
+		+r($tL)
+			border-bottom none
+		+r($tM)
+			justify-content space-between
+		&:first-child
+			padding-top 0
+
+	.latest-news__meta
+		margin-top 5px
+		margin-right 16px
+		min-width 55px
+		align-items flex-start
+		+r($tL)
+			margin-top 0
+			margin-right 0
+			min-width 128px
+			align-items center
+		+r($tM)
+			min-width 52px
+			max-width 52px
+			min-height 50px
+	.latest-news__video-w
+		display none
+		+r($tL)
+			display block
+
+	.latest-news__video
+		left calc(50% - 12px)
+		+r($tM)
+			left 50%
+	.latest-news__sep
+		width 40px
+		display none
+		+r($tL)
+			display block
+	.latest-news__news-title
+		max-width 214px
+		max-width ratio-percentage(214,288)
+		font-size 14px
+		line-height 1.428
+		white-space normal
+		+r($tM)
+			max-width ratio-percentage(236,288)
+			font-size 15px
+
+	.latest-news__day-w
+		margin-top 30px
+		margin-bottom 30px
+		display none
+		+r($tL)
+			display block
+
+	.latest-news__more-w
+		text-align center
+		display none
+		+r($tL)
+			display block
+	.latest-news__more
+		position static
+		display inline-block
+		vertical-align top
+		transform none

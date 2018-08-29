@@ -58,6 +58,9 @@
 			.breadcrumbs__sub
 				+r($tL)
 					display block
+			// .breadcrumbs__sub-item
+			// 	.breadcrumbs__sub-link
+			// 		color lighten(#6a7381, 20)
 
 		.breadcrumbs__link
 			position relative
@@ -65,7 +68,6 @@
 	&__item_hide
 		+r($tM)
 			display none
-
 
 
 	&__link
@@ -77,7 +79,6 @@
 		height 10px
 		fill #fff
 		stroke #808080
-
 
 	&__more-icon
 		position absolute
@@ -102,6 +103,8 @@
 		padding-left 15px
 		background #ECEEF2
 		display none
+		+r($tL)
+			border-radius 0 0 8px 8px
 		// +r($tL)
 
 	&__sub-item
@@ -116,3 +119,6 @@
 	&__sub-link
 		color #6a7381
 		text-decoration none
+		&:hover
+			color lighten(#6a7381, 20)
+			tr(all .3s ease)

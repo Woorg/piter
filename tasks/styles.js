@@ -7,6 +7,7 @@ import stylus from 'gulp-stylus';
 import importIfExist from 'stylus-import-if-exist';
 import autoprefixer from 'autoprefixer-stylus';
 import gcmq from 'gulp-group-css-media-queries';
+// import csso from 'gulp-csso';
 import nano from 'gulp-cssnano';
 import rename from 'gulp-rename';
 import sourcemaps from 'gulp-sourcemaps';
@@ -30,6 +31,7 @@ gulp.task('styles', () => (
 				'__DEV__': isDebug
 			}
 		}))
+		// .pipe(gulpIf(!isDebug, csso()))
 		.pipe(gulpIf(!isDebug, gcmq()))
 		.pipe(gulpIf(!isDebug, nano({zindex: false})))
 		.pipe(rename({suffix: '.min'}))

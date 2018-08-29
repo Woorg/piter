@@ -1,8 +1,10 @@
+include ../comments/comments
+
+
 mixin article()
 	article.article&attributes(attributes)
 		.article__image
-			img(src="assets/images/content/news-big.jpg", alt="")
-
+			img(src="assets/images/content/article/article-img-1.jpg", alt="")
 		.article__meta
 			.article__date
 				+icon('date-icon', true).article__date-icon
@@ -12,7 +14,60 @@ mixin article()
 				| 256
 			a.article__author(href="#") pitertv218
 
-		h1.article__title В Петербурге открылась выставка современного искусства
+		header.article__header
+			h1.article__title В Петербурге открылась выставка современного искусства
+			.article__rating
+				a.article__rating-button.article__rating-plus(href="#")
+					+icon('rating-plus', true).article__rating-icon
+					| 0
+				a.article__rating-button.article__rating-minus(href="#")
+					+icon('rating-minus', true).article__rating-icon
+					| 0
 
 		.article__social
-			img(src="assets/images/general/social-buttons.png", alt="")
+			img(src="assets/images/general/social-button/vk-button.png", alt="")
+			img(src="assets/images/general/social-button/fb-button.png", alt="")
+			img(src="assets/images/general/social-button/twit-button.png", alt="")
+			img(src="assets/images/general/social-button/gplus-button.png", alt="")
+
+
+		.article__entry
+			p В Петербурге открылась выставка работ петербургских художников.
+
+			p На Васильевском острове открылась выставка работ петербургских художников. Порт Севкабель совместно с факультетом Свободных искусств и наук СПбГУ и Bard College из (США) представляют серию работ "Lingwe universala". Это название является отсылкой к языку эсперанто Людовика Земенгофа и переводится как "универсальный язык".
+
+			figure
+				img(src="assets/images/content/article/article-img-1.jpg", alt="")
+
+			figure
+				img(src="assets/images/content/article/article-img-2.jpg", alt="")
+
+			figure
+				figcaption Анна Ильина, архитектор, куратор выставки "Lingwe universala"
+				img(src="assets/images/content/article/article-img-3.jpg", alt="")
+
+
+			p Выставка продлится до 6 мая. Художники и кураторы проекта ждут всех желающих приобщиться к современному искусству ежедневно с 12 до 19 часов в пространстве "Порт Севкабель".
+
+			p.article__entry-author Вера Иптышева, Саша Минаков
+
+			p.article__entry-by Видео и фото - PiterTV
+
+
+		.article__bottom
+			.article__bottom__row
+				span.article__bottom-title Теги:
+				a.article__tags(href="#") сбербанк
+				| ,
+				a.article__tags(href="#") цифровая школа
+
+			.article__bottom__row
+				span.article__bottom-title Категории:
+				a.article__tags(href="#") Лента новостей
+				| ,
+				a.article__tags(href="#") Новости СПб
+
+
+		+comments().article__comments
+
+
