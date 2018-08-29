@@ -1,0 +1,23 @@
+extends /blocks/layout-default/layout-default
+
+include /blocks/header/header
+include /blocks/main/main
+include /blocks/breadcrumbs/breadcrumbs
+include /blocks/districts/districts
+
+
+include /blocks/footer/footer
+
+
+block head
+	- var pageTitle = 'Piter.tv — Районы — Кировский район';
+
+block content
+	+header()
+	+main()
+		.main__in
+			.main__breadcrumbs
+				+breadcrumbs-district()
+			.main__w
+				+district()
+	+footer()

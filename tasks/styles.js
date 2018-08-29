@@ -22,7 +22,7 @@ gulp.task('styles', () => (
 		.pipe(stylus({
 			use: [
 				importIfExist(),
-				rupture(),
+				// rupture(),
 				autoprefixer()
 			],
 			'include css': true,

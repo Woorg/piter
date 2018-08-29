@@ -4,6 +4,7 @@ import slick from 'slick-carousel';
 import 'jquery-easing';
 import 'sly-scrolling/src/sly';
 import 'simplebar';
+// import LazyLoad from "vanilla-lazyload";
 // import 'magnific-popup';
 
 (function ($) {
@@ -19,6 +20,13 @@ import 'simplebar';
 		// 	midClick: true,
 		// 	mainClass: 'popup-callback'
 		// });
+
+		// Lazy load
+
+		// let piterLazyLoad = new LazyLoad({
+		// 	elements_selector: "img"
+		// });
+
 
 
 		// Nav more
@@ -50,7 +58,7 @@ import 'simplebar';
 			}
 		}
 
-		$(window).on('load resize',function(){
+		$(window).on('load resize', function () {
 			calcWidth();
 		});
 
@@ -58,6 +66,11 @@ import 'simplebar';
 		$('.nav__item_more').on('click', function () {
 			$(this).toggleClass('nav__more-show');
 		});
+
+
+
+
+
 
 		const $whereSlider = $('.where__days');
 
@@ -291,6 +304,18 @@ import 'simplebar';
 		});
 
 
+
+		$('.districts__link').on('click', function (e) {
+			// e.preventDefault();
+
+			$('.districts__list-w').attr('data-district-choose', $(this).text());
+
+		});
+
+
+
+
+
 		// Category text
 
 		// const $catTextMore = $('.category__text-more');
@@ -383,7 +408,7 @@ import 'simplebar';
 		widgetStilization.prependTo(".widget_wrap");
 	}
 
-	pageWidget(['index', 'category', 'article', 'videos']);
+	pageWidget(['index', 'category', 'article', 'videos', 'districts', 'district', 'persons']);
 
 	});
 

@@ -124,6 +124,7 @@
     "stylus-import-if-exist": "^1.1.0",
     "stylus-svg-size-template": "^1.0.0",
     "svg4everybody": "^2.0.0",
+    "vanilla-lazyload": "^10.16.0-beta",
     "webpack": "^1.12.9",
     "webpack-stats-logger": "^1.0.1",
     "webpack-stream": "^3.1.0"

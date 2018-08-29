@@ -151,3 +151,46 @@
 			margin-bottom 8px
 			order -1
 			color #FFF
+
+
+.videos_district
+	.videos__list
+		+r($d)
+			margin-left -24px
+		+r($tL)
+			margin-left -16px
+		+r($tM)
+			margin-left 0
+	.videos__item
+		width 304px
+		width ratio-percentage(297,1315)
+		+r($d)
+			margin-left 24px
+			width ratio-percentage(234,1036)
+		+r($tL)
+			margin-left 16px
+			width ratio-percentage(234,750)
+		+r($tM)
+			margin-left 0
+			width 100%
+		&:nth-child(7),
+		&:nth-child(8)
+			+r($tL)
+				display none
+
+	.videos__item-title
+		+r($tM)
+			position relative
+			max-height 50px
+			overflow hidden
+		// span
+		// 	+r($tM)
+		// 		position relative
+		// 		padding-right 20px
+		// &:after
+		// 	+r($tM)
+		// 		position absolute
+		// 		bottom 0
+		// 		right 0
+		// 		content '...'
+		// 		color #FFF

@@ -122,3 +122,16 @@
 		&:hover
 			color lighten(#6a7381, 20)
 			tr(all .3s ease)
+
+
+.breadcrumbs_sec
+	.breadcrumbs__item
+		&:last-child
+			display block
+			+r($tM)
+				display none
+		&:nth-child(2)
+			.breadcrumbs__icon
+				+r($tM)
+					display none
+

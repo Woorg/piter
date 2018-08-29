@@ -10,9 +10,40 @@
 		+r($tM)
 			margin-bottom 70px
 	// &__title
+
 	&__button
 		+r($tM)
 			margin-bottom -70px
+
+	&__all-news
+		position relative
+		padding-right 23px
+		display none
+		font-size 18px
+		color #007fc6
+		text-decoration none
+		tr(all .3s ease)
+		+r($d)
+			display block
+		+r($tL)
+			display none
+		&:hover
+			color darken(#007fc6, 10)
+			tr(all .3s ease)
+			.category__all-icon
+				fill #fafafa
+				stroke darken(#0790D1, 10)
+	&__all-icon
+		position absolute
+		top 50%
+		right 0
+		width 8px
+		height 15px
+		fill #fafafa
+		stroke #0790D1
+		transform translateY(-50%)
+
+
 	&__text
 		@extends .wysiwyg
 		padding-bottom 24px
