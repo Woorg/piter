@@ -1,6 +1,5 @@
 include ../comments/comments
 
-
 mixin article()
 	article.article&attributes(attributes)
 		.article__image
@@ -66,6 +65,7 @@ mixin article()
 				a.article__tags(href="#") Лента новостей
 				| ,
 				a.article__tags(href="#") Новости СПб
+
 
 
 		+comments().article__comments

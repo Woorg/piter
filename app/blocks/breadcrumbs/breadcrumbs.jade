@@ -49,7 +49,6 @@ mixin breadcrumbs-cat()
 				meta(itemprop='position', content='6')
 
 
-
 mixin breadcrumbs-districts()
 	.breadcrumbs.breadcrumbs_sec&attributes(attributes)
 		ol.breadcrumbs__list(itemscope='', itemtype='http://schema.org/BreadcrumbList')
@@ -92,3 +91,23 @@ mixin breadcrumbs-district()
 					+icon('arrow-right', true).breadcrumbs__icon
 
 				meta(itemprop='position', content='3')
+
+
+mixin breadcrumbs-person()
+	.breadcrumbs.breadcrumbs_third&attributes(attributes)
+		ol.breadcrumbs__list(itemscope='', itemtype='http://schema.org/BreadcrumbList')
+			li.breadcrumbs__item(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a.breadcrumbs__link(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books')
+					span(itemprop='name') Главная
+					+icon('arrow-right', true).breadcrumbs__icon
+				meta(itemprop='position', content='1')
+
+			li.breadcrumbs__item(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a.breadcrumbs__link(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books/sciencefiction')
+					span(itemprop='name') Персоны
+					+icon('arrow-right', true).breadcrumbs__icon
+
+				meta(itemprop='position', content='2')
+
+
+

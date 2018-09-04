@@ -1,0 +1,36 @@
+include ../icon/icon
+
+mixin mentions()
+	section.mentions&attributes(attributes)
+		header.mentions__header.category__header
+			h2.mentions__title.title Упоминания в новостях
+		ul.mentions__list
+			li.mentions__item
+				a.mentions__link(href="#")
+					.mentions__image
+						img(src="assets/images/content/mentions/mentions-1.jpg", alt="")
+					.mentions__w
+						.mentions__item-title Концерта Олега Газманова в БКЗ "Октябрский
+						.mentions__meta
+							.mentions__date Вчера в 18:56
+							.mentions__views
+								+icon('views-icon', true).mentions__views-icon
+								| 256
+							.mentions__comments
+								+icon('comments-icon', true).mentions__comments-icon
+								| 8
+
+			li.mentions__item
+				a.mentions__link(href="#")
+					.mentions__image
+						img(src="assets/images/content/mentions/mentions-2.jpg", alt="")
+					.mentions__w
+						.mentions__item-title Газманов попал в аварию в Пермском крае
+						.mentions__meta
+							.mentions__date Вчера в 18:56
+							.mentions__views
+								+icon('views-icon', true).mentions__views-icon
+								| 256
+							.mentions__comments
+								+icon('comments-icon', true).mentions__comments-icon
+								| 8

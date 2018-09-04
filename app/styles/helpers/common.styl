@@ -59,6 +59,7 @@ img
 		tr(all .3s ease)
 
 .button_form
+	border none
 	padding-top 11px
 	padding-right 30px
 	padding-bottom 6px
@@ -70,6 +71,23 @@ img
 	color #FFF
 	line-height 1
 	border-radius 8px
+	&:hover
+		background-color darken(#0790d1,10)
+		color #FFF
+
+.button_round
+	border none
+	padding-top 11px
+	padding-right 30px
+	padding-bottom 6px
+	padding-left 30px
+	height 40px
+	display inline-block
+	vertical-align top
+	background-color #0790d1
+	color #FFF
+	line-height 1
+	border-radius 40px
 	&:hover
 		background-color darken(#0790d1,10)
 		color #FFF
@@ -144,6 +162,38 @@ img
 	p
 		margin-bottom 30px
 		color #1f2630
+		font-size 15px
+		line-height 1.6
+		&:last-child
+			margin-bottom 0
+
+		a
+			color #0790d1
+			font-family $hL
+			text-decoration none
+			&:hover
+				text-decoration underline
+
+	figure
+		margin-bottom 16px
+
+	figcaption
+		margin-top 9px
+		margin-bottom 10px
+		font-size 15px
+
+	img
+		margin-bottom 16px
+		max-width 100%
+		height auto
+
+
+.wysiwyg-entry-second
+	h2
+		margin-bottom 17px
+		font-size 22px
+		font-family $hL
+	p
 		font-size 15px
 		line-height 1.6
 		&:last-child
