@@ -46,6 +46,7 @@
 		flex 1
 		// flex-flow row wrap
 		// justify-content space-between
+		align-items flex-start
 
 	&__w_3
 		position relative
@@ -75,7 +76,7 @@
 	&__content_middle
 		// margin-right ratio-percentage(30,1315)
 		// margin-left ratio-percentage(30,1315)
-		margin auto
+		margin 0 auto
 		width ratio-percentage(640,1315)
 		order 2
 		+r($d)
@@ -96,11 +97,16 @@
 			padding-top 0
 
 	&__sidebar_first
-		position absolute
-		top 0
-		left 0
+		// position absolute
+		// top 0
+		// left 0
 		padding-right 16px
 		order 1
+		+r($d)
+			position absolute
+			top 0
+			left 0
+
 		+r($tL)
 			position static
 			margin-left auto
@@ -115,9 +121,9 @@
 
 
 	&__sidebar_second
-		position absolute
-		top 0
-		right 0
+		// position absolute
+		// top 0
+		// right 0
 		padding-left 16px
 		order 3
 		+r($d)

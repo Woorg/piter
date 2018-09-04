@@ -26,8 +26,9 @@
 		margin-bottom 20px
 		display flex
 		flex-flow row wrap
-		justify-content flex-start
+		justify-content space-between
 		align-items center
+		max-width 450px
 		color #a0a7b2
 		font-size 14px
 		line-height 1.571
@@ -86,7 +87,8 @@
 	&__author
 		color #A0A7B2
 		text-decoration none
-
+		&:hover
+			text-decoration underline
 	&__header
 		margin-bottom 30px
 		display flex
@@ -178,4 +180,28 @@
 
 	// &__comments
 
+.article_broadcast
+	.article__meta
+		margin-bottom 20px
+		color #6a7381
+	.article__author
+		color #6a7381
+	.article__date-icon,
+	.article__views-icon
+		fill #6a7381
 
+	.article__header
+		border-top 1px solid #f3f3f3
+		padding-top 30px
+		+r($tL)
+			border-top none
+			padding-top 0
+	.article__title
+		max-width 100%
+
+	.article__entry
+		margin-bottom 50px
+		+r($tL)
+			margin-bottom 30px
+		+r($tM)
+			margin-bottom 0

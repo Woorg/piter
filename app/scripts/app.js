@@ -314,6 +314,17 @@ import 'simplebar';
 
 
 
+		// Main height
+
+		const $sideFirst = $('.main__sidebar_first');
+		const sideFirstHeight = $sideFirst.height();
+
+		if ( $sideFirst.length ) {
+
+			$('.main__w_3').css('min-height', sideFirstHeight);
+
+		}
+
 
 
 		// Category text
@@ -408,8 +419,18 @@ import 'simplebar';
 		widgetStilization.prependTo(".widget_wrap");
 	}
 
-	pageWidget(['index', 'category', 'article', 'videos', 'districts', 'district', 'persons', 'person']);
-
+	pageWidget([
+		'index',
+		'category',
+		'article',
+		'videos',
+		'districts',
+		'district',
+		'persons',
+		'person',
+		'broadcasts',
+		'broadcast'
+		]);
 	});
 
 

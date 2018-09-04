@@ -1,0 +1,64 @@
+extends /blocks/layout-default/layout-sub
+
+include /blocks/header/header
+include /blocks/main/main
+include /blocks/breadcrumbs/breadcrumbs
+include /blocks/content/content
+include /blocks/sidebar/sidebar
+include /blocks/sidenav/sidenav
+
+include /blocks/article/article
+
+include /blocks/poll/poll
+include /blocks/best/best
+include /blocks/sidefeed/sidefeed
+include /blocks/sidechanels/sidechanels
+include /blocks/ads/ads
+
+include /blocks/latest-news/latest-news
+include /blocks/chanels/chanels
+
+include /blocks/related/related
+include /blocks/icon/icon
+
+
+include /blocks/pagination/pagination
+
+include /blocks/footer/footer
+
+
+block head
+	- var pageTitle = 'Piter.tv - Зеленый марафон Сбербанка в Санкт-Петербурге';
+
+block content
+	+header()
+	+main()
+		.main__in
+			.main__breadcrumbs
+				+breadcrumbs-cat()
+			.main__w.main__w_3
+				+content().main__content_middle.main__content
+					+article-broadcast()
+				+sidebar().main__sidebar.main__sidebar_first
+					+related().sidebar__related.sidebar__row
+					+best().sidebar__best.sidebar__row
+					+sidefeed().sidebar__feed.sidebar__row
+					+sidechanels().sidebar__chanels.sidebar__row
+					+sideads().sidebar__ads.sidebar__row
+
+				+sidebar().main__sidebar.main__sidebar_second
+					+sidenav().sidebar__row
+					+poll-side().sidebar__row
+					+related().sidebar__row.sidebar__related_sec
+
+			.main__text
+				.main__text-w
+					p Новости дня Санкт-Петербурга и России. <br/>«PITER.TV» — первый информационный портал Санкт-Петербурга в формате интернет-телевидения. Круглосуточно только свежие видео новости, эксклюзивные репортажи с места событий, комментарии специалистов, рассказы очевидцев и заявления официальных лиц.
+
+					p Современные российские реалии таковы, что получение правдивой, объективной информации посредством традиционных СМИ фактически не возможно. Однобокая интерпретация событий и происшествий, негласная цензура на федеральных и региональных телеканалах заставляет думающих, свободомыслящих людей искать иные источники информации. Именно для таких граждан вещает канал «PITER.TV».
+
+				a.main__text-more(href="#")
+					+icon('arrow-down', true).main__more-icon
+					| Подробнее
+
+	+footer()

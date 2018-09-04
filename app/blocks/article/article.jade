@@ -71,3 +71,34 @@ mixin article()
 		+comments().article__comments
 
 
+mixin article-broadcast()
+	article.article.article_broadcast&attributes(attributes)
+		.article__image
+			img(src="assets/images/content/article/article-img-1.jpg", alt="")
+		.article__meta
+			.article__date
+				+icon('date-icon', true).article__date-icon
+				| Вчера 18:56
+			.article__views
+				+icon('views-icon', true).article__views-icon
+				| 256
+			a.article__author(href="#") pitertv218
+
+			.article__completed Завершена в 0:21
+
+		h1.article__title Зеленый марафон Сбербанка в Санкт-Петербурге
+
+		.article__social
+			img(src="assets/images/general/social-button/vk-button.png", alt="")
+			img(src="assets/images/general/social-button/fb-button.png", alt="")
+			img(src="assets/images/general/social-button/twit-button.png", alt="")
+			img(src="assets/images/general/social-button/gplus-button.png", alt="")
+
+
+		.article__entry
+			p В Петербурге открылась выставка работ петербургских художников.
+
+			p На Васильевском острове открылась выставка работ петербургских художников. Порт Севкабель совместно с факультетом Свободных искусств и наук СПбГУ и Bard College из (США) представляют серию работ "Lingwe universala". Это название является отсылкой к языку эсперанто Людовика Земенгофа и переводится как "универсальный язык".
+
+
+		+comments-broadcast().article__comments

@@ -1,4 +1,4 @@
-include ../videos/videos
+include ../broadcasts/broadcasts
 
 
 mixin category()
@@ -281,4 +281,17 @@ mixin category-videos()
 			p Сайт Piter.TV предлагает всем посетителям последние новости России и мира. Граждане нашей страны, проживающие в любом городе, имеют право знать обо всех важных событиях, которые происходят в государстве, будь то принятие нового закона или выступление звезды мирового уровня. <a class="category__text-more" href="#">Подробнее</a>
 
 		+videos().category__videos
+
+
+
+mixin category-broadcasts()
+	section.category&attributes(attributes)
+		header.category__header
+			h1.category__title.title.title_full Трансляции
+			//- a.category__button.button.button_form(href="#") Прислать видео
+		.category__text
+			p Сайт Piter.TV предлагает всем посетителям последние новости России и мира. Граждане нашей страны, проживающие в любом городе, имеют право знать обо всех важных событиях, которые происходят в государстве, будь то принятие нового закона или выступление звезды мирового уровня. <a class="category__text-more" href="#">Подробнее</a>
+
+		+broadcasts().category__broadcasts
+
 
