@@ -1,0 +1,93 @@
+.person
+	position relative
+	display block
+	color #6a7381
+	text-decoration none
+	display flex
+	flex-flow row wrap
+	justify-content flex-start
+	&__photo
+		margin-right 32px
+		width 128px
+		height 128px
+		border-radius 3px
+		+r($tM)
+			position absolute
+			top 0
+			right 7px
+			margin-right 0
+			width 64px
+			height 64px
+		img
+			respimg()
+	&__w
+		position relative
+		padding-right 250px
+		flex 1
+		font-size 14px
+		+r($d)
+			padding-right 0
+			display flex
+			flex-flow column
+
+	&__name
+		margin-bottom 12px
+		color #001d49
+		font-size 20px
+		font-family $hM
+		line-height 1.2
+		+r($tM)
+			padding-right 70px
+			font-size 15px
+	&__desc
+		@extends .wysiwyg
+		color #6a7381
+		p
+			margin-bottom 10px
+			&:last-child
+				+r($tM)
+					display none
+
+		+r($d)
+			margin-bottom 10px
+		+r($tM)
+			padding-right 70px
+	&__meta
+		position absolute
+		top 37px
+		right 32px
+		max-width 200px
+		+r($d)
+			position static
+			margin-top auto
+			max-width 100%
+			display flex
+			flex-flow row wrap
+			justify-content flex-start
+	&__related
+		margin-bottom 20px
+		+r($d)
+			margin-bottom 0
+			margin-right 30px
+		+r($tM)
+			max-width 110px
+	&__related,
+	&__comments
+		position relative
+		padding-left 28px
+	&__related-icon,
+	&__comments-icon
+		position absolute
+		top 50%
+		left 0
+		fill #a0a7b2
+		transform translateY(-50%)
+		+r($tM)
+			top 3px
+			transform none
+	&__related-icon
+		width 15px
+		height 12px
+	&__comments-icon
+		width 14px
+		height 14px

@@ -408,7 +408,7 @@ import 'simplebar';
 		widgetStilization.prependTo(".widget_wrap");
 	}
 
-	pageWidget(['index', 'category', 'article', 'videos', 'districts', 'district', 'persons']);
+	pageWidget(['index', 'category', 'article', 'videos', 'districts', 'district', 'persons', 'person']);
 
 	});
 

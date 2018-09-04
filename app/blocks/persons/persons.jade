@@ -1,0 +1,106 @@
+include ../search-form/search-form
+include ../icon/icon
+
+
+mixin persons()
+	section.persons.category&attributes(attributes)
+		header.persons__header.category__header
+			h1.category__title.title.title_full Персоны
+
+		+search-persons().persons__form.search-form_wide
+
+		.persons__find Найдено
+			span 15637
+
+		//- .category__text
+		//- 	p Сайт Piter.TV предлагает всем посетителям последние новости России и мира. Граждане нашей страны, проживающие в любом городе, имеют право знать обо всех важных событиях, которые происходят в государстве, будь то принятие нового закона или выступление звезды мирового уровня. <a href="#">Подробнее</a>
+
+
+		ul.persons__list.category__list
+			li.persons__item.category__item
+				a.persons__person.person(href="#")
+					.person__photo
+						img(src="assets/images/content/person/person-1.jpg", alt="")
+					.person__w
+						.person__name Пайкин Борис Романович
+						.person__desc
+							p Советский и российский поэт-песенник, актер театра и кино
+							p Пайкин Борис Романович родился в Ленинграде 26 марта 1965 года. В 1987 году окончил Ленинградский технологический институт
+						.person__meta
+							.person__related
+								+icon('related-icon', true).person__related-icon
+								| 0 связей с кампаниями
+							.person__comments
+								+icon('comments-icon', true).person__comments-icon
+								| 0 комментариев
+
+			li.persons__item.category__item
+				a.persons__person.person(href="#")
+					.person__photo
+						img(src="assets/images/content/person/person-2.jpg", alt="")
+					.person__w
+						.person__name Грачевский Борис
+						.person__desc
+							p Советский и российский поэт-песенник, актер театра и кино
+							p Режиссер и продюсер, создатель проекта "Ералаш".
+						.person__meta
+							.person__related
+								+icon('related-icon', true).person__related-icon
+								| 0 связей с кампаниями
+							.person__comments
+								+icon('comments-icon', true).person__comments-icon
+								| 0 комментариев
+
+
+			li.persons__item.category__item
+				a.persons__person.person(href="#")
+					.person__photo
+						img(src="assets/images/content/person/person-1.jpg", alt="")
+					.person__w
+						.person__name Беляев Антон
+						.person__desc
+							p Антон Беляев
+							p Антон Беляев - звезда шоу "Голос", солист группы Terr Maitz.
+						.person__meta
+							.person__related
+								+icon('related-icon', true).person__related-icon
+								| 0 связей с кампаниями
+							.person__comments
+								+icon('comments-icon', true).person__comments-icon
+								| 0 комментариев
+
+
+			li.persons__item.category__item
+				a.persons__person.person(href="#")
+					.person__photo
+						img(src="assets/images/content/person/person-2.jpg", alt="")
+					.person__w
+						.person__name Грачевский Борис
+						.person__desc
+							p Советский и российский поэт-песенник, актер театра и кино
+							p Режиссер и продюсер, создатель проекта "Ералаш".
+						.person__meta
+							.person__related
+								+icon('related-icon', true).person__related-icon
+								| 0 связей с кампаниями
+							.person__comments
+								+icon('comments-icon', true).person__comments-icon
+								| 0 комментариев
+
+
+			li.persons__item.category__item
+				a.persons__person.person(href="#")
+					.person__photo
+						img(src="assets/images/content/person/person-1.jpg", alt="")
+					.person__w
+						.person__name Беляев Антон
+						.person__desc
+							p Антон Беляев
+							p Антон Беляев - звезда шоу "Голос", солист группы Terr Maitz.
+						.person__meta
+							.person__related
+								+icon('related-icon', true).person__related-icon
+								| 0 связей с кампаниями
+							.person__comments
+								+icon('comments-icon', true).person__comments-icon
+								| 0 комментариев
