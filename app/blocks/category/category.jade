@@ -301,3 +301,259 @@ mixin category-chanels()
 		+chnls().category__channels
 
 
+mixin category-channel()
+	section.category&attributes(attributes)
+		header.category__header
+			h1.category__title.title.title_full СБЕРЕГАЯ ПЕТЕРБУРГ
+		a.category__button.button.button_form(href="#") Подписаться
+
+		.category__text
+			p Совместный проект Северо-Западного банка Сбербанка и Piter.TV. Цикл журналистских материалов о событиях, которые меняют Санкт-Петербург и самих петербуржцев в лучшую сторону.
+
+			p Нам повезло жить в городе с удивительной историей, невероятным культурным богатством и с замечательными людьми. Однако все это наследие необходимо сберечь и приумножить. Каждый памятник, каждая улица и каждый человек в Санкт-Петербурге нуждаются в заботе, созидании и добрых делах. Наш канал расскажет зрителям о реставрации исторических объектов, петербургских благотворительных мероприятиях и о профессионалах, которые готовы тратить силы на благо родного города.
+
+
+		.category__top-news
+			header.category__news-header
+				h2.category__news-title.title.title_side Топ новостей
+
+			ul.category__news-list
+				li.category__news-item.video
+					a.video__link(href="#")
+						.video__img
+							img(src="assets/images/content/day-pic-1.jpg", alt="")
+							+icon('video-icon', true).video__video-icon
+						.video__w
+							.video__meta
+								.video__date
+									+icon('date-icon', true).video__date-icon
+									| Вчера 18:56
+								.video__views
+									+icon('views-icon', true).video__views-icon
+									| 256
+								.video__comments
+									+icon('comments-icon', true).video__comments-icon
+									| 2
+							.video__title Появилось видео с места нападения на кассира "Дикси"
+
+				li.category__news-item.video
+					a.video__link(href="#")
+						.video__img
+							img(src="assets/images/content/day-pic-2.jpg", alt="")
+							+icon('video-icon', true).video__video-icon
+						.video__w
+							.video__meta
+								.video__date
+									+icon('date-icon', true).video__date-icon
+									| Вчера 18:56
+								.video__views
+									+icon('views-icon', true).video__views-icon
+									| 256
+								.video__comments
+									+icon('comments-icon', true).video__comments-icon
+									| 2
+							.video__title Пхёнчхан: В месте проведения ОИ 2018 начался ураган
+
+				li.category__news-item.video
+					a.video__link(href="#")
+						.video__img
+							img(src="assets/images/content/day-pic-3.jpg", alt="")
+							+icon('video-icon', true).video__video-icon
+						.video__video-w
+							.video__meta
+								.video__date
+									+icon('date-icon', true).video__date-icon
+									| Вчера 18:56
+								.video__views
+									+icon('views-icon', true).video__views-icon
+									| 256
+								.video__comments
+									+icon('comments-icon', true).video__comments-icon
+									| 2
+							.video__title "Зенит" неожиданно проиграл датскому "Вайле" на сборах
+
+				li.category__news-item.video
+					a.video__link(href="#")
+						.video__img
+							img(src="assets/images/content/day-pic-4.jpg", alt="")
+							+icon('video-icon', true).video__video-icon
+						.video__w
+							.video__meta
+								.video__date
+									+icon('date-icon', true).video__date-icon
+									| Вчера 18:56
+								.video__views
+									+icon('views-icon', true).video__views-icon
+									| 256
+								.video__comments
+									+icon('comments-icon', true).video__comments-icon
+									| 2
+							.video__title Петербургский метрополитен выпустил ролик "Мы соединяем"
+
+				li.category__news-item.video
+					a.video__link(href="#")
+						.video__img
+							img(src="assets/images/content/day-pic-5.jpg", alt="")
+							+icon('video-icon', true).video__video-icon
+						.video__video-w
+							.video__meta
+								.video__date
+									+icon('date-icon', true).video__date-icon
+									| Вчера 18:56
+								.video__views
+									+icon('views-icon', true).video__views-icon
+									| 256
+								.video__comments
+									+icon('comments-icon', true).video__comments-icon
+									| 2
+							.video__title Появилось видео с места нападения на кассира "Дикси"
+
+
+
+
+
+		header.category__news-header
+			h2.category__news-title.title.title_side Все новости
+
+		ul.category__list
+			li.category__item
+				article.news-article.news-article_category
+					a.news-article__link(href="#" title='Рэпер Мот о своем самом романтическом свидании')
+						.news-article__image
+							img(src="assets/images/content/category/category-img-1.jpg", alt="")
+							+icon('video-icon', true).news-article__video-icon
+						.news-article__w
+							.news-article__title Сборная России проиграла Словакии, хотя выигрывала 2:0
+							.news-article__text Сборная России по хоккею стартовала на Олимпиаде в Южной Корее.
+							.news-article__meta
+								.news-article__date
+									+icon('date-icon', true).news-article__date-icon
+									| Вчера 18:56
+								.news-article__views
+									+icon('views-icon', true).news-article__views-icon
+									| 256
+								.news-article__comments
+									+icon('comments-icon', true).news-article__comments-icon
+									| 12
+
+			li.category__item
+				article.news-article.news-article_category
+					a.news-article__link(href="#" title='Рэпер Мот о своем самом романтическом свидании')
+						.news-article__image
+							img(src="assets/images/content/category/category-img-2.jpg", alt="")
+							+icon('video-icon', true).news-article__video-icon
+						.news-article__w
+							.news-article__title Пхёнчхан: В месте проведения ОИ 2018 начался ураган
+							.news-article__text В сети появилось видео из Олимпийской деревни.
+							.news-article__meta
+								.news-article__date
+									+icon('date-icon', true).news-article__date-icon
+									| Вчера 18:56
+								.news-article__views
+									+icon('views-icon', true).news-article__views-icon
+									| 256
+								.news-article__comments
+									+icon('comments-icon', true).news-article__comments-icon
+									| 12
+
+			li.category__item
+				article.news-article.news-article_category
+					a.news-article__link(href="#" title='Рэпер Мот о своем самом романтическом свидании')
+						.news-article__image
+							img(src="assets/images/content/category/category-img-3.jpg", alt="")
+							+icon('video-icon', true).news-article__video-icon
+						.news-article__w
+							.news-article__title Российские фигуристы Тарасова и Морозов заняли второе место за короткую программу
+							.news-article__text Российские фигуристы получили первое "серебро" в Южной Корее.
+							.news-article__meta
+								.news-article__date
+									+icon('date-icon', true).news-article__date-icon
+									| Вчера 18:56
+								.news-article__views
+									+icon('views-icon', true).news-article__views-icon
+									| 256
+								.news-article__comments
+									+icon('comments-icon', true).news-article__comments-icon
+									| 12
+
+			li.category__item
+				article.news-article.news-article_category
+					a.news-article__link(href="#" title='Рэпер Мот о своем самом романтическом свидании')
+						.news-article__image
+							img(src="assets/images/content/category/category-img-4.jpg", alt="")
+							+icon('video-icon', true).news-article__video-icon
+						.news-article__w
+							.news-article__title Олимпиада в Пхенчхане 2018: расписание соревнований на 13 февраля
+							.news-article__text Расписание Олимпийских игр в Пхёнчхане 13 февраля.
+							.news-article__meta
+								.news-article__date
+									+icon('date-icon', true).news-article__date-icon
+									| Вчера 18:56
+								.news-article__views
+									+icon('views-icon', true).news-article__views-icon
+									| 256
+								.news-article__comments
+									+icon('comments-icon', true).news-article__comments-icon
+									| 12
+
+			li.category__item
+				article.news-article.news-article_category
+					a.news-article__link(href="#" title='Рэпер Мот о своем самом романтическом свидании')
+						.news-article__image
+							img(src="assets/images/content/category/category-img-1.jpg", alt="")
+							+icon('video-icon', true).news-article__video-icon
+						.news-article__w
+							.news-article__title Сборная России проиграла Словакии, хотя выигрывала 2:0
+							.news-article__text Сборная России по хоккею стартовала на Олимпиаде в Южной Корее.
+							.news-article__meta
+								.news-article__date
+									+icon('date-icon', true).news-article__date-icon
+									| Вчера 18:56
+								.news-article__views
+									+icon('views-icon', true).news-article__views-icon
+									| 256
+								.news-article__comments
+									+icon('comments-icon', true).news-article__comments-icon
+									| 12
+
+			li.category__item
+				article.news-article.news-article_category
+					a.news-article__link(href="#" title='Рэпер Мот о своем самом романтическом свидании')
+						.news-article__image
+							img(src="assets/images/content/category/category-img-1.jpg", alt="")
+							+icon('video-icon', true).news-article__video-icon
+						.news-article__w
+							.news-article__title Сборная России проиграла Словакии, хотя выигрывала 2:0
+							.news-article__text Сборная России по хоккею стартовала на Олимпиаде в Южной Корее.
+							.news-article__meta
+								.news-article__date
+									+icon('date-icon', true).news-article__date-icon
+									| Вчера 18:56
+								.news-article__views
+									+icon('views-icon', true).news-article__views-icon
+									| 256
+								.news-article__comments
+									+icon('comments-icon', true).news-article__comments-icon
+									| 12
+
+			li.category__item
+				article.news-article.news-article_category
+					a.news-article__link(href="#" title='Рэпер Мот о своем самом романтическом свидании')
+						.news-article__image
+							img(src="assets/images/content/category/category-img-1.jpg", alt="")
+							+icon('video-icon', true).news-article__video-icon
+						.news-article__w
+							.news-article__title Сборная России проиграла Словакии, хотя выигрывала 2:0
+							.news-article__text Сборная России по хоккею стартовала на Олимпиаде в Южной Корее.
+							.news-article__meta
+								.news-article__date
+									+icon('date-icon', true).news-article__date-icon
+									| Вчера 18:56
+								.news-article__views
+									+icon('views-icon', true).news-article__views-icon
+									| 256
+								.news-article__comments
+									+icon('comments-icon', true).news-article__comments-icon
+									| 12
+
+

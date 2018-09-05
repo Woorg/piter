@@ -94,3 +94,140 @@
 			margin-bottom 0
 
 
+
+
+	&__top-news
+		margin-bottom 60px
+		padding-top 28px
+		padding-left 30px
+		padding-bottom 50px
+		box-shadow 0 2px 24px rgba(0, 0, 0, 0.1)
+		// background-color #ffffff
+		+r($tM)
+			position relative
+			margin-bottom 30px
+			padding-top 20px
+			padding-left 0
+			box-shadow none
+		&:after
+			position absolute
+			z-index -1
+			top 0
+			left 50%
+			bottom 0
+			width 1000%
+			height 100%
+			content ''
+			display none
+			background #FFF
+			box-shadow 0 2px 24px rgba(0, 0, 0, 0.1)
+			transform translateX(-50%)
+			+r($tM)
+				display block
+	&__news-header
+		margin-bottom 30px
+		margin-right 30px
+		border-bottom 1px solid #f3f3f3
+		+r($tM)
+			margin-right 0
+			margin-bottom 24px
+	&__news-list
+		display flex
+		flex-flow row wrap
+		justify-content flex-start
+
+		// .slick-list
+		// 	padding 0 30% 0 0
+
+		.slick-arrow
+			z-index 1
+			width 160px
+			height 100%
+			background-image linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%)
+			opacity 1
+			visibility visible
+			&:hover,
+			&:focus
+				background-image linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%)
+
+			&.slick-disabled
+				display none
+				visibility hidden
+				&:hover
+					display none
+			&:before
+				position absolute
+				top 92px
+				width 30px
+				height 30px
+				content ''
+				background url('../images/general/arrow-right-sec.svg') 0 0 no-repeat
+				background-size cover
+
+			&:after
+				+r($d)
+					position absolute
+					z-index -1
+					top 83px
+					border 1px solid #f3f3f3
+					width 46px
+					height 46px
+					content ''
+					background-color #ffffff
+					border-radius 50%
+
+		.slick-prev
+			left -1px
+			transform translateY(-50%)
+			background-image linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%)
+			&:hover,
+			&:focus
+				background-image linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%)
+			&:before
+				left 12px
+				transform rotate(180deg)
+				+r($d)
+					left -25px
+			&:after
+				+r($d)
+					left -27px
+
+		.slick-next
+			right -1px
+			&:before
+				right 12px
+				+r($d)
+					right -25px
+			&:after
+				+r($d)
+					right -27px
+
+
+		.slick-dots
+			bottom -35px
+			li
+				margin 0
+				margin-right 12px
+				width 12px
+				height 12px
+				border-radius 10px
+				background-color #d8d8d8
+				&:last-child
+					margin-right 0
+			button
+				padding 0
+				width 12px
+				height 12px
+				&:before
+					display none
+
+			.slick-active
+				background-color #40527b
+
+
+	&__news-item
+		padding-right 24px
+		width 240px
+
+
+

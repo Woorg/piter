@@ -1,8 +1,15 @@
+
+
+
 .page_persons
 	.main__w
 		padding-top 44px
 		+r($tM)
 			padding-top (44px / 2)
+	.category__header
+		+r($tM)
+			margin-bottom 22px
+
 	.sidebar__best
 		display none
 		+r($d)
@@ -58,3 +65,138 @@
 	.main__pagination
 		+r($tM)
 			margin-bottom 50px
+
+
+.page_channel
+	.category__header
+		+r($tM)
+			margin-bottom 22px
+	.category__button
+		margin-bottom 24px
+
+	.category__text
+		max-height 100%
+		font-size 15px
+		p
+			font-size inherit
+
+	.category__item
+		&:first-child
+			border-top none
+			padding-top 0
+
+	.news-article__title
+		+r($tL)
+			font-family $hM
+
+
+	.main__w
+		+r($tL)
+			display block
+
+	.main__sidebar
+		+r($tL)
+			width 100%
+			display flex
+			flex-flow column
+
+
+	.sidebar__feed
+		display none
+		+r($tL)
+			display block
+	.sidebar__chanels
+		display none
+		+r($tL)
+			display block
+
+	.sidenav
+		+r($tL)
+			order 1
+
+
+	.sidenav__item
+		width 100%
+		+r($d)
+			width 100%
+		+r($tL)
+			width 33%
+		+r($tM)
+			width 100%
+	.sidenav__link
+		+r($d)
+			padding-left 23px
+		+r($tL)
+			padding-left 0
+		&:after
+			display block
+			+r($tL)
+				display none
+		&:before
+			display none
+			+r($d)
+				display none
+
+	.sidenav__item_sub
+		.sidenav__sub
+
+			display block
+			+r($d)
+				margin-left 32px
+				display block
+			+r($tL)
+				margin-left 0
+				display none
+
+		.sidenav__link
+			&:before
+				display none
+				+r($d)
+					display none
+				+r($tL)
+					display block
+
+
+	// .poll
+	// 	+r($tL)
+	// 		max-width 424px
+
+	.poll_s-wide
+		+r($tL)
+			order 2
+		.poll
+			+r($tL)
+				max-width 424px
+		.poll__w
+			+r($tM)
+				max-height 100%
+		.polls__list
+			+r($tL)
+				display block
+
+		.polls__list-item
+			+r($tL)
+				margin-bottom 10px
+
+
+
+	.related_wide
+		.related__item
+			+r($tL)
+				border-top none
+				width 50%
+			+r($tM)
+				width 100%
+			&:nth-child(1),
+			&:nth-child(2)
+				+r($tL)
+					padding-top 0
+
+
+		.news-article__category
+			+r($tL)
+				display block
+
+	.pagination__more
+		+r($tM)
+			margin-bottom 0

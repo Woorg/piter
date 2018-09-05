@@ -56,6 +56,7 @@
 					background url('../images/general/arrow-down.svg') 0 0 / cover no-repeat
 
 		.sidenav__sub
+			position static
 			+r($d)
 				// display block
 				background #FFF
@@ -63,7 +64,10 @@
 
 		&:hover
 			.sidenav__sub
+				position static
 				+r($d)
+					position static
+				+r($tL)
 					position absolute
 					z-index 1
 					top 100%
@@ -145,11 +149,17 @@
 
 	.sidenav__item
 		width 100%
-
+		+r($tL)
+			width 33%
+		+r($tM)
+			width 100%
 	.sidenav__item_sub
 		.sidenav__link
 			&:before
 				display none
+		// &:hover
+		// 	+r($tL)
+		// 		.sidenav__sub
 	.sidenav__link
 		padding-right 0
 		&:after
@@ -158,5 +168,9 @@
 			padding-left 23px
 	.sidenav__sub
 		position static
-		padding-left 26px
+		padding-left 6px
 		display block
+		+r($d)
+			padding-left 36px
+
+

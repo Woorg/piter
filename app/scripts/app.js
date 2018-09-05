@@ -245,17 +245,17 @@ import 'simplebar';
 
 			$('.broadcast__list').slick({
 				dots: true,
-				infinite: true
+				infinite: false
 			});
 
 			$('.u-video__list').slick({
 				dots: true,
-				infinite: true
+				infinite: false
 			});
 
 			$('.movie__list').slick({
 				dots: true,
-				infinite: true
+				infinite: false
 			});
 
 		}
@@ -276,10 +276,61 @@ import 'simplebar';
 			$('.chnls__list').slick({
 				dots: false,
 				arrows: false,
-				infinite: true
+				infinite: false
 			});
 
 		}
+
+
+
+		$('.category__news-list').slick({
+			dots: false,
+			arrows: true,
+			infinite: false,
+			slidesToShow: 3.5,
+			responsive: [
+				{
+					breakpoint: 1315,
+					settings: {
+						slidesToShow: 2.5,
+						dots: false
+					}
+				},
+				{
+					breakpoint: 1025,
+					settings: {
+						slidesToShow: 2.5,
+						dots: true
+					}
+				},
+				{
+					breakpoint: 800,
+					settings: {
+						slidesToShow: 1.2,
+						dots: true,
+						arrows: false
+					}
+				}
+			]
+		});
+
+		// if ( $('.category__news-list').slick('slickCurrentSlide') > 0 ) {
+
+
+		// }
+
+
+
+
+
+		// $('.category__news-list').slick({
+		// 	dots: false,
+		// 	arrows: true,
+		// 	infinite: false,
+		// 	slidesToShow: 1,
+		// 	centerMode: true,
+		// 	variableWidth: true
+		// });
 
 
 		// Comments
@@ -438,7 +489,8 @@ import 'simplebar';
 		'person',
 		'broadcasts',
 		'broadcast',
-		'channels'
+		'channels',
+		'channel'
 		]);
 	});
 
