@@ -16,3 +16,15 @@ mixin search-persons()
 
 		.search-form__example Например,
 			a.search-form__example-link(href="#")  Дворец Спорта
+
+
+
+mixin search-address()
+	.search-form.search-form_wide&attributes(attributes)
+		form(action="", method="get").search-form__w
+				input.search-form__input(type="text", value="", placeholder="Поиск", name="")
+				button.search-form__submit(type="submit")
+					+icon('search-icon', true).search-form__submit-icon
+
+		.search-form__example Например,
+			a.search-form__example-link(href="#")  Дворец Спорта

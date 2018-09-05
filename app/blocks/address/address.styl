@@ -1,0 +1,84 @@
+.address
+	position relative
+	color #6a7381
+	text-decoration none
+	display flex
+	flex-flow row wrap
+	justify-content flex-start
+	&__link
+		position absolute
+		z-index 1
+		top 0
+		bottom 0
+		right 0
+		left 0
+		width 100%
+		height 100%
+	&__photo
+		position relative
+		margin-right 32px
+		width 128px
+		height 128px
+		background #f3f3f3 url('../images/general/address-list-placeholder.png') 50% no-repeat
+		border-radius 3px
+		background-size cover
+		+r($tM)
+			position absolute
+			top 15px
+			right 15px
+			margin-right 0
+			width 64px
+			height 64px
+		img
+			position relative
+			z-index 1
+			respimg()
+
+	&__w
+		position relative
+		padding-right 150px
+		flex 1
+		display flex
+		flex-flow column
+		font-size 14px
+		+r($d)
+			padding-right 0
+
+	&__title
+		margin-bottom 6px
+		color #001d49
+		font-size 20px
+		font-family $hM
+		line-height 1.2
+		+r($tM)
+			padding-right 70px
+			font-size 15px
+	&__desc
+		@extends .wysiwyg
+		margin-bottom 6px
+		color #6a7381
+		p
+			margin-bottom 10px
+			// &:last-child
+			// 	+r($tM)
+			// 		display none
+
+		+r($d)
+			margin-bottom 10px
+		+r($tM)
+			padding-right 70px
+
+
+	&__category
+		position relative
+		z-index 2
+		margin-bottom 10px
+		display inline-block
+		vertical-align top
+		color inherit
+		&:hover
+			text-decoration none
+
+	&__address
+		margin-top auto
+		color #A7ADB5

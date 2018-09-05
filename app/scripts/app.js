@@ -69,6 +69,19 @@ import 'simplebar';
 
 
 
+		let $navMoreTrigger = $('.nav__item_more .nav__link');
+
+		$navMoreTrigger.on('click', function (e) {
+			e.stopPropagation();
+			$(this).parent().toggleClass('nav__more-show');
+
+			$(document).on('click', function(e) {
+				if (!$(e.target).closest('.nav__item_more ul').length) {
+					$navMoreTrigger.parent().removeClass('nav__more-show');
+				}
+			});
+		});
+
 
 
 
@@ -490,7 +503,8 @@ import 'simplebar';
 		'broadcasts',
 		'broadcast',
 		'channels',
-		'channel'
+		'channel',
+		'address-list'
 		]);
 	});
 

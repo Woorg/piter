@@ -1,0 +1,28 @@
+.address-list
+	.address-list__form
+		max-width 100%
+
+	.address-list__item
+		position relative
+		border-top none
+		padding-top 23px
+		padding-bottom 23px
+		padding-left 10px
+		display flex
+		flex-flow row
+		justify-content flex-start
+		+r($tM)
+			padding-top 13px
+			padding-right 30px
+			padding-bottom 13px
+			padding-left 0
+		&:after
+			position absolute
+			top 0
+			left 50%
+			width 1000%
+			height 1px
+			content ''
+			background #f3f3f3
+			transform translateX(-50%)
+
