@@ -1,4 +1,6 @@
 include ../broadcasts/broadcasts
+include ../videos/videos
+include ../chnls/chnls
 
 
 mixin category()
@@ -268,10 +270,6 @@ mixin category()
 									+icon('comments-icon', true).news-article__comments-icon
 									| 12
 
-
-
-
-
 mixin category-videos()
 	section.category&attributes(attributes)
 		header.category__header
@@ -282,8 +280,6 @@ mixin category-videos()
 
 		+videos().category__videos
 
-
-
 mixin category-broadcasts()
 	section.category&attributes(attributes)
 		header.category__header
@@ -293,5 +289,15 @@ mixin category-broadcasts()
 			p Сайт Piter.TV предлагает всем посетителям последние новости России и мира. Граждане нашей страны, проживающие в любом городе, имеют право знать обо всех важных событиях, которые происходят в государстве, будь то принятие нового закона или выступление звезды мирового уровня. <a class="category__text-more" href="#">Подробнее</a>
 
 		+broadcasts().category__broadcasts
+
+mixin category-chanels()
+	section.category&attributes(attributes)
+		header.category__header
+			h1.category__title.title.title_full Каналы
+			//- a.category__button.button.button_form(href="#") Прислать видео
+		.category__text
+			p Сайт Piter.TV предлагает всем посетителям последние новости России и мира. Граждане нашей страны, проживающие в любом городе, имеют право знать обо всех важных событиях, которые происходят в государстве, будь то принятие нового закона или выступление звезды мирового уровня. <a class="category__text-more" href="#">Подробнее</a>
+
+		+chnls().category__channels
 
 

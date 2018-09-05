@@ -1,0 +1,150 @@
+.chnls
+	&__channel
+		position relative
+		border 1px solid #f3f3f3
+		border-width 0 1px 1px 1px
+		+r($tL)
+			border-width 0
+		&:first-child
+			border-top 1px solid #f3f3f3
+			+r($tL)
+				border-top none
+		&:after,
+		&:before
+			position absolute
+			left 50%
+			width 1000%
+			height 1px
+			display none
+			content ''
+			background #f3f3f3
+			transform translateX(-50%)
+			+r($tL)
+				display block
+		&:after
+			top 0
+		&:before
+			bottom -1px
+	&__top
+		padding-top 28px
+		padding-right 32px
+		padding-bottom 20px
+		padding-left 32px
+		display flex
+		flex-flow row wrap
+		justify-content flex-start
+		+r($tL)
+			padding-top 20px
+			padding-right 8px
+			padding-bottom 20px
+			padding-left 8px
+
+		+r($tM)
+			padding-left 0
+			padding-right 0
+
+	&__image
+		margin-right 28px
+		width 100px
+		height 100px
+		overflow hidden
+		border-radius 50%
+		+r($tM)
+			margin-right 0
+			width 88px
+			height 88px
+			order 1
+		img
+			respimg()
+
+	&__w
+		flex 1
+	&__channel-title
+		margin-bottom 10px
+		color #001d49
+		font-size 20px
+		line-height 1.2
+	&__text
+		margin-bottom 17px
+		font-size 14px
+		line-height 1.428
+	&__all
+		position relative
+		padding-right 23px
+		font-size 18px
+		color #007fc6
+		text-decoration none
+		tr(all .3s ease)
+		+r($tM)
+			font-size 16px
+	&__all-icon
+		position absolute
+		top 50%
+		right 0
+		width 8px
+		height 15px
+		fill #fafafa
+		stroke #0790D1
+		transform translateY(-50%)
+
+	&__body
+		position relative
+		padding-top 24px
+		padding-right 32px
+		padding-bottom 30px
+		padding-left 32px
+		background #fbfbfb
+		+r($d)
+			padding-left 24px
+		+r($tL)
+			padding-right 0
+		+r($tM)
+			padding-left 0
+		&:after
+			position absolute
+			z-index -1
+			top 0
+			left 50%
+			width 1000%
+			height 100%
+			bottom 0
+			content ''
+			display none
+			background #fbfbfb
+			transform translateX(-50%)
+			+r($tL)
+				display block
+	&__list
+		display flex
+		flex-flow row wrap
+		justify-content flex-start
+	&__video
+		margin-bottom 20px
+		margin-right 16px
+		width 240px
+		+r($d)
+			margin-right 24px
+		+r($tL)
+			margin-right ratio-percentage(16,750)
+			width ratio-percentage(232,750)
+		+r($tM)
+			margin-right 0
+			padding-right 16px
+			width ratio-percentage(176,320)
+		// &:last-child
+		// 	margin-right 0
+		&:nth-child(3)
+			+r($d)
+				display none
+			+r($tL)
+				display block
+
+		&:nth-child(4),
+		&:nth-child(5)
+			display none
+			+r($tM)
+				display block
+
+	.slick-list
+		+r($tM)
+			padding 0 30% 0 0

@@ -241,35 +241,43 @@ import 'simplebar';
 
 
 
-		if ( $(window).width() < 750 ) {
+		if ( $(window).width() < 800 ) {
 
 			$('.broadcast__list').slick({
 				dots: true,
 				infinite: true
-
 			});
 
 			$('.u-video__list').slick({
 				dots: true,
 				infinite: true
-
 			});
 
 			$('.movie__list').slick({
 				dots: true,
 				infinite: true
-
 			});
 
 		}
 
-		if ( $(window).width() > 750 ) {
+		if ( $(window).width() > 800 ) {
 
 			$('.broadcast__list').slick('unslick');
 
 			$('.u-video__list').slick('unslick');
 
 			$('.movie__list').slick('unslick');
+
+		}
+
+
+		if ( $(window).width() < 800 ) {
+
+			$('.chnls__list').slick({
+				dots: false,
+				arrows: false,
+				infinite: true
+			});
 
 		}
 
@@ -429,7 +437,8 @@ import 'simplebar';
 		'persons',
 		'person',
 		'broadcasts',
-		'broadcast'
+		'broadcast',
+		'channels'
 		]);
 	});
 

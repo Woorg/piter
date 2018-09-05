@@ -1,9 +1,8 @@
 .page_persons
 	.main__w
 		padding-top 44px
-
-
-
+		+r($tM)
+			padding-top (44px / 2)
 	.sidebar__best
 		display none
 		+r($d)
@@ -23,3 +22,39 @@
 	.poll_side
 		+r($d)
 			display none
+
+
+.page_chanels
+	.main__w
+		padding-top 44px
+		+r($tM)
+			padding-top (44px / 2)
+	.sidenav
+		display none
+	.poll_side
+		display none
+
+	.category__header
+		+r($tM)
+			margin-bottom 22px
+
+	.main__category
+		+r($tM)
+			margin-bottom 20px
+
+	.main__w
+		+r($tL)
+			display block
+
+	.main__sidebar
+		+r($tL)
+			width 100%
+			display block
+
+	.pagination__more
+		+r($tM)
+			margin-bottom 0
+
+	.main__pagination
+		+r($tM)
+			margin-bottom 50px

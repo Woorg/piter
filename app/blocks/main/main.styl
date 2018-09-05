@@ -1,4 +1,6 @@
 .main
+	+r($tL)
+		overflow hidden
 	&__in
 		@extends .in
 		clr()
@@ -89,6 +91,7 @@
 
 	&__sidebar
 		padding-top 8px
+		padding-left 16px
 		width 304px
 		width ratio-percentage(304,1315)
 		+r($d)
@@ -100,6 +103,7 @@
 		// position absolute
 		// top 0
 		// left 0
+		padding-left 0
 		padding-right 16px
 		order 1
 		+r($d)
