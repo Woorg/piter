@@ -1,0 +1,42 @@
+extends /blocks/layout-default/layout-sub-comments
+
+include /blocks/header/header
+include /blocks/main/main
+include /blocks/breadcrumbs/breadcrumbs
+include /blocks/content/content
+
+include /blocks/sidebar/sidebar
+include /blocks/category/category
+
+
+include /blocks/best/best
+include /blocks/sidefeed/sidefeed
+include /blocks/sidechanels/sidechanels
+
+include /blocks/sidenav/sidenav
+include /blocks/ads/ads
+
+include /blocks/poll/poll
+include /blocks/related/related
+
+include /blocks/pagination/pagination
+
+include /blocks/footer/footer
+
+
+block head
+	- var pageTitle = 'Piter.tv - Комментарии юзера';
+
+block content
+	+header()
+	+main()
+		.main__in
+			.main__breadcrumbs
+				+breadcrumbs-user-comm()
+			.main__w
+				+content().main__content
+					+category-user-comments().main__category
+					+pagination().main__pagination
+
+
+	+footer()

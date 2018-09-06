@@ -25,6 +25,6 @@ gulp.task('server', () => (
 			middleware: NODE_ENV !== 'production' ? [debuga()] : []
 		},
 		tunnel: !!TUNNEL,
-		injectChanges: true
+		injectChanges: false
 	})
 ));

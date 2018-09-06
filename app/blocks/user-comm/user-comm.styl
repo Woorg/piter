@@ -1,0 +1,54 @@
+.user-comm
+	.user-comm__header
+		+r($tM)
+			margin-bottom 10px
+
+	// &__list
+
+	&__item
+		border-bottom 1px solid #f3f3f3
+		padding-top 20px
+		padding-bottom 20px
+		display flex
+		flex-flow column
+		font-size 14px
+		// &:first-child
+		// 	padding-top 0
+	&__item-link
+		margin-bottom 8px
+		color #0790d1
+		font-size 15px
+		text-decoration none
+		&:hover
+			text-decoration underline
+	&__text
+		margin-bottom 12px
+	&__meta
+		margin-top auto
+		max-width 280px
+		display flex
+		flex-flow row wrap
+		justify-content space-between
+		color #a0a7b2
+	// &__date
+
+	// &__cat
+
+	&__comments,
+	&__rating
+		position relative
+		padding-left 22px
+	&__comments-icon,
+	&__rating:after
+		position absolute
+		top 50%
+		left 0
+		width 14px
+		height 14px
+		fill #a0a7b2
+		transform translateY(-50%)
+
+	&__rating
+		&:after
+			content ''
+			retinaSprite($comm_plus_group)

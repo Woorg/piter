@@ -151,3 +151,31 @@ mixin breadcrumbs-question()
 					+icon('arrow-right', true).breadcrumbs__icon
 
 				meta(itemprop='position', content='2')
+
+
+
+mixin breadcrumbs-user-comm()
+	.breadcrumbs.breadcrumbs_five&attributes(attributes)
+		ol.breadcrumbs__list(itemscope='', itemtype='http://schema.org/BreadcrumbList')
+			li.breadcrumbs__item(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a.breadcrumbs__link(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books')
+					span(itemprop='name') Главная
+					+icon('arrow-right', true).breadcrumbs__icon
+				meta(itemprop='position', content='1')
+
+			li.breadcrumbs__item.breadcrumbs__item_hide(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a.breadcrumbs__link(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books/sciencefiction')
+					span(itemprop='name') Пользователь
+					+icon('arrow-right', true).breadcrumbs__icon
+
+				meta(itemprop='position', content='2')
+
+			li.breadcrumbs__item.breadcrumbs__item_more.breadcrumbs__item_siblings.breadcrumbs__item_active(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a.breadcrumbs__link(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books/sciencefiction/ancillaryjustice')
+					span(itemprop='name') Комментарии
+					+icon('arrow-down', true).breadcrumbs__more-icon
+				meta(itemprop='position', content='3')
+
+
+
+

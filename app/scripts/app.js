@@ -13,6 +13,24 @@ import 'simplebar';
 
 	$(function() {
 
+
+		// console.log(jQuery.fn.jquery);
+
+		var styles = [
+			'padding: 2px 9px',
+			'background: #82B93C',
+			'color: #fff',
+			'display: inline-block',
+			'text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2)',
+			'box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.2) inset, 0 5px 3px -5px rgba(0, 0, 0, 0.5), 0 -13px 5px -10px rgba(255, 255, 255, 0.4) inset',
+			'line-height: 1.56',
+			'text-align: left',
+			'font-size: 18px',
+			'font-weight: 400'
+		].join(';');
+
+		console.log('%c developed by igor gorlov https://webjeb.ru', styles);
+
 		/*Callback*/
 
 		// $('.popup-open').magnificPopup({
@@ -389,7 +407,7 @@ import 'simplebar';
 		// Main height
 
 		const $sideFirst = $('.main__sidebar_first');
-		const sideFirstHeight = $sideFirst.height();
+		const sideFirstHeight = $sideFirst.outerHeight();
 
 		if ( $sideFirst.length ) {
 
@@ -507,7 +525,8 @@ import 'simplebar';
 		'address-list',
 		'address',
 		'questionare',
-		'question'
+		'question',
+		'user-comments'
 		]);
 	});
 
