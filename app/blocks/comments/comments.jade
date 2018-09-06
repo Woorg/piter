@@ -92,3 +92,30 @@ mixin comments-broadcast()
 						textarea.form__textarea(name="" )
 				.form__row
 					input.form__submit.button.button_form(type="submit", value="Отправить")
+
+
+
+mixin comments-address()
+	.comments&attributes(attributes)
+		header.comments__header.category__header
+			h3.comments__title.title.title_side Оставить комментарий
+		.comments__form.form
+			form(action="", method="post")
+				.form__row
+					.form__field
+						textarea.form__textarea(name="" )
+				.form__row
+					input.form__submit.button.button_round(type="submit", value="Отправить")
+
+
+mixin comments-question()
+	.comments&attributes(attributes)
+		header.comments__header.category__header
+			h3.comments__title.title.title_side Оставить комментарий
+		.comments__form.form
+			form(action="", method="post")
+				.form__row
+					.form__field
+						textarea.form__textarea(name="" )
+				.form__row
+					input.form__submit.button.button_form(type="submit", value="Отправить")

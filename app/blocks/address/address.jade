@@ -1,3 +1,47 @@
+include ../comments/comments
+
 mixin address()
-	+b.address&attributes(attributes)
-		block
+	section.address.address_full.category&attributes(attributes)
+		header.address__header.category__header
+			h1.address__title.title.title_full Архитектурное бюро Студия-17
+
+		a.address__site(href="#") Архитектурное бюро Студия-17
+
+		.address__first 199034, Санкт-Петербург, ул. Беринга, д. 1
+
+		.address__second 191144, г. Санкт-Петербург, Суворовский пр., 33
+
+		.address__map-w
+			#map.address__map
+
+		dl.address__contacts
+			.address__contacts-item
+				dt.address__contacts-title Email:
+				dd.address__contacts-desc
+					a(href="mailto:office@studio-17.ru") office@studio-17.ru
+			.address__contacts-item
+				dt.address__contacts-title Телефон:
+				dd.address__contacts-desc
+					a(href="tel:+78124970404") (812)497-04-04
+					| ,
+					a(href="tel:+74970405") 497-04-05
+					| ,
+					a(href="tel:+74970406") 497-04-06
+
+			.address__contacts-item
+				dt.address__contacts-title Факc:
+				dd.address__contacts-desc
+					a(href="tel:+78124970404") (812)497-04-04
+					| ,
+					a(href="tel:+74970405") 497-04-05
+					| ,
+					a(href="tel:+74970406") 497-04-06
+
+		.address__text
+			p Архитектурное бюро "студия 17" - проектная организация, занимающаяся архитектурным проектированием общественных, жилых зданий и частных домов от стадии предпроектного предложения до авторского надзора за ходом строительства.
+			p История компании берет свое начало от персональной творческой архитектурной мастерской Союза архитекторов Российской Федерации под руководством С.В. Гайковича, основанной в августе 1991 г. Основателем и деловым партнером (до 1998 г.) также был архитектор Ю.М.Песоцкий.
+			p Основная сфера деятельности архитектурного бюро - проектирование общественных зданий, среди ее разработок - офисы, гостиницы, специализированные школы, гаражи, спортивные комплексы, объекты реконструкции.
+			p Среди наиболее известных проектов Студии 17 - многофункциональный комплекс Атлантик-Сити на улице Савушкина, Театрально-развлекательный комплекс Лицедеи на улице Льва Толстого, многофункциональный комплекс на Леонтьевском мысу на Петроградской стороне и другие.
+
+
+		+comments-address().address__comments

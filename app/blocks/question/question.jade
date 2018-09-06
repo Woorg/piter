@@ -1,0 +1,16 @@
+include ../poll/poll
+include ../comments/comments
+
+
+mixin question()
+	section.question.category&attributes(attributes)
+		header.question__header.category__header
+			h1.question__title.title.title_full Чувствуете ли вы себя в безопасности в ТРЦ Петербурга?
+
+		.question__by
+			span Опрос для статьи
+			a(href="#link") «В Петербурге прошли две акции в память о погибших в Кемерово: как это было»
+
+		+poll-question().question__poll
+
+		+comments-question().question__comments

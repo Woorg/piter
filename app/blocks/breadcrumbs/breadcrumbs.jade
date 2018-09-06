@@ -50,7 +50,7 @@ mixin breadcrumbs-cat()
 
 
 mixin breadcrumbs-districts()
-	.breadcrumbs.breadcrumbs_sec&attributes(attributes)
+	.breadcrumbs.breadcrumbs_third&attributes(attributes)
 		ol.breadcrumbs__list(itemscope='', itemtype='http://schema.org/BreadcrumbList')
 			li.breadcrumbs__item(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
 				a.breadcrumbs__link(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books')
@@ -69,7 +69,7 @@ mixin breadcrumbs-districts()
 
 
 mixin breadcrumbs-district()
-	.breadcrumbs.breadcrumbs_sec&attributes(attributes)
+	.breadcrumbs.breadcrumbs_third&attributes(attributes)
 		ol.breadcrumbs__list(itemscope='', itemtype='http://schema.org/BreadcrumbList')
 			li.breadcrumbs__item(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
 				a.breadcrumbs__link(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books')
@@ -110,4 +110,44 @@ mixin breadcrumbs-person()
 				meta(itemprop='position', content='2')
 
 
+mixin breadcrumbs-address()
+	.breadcrumbs.breadcrumbs_third.breadcrumbs_fourth&attributes(attributes)
+		ol.breadcrumbs__list(itemscope='', itemtype='http://schema.org/BreadcrumbList')
+			li.breadcrumbs__item(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a.breadcrumbs__link(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books')
+					span(itemprop='name') Справочник
+					+icon('arrow-right', true).breadcrumbs__icon
+				meta(itemprop='position', content='1')
 
+			li.breadcrumbs__item(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a.breadcrumbs__link(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books/sciencefiction')
+					span(itemprop='name') Адреса Петербурга
+					+icon('arrow-right', true).breadcrumbs__icon
+
+				meta(itemprop='position', content='2')
+
+			li.breadcrumbs__item(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a.breadcrumbs__link(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books/sciencefiction')
+					span(itemprop='name') Разработки
+					+icon('arrow-right', true).breadcrumbs__icon
+
+				meta(itemprop='position', content='3')
+
+
+
+
+mixin breadcrumbs-question()
+	.breadcrumbs.breadcrumbs_third&attributes(attributes)
+		ol.breadcrumbs__list(itemscope='', itemtype='http://schema.org/BreadcrumbList')
+			li.breadcrumbs__item(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a.breadcrumbs__link(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books')
+					span(itemprop='name') Главная
+					+icon('arrow-right', true).breadcrumbs__icon
+				meta(itemprop='position', content='1')
+
+			li.breadcrumbs__item(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a.breadcrumbs__link(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books/sciencefiction')
+					span(itemprop='name') Опросы
+					+icon('arrow-right', true).breadcrumbs__icon
+
+				meta(itemprop='position', content='2')

@@ -1,0 +1,49 @@
+extends /blocks/layout-default/layout-sub-questionare
+
+include /blocks/header/header
+include /blocks/main/main
+//- include /blocks/breadcrumbs/breadcrumbs
+include /blocks/content/content
+
+include /blocks/sidebar/sidebar
+include /blocks/category/category
+
+
+include /blocks/best/best
+include /blocks/sidefeed/sidefeed
+include /blocks/sidechanels/sidechanels
+
+include /blocks/sidenav/sidenav
+include /blocks/ads/ads
+
+include /blocks/poll/poll
+include /blocks/related/related
+
+include /blocks/pagination/pagination
+
+include /blocks/footer/footer
+
+
+block head
+	- var pageTitle = 'Piter.tv - Опросы';
+
+block content
+	+header()
+	+main()
+		.main__in
+			//- .main__breadcrumbs
+			//- 	+breadcrumbs-cat()
+			.main__w
+				+content().main__content
+					+category-questionare().main__category
+					+pagination().main__pagination
+				+sidebar().sidebar__cat.main__sidebar
+					+best().sidebar__best.sidebar__row
+					+sidefeed().sidebar__feed.sidebar__row
+					+sidechanels-chanels().sidebar__chanels.sidebar__row
+					+sideads().sidebar__ads.sidebar__row
+					//- +sidenav-videos().sidebar__row.sidenav_wide
+					//- +poll-side-videos().sidebar__row.poll_s-wide
+					//- +related().sidebar__row.related_wide
+
+	+footer()

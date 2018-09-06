@@ -504,7 +504,10 @@ import 'simplebar';
 		'broadcast',
 		'channels',
 		'channel',
-		'address-list'
+		'address-list',
+		'address',
+		'questionare',
+		'question'
 		]);
 	});
 

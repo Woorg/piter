@@ -1,0 +1,30 @@
+.question
+	&__header
+		margin-bottom 20px
+		+r($tM)
+			margin-bottom 20px
+
+	&__by
+		margin-bottom 18px
+		display flex
+		flex-flow row wrap
+		justify-content flex-start
+		color #6a7381
+		font-size 14px
+		span
+			+r($d)
+				margin-bottom 5px
+				width 100%
+		a
+			margin-left 10px
+			flex 1
+			color inherit
+			+r($d)
+				margin-left 0
+				width 100%
+			&:hover
+				text-decoration none
+	&__poll
+		margin-bottom 30px
+
+	// &__comments

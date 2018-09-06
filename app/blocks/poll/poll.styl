@@ -126,8 +126,6 @@
 			border-radius 30px
 			background-color #f2f2f2
 
-
-
 .poll_s-wide
 	padding-top 20px
 	padding-left 24px
@@ -210,3 +208,44 @@
 		&:before
 			border-radius 30px
 			background-color #f2f2f2
+
+.poll_question
+	padding-top 30px
+	padding-right 30px
+	padding-bottom 15px
+	padding-left 30px
+	box-shadow 0 2px 14px rgba(0, 0, 0, 0.1)
+	+r($tM)
+		padding-top 10px
+		padding-right 16px
+		padding-bottom 10px
+		padding-left 16px
+	.poll__list
+		padding-right 62px
+		+r($d)
+			padding-right 122px
+		+r($tL)
+			padding-right 192px
+		+r($tM)
+			padding-right 0
+
+	.poll__item
+		margin-bottom 30px
+		+r($tM)
+			margin-bottom 20px
+	.poll__item-w
+		// max-width 330px
+		max-width 450px
+		+r($tM)
+			max-width 84%
+	.poll__item-result-w
+		+r($tM)
+			height 16px
+
+	.poll__result
+		border-top 1px solid #f3f3f3
+		padding-top 13px
+		color #001d49
+		font-family $hL
+		+r($tM)
+			font-size 14px

@@ -1,0 +1,54 @@
+.questionare
+	&__header
+		margin-bottom 35px
+		+r($tM)
+			margin-bottom 20px
+
+	// &__list
+
+	&__item
+		border-bottom 1px solid #f3f3f3
+		padding-top 20px
+		padding-bottom 25px
+		&:first-child
+			padding-top 0
+
+	&__item-link
+		margin-bottom 10px
+		display block
+		color #001d49
+		font-family $hM
+		font-size 20px
+		line-height 1.2
+		text-decoration none
+		&:hover
+			text-decoration underline
+
+	&__meta
+		max-width 310px
+		display flex
+		flex-flow row wrap
+		justify-content space-between
+		align-items center
+		font-size 14px
+	// &__total
+
+
+	&__comments
+		position relative
+		padding-left 22px
+	&__comments-icon
+		position absolute
+		top 50%
+		left 0
+		width 14px
+		height 14px
+		fill #a0a7b2
+		transform translateY(-50%)
+
+
+	&__poll-enter
+		color #0790d1
+		text-decoration none
+		&:hover
+			text-decoration underline

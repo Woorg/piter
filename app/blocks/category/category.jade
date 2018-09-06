@@ -1,6 +1,8 @@
 include ../broadcasts/broadcasts
 include ../videos/videos
 include ../chnls/chnls
+include ../questionare/questionare
+include ../icon/icon
 
 
 mixin category()
@@ -557,3 +559,63 @@ mixin category-channel()
 									| 12
 
 
+mixin category-questionare()
+	section.questionare.category&attributes(attributes)
+		header.questionare__header.category__header
+			h1.category__title.title.title_full Опросы
+
+
+		ul.questionare__list.category__list
+			li.questionare__item
+				a.questionare__item-link(href="#link") Чувствуете ли вы себя в безопасности в ТРЦ Петербурга?
+				.questionare__meta
+					.questionare__total Проголосовало: 13
+					.questionare__comments
+						+icon('comments-icon', true).questionare__comments-icon
+						| 2
+					a.questionare__poll-enter(href="#link") Проголосовать
+
+			li.questionare__item
+				a.questionare__item-link(href="#link") А Вы сходили на выборы?
+				.questionare__meta
+					.questionare__total Проголосовало: 13
+					.questionare__comments
+						+icon('comments-icon', true).questionare__comments-icon
+						| 2
+					a.questionare__poll-enter(href="#link") Проголосовать
+
+			li.questionare__item
+				a.questionare__item-link(href="#link") Город засыпает снегом. Как вам погода, петербуржцы???
+				.questionare__meta
+					.questionare__total Проголосовало: 13
+					.questionare__comments
+						+icon('comments-icon', true).questionare__comments-icon
+						| 2
+					a.questionare__poll-enter(href="#link") Проголосовать
+
+			li.questionare__item
+				a.questionare__item-link(href="#link") МОК не допустил к Олимпиаде главных звезд российского спорта. Что делать России?
+				.questionare__meta
+					.questionare__total Проголосовало: 13
+					.questionare__comments
+						+icon('comments-icon', true).questionare__comments-icon
+						| 2
+					a.questionare__poll-enter(href="#link") Проголосовать
+
+			li.questionare__item
+				a.questionare__item-link(href="#link") Как оцениваете работы по очистке Петербурга от снега?
+				.questionare__meta
+					.questionare__total Проголосовало: 13
+					.questionare__comments
+						+icon('comments-icon', true).questionare__comments-icon
+						| 2
+					a.questionare__poll-enter(href="#link") Проголосовать
+
+			li.questionare__item
+				a.questionare__item-link(href="#link") Чувствуете ли вы себя в безопасности в ТРЦ Петербурга?
+				.questionare__meta
+					.questionare__total Проголосовало: 13
+					.questionare__comments
+						+icon('comments-icon', true).questionare__comments-icon
+						| 2
+					a.questionare__poll-enter(href="#link") Проголосовать
