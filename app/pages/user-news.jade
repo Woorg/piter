@@ -1,0 +1,35 @@
+extends /blocks/layout-default/layout-sub
+
+include /blocks/header/header
+include /blocks/main/main
+include /blocks/breadcrumbs/breadcrumbs
+include /blocks/content/content
+include /blocks/sidebar/sidebar
+include /blocks/category/category
+include /blocks/sidenav/sidenav
+include /blocks/poll/poll
+include /blocks/related/related
+
+include /blocks/pagination/pagination
+
+include /blocks/footer/footer
+
+
+block head
+	- var pageTitle = 'Piter.tv - Новости юзера';
+
+block content
+	+header()
+	+main()
+		.main__in
+			.main__breadcrumbs
+				+breadcrumbs-user-news()
+			.main__w
+				+content().main__content
+					+category-user-news()
+					+pagination().main__pagination
+				+sidebar().sidebar__cat.main__sidebar
+					+sidenav().sidebar__row.sidenav_wide
+					+poll-side().sidebar__row.poll_s-wide
+					+related().sidebar__row.related_wide
+	+footer()

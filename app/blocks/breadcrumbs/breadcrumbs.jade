@@ -155,6 +155,51 @@ mixin breadcrumbs-question()
 
 
 mixin breadcrumbs-user-comm()
+	.breadcrumbs.breadcrumbs_fourth.breadcrumbs_five&attributes(attributes)
+		ol.breadcrumbs__list(itemscope='', itemtype='http://schema.org/BreadcrumbList')
+			li.breadcrumbs__item(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a.breadcrumbs__link(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books')
+					span(itemprop='name') Главная
+					+icon('arrow-right', true).breadcrumbs__icon
+				meta(itemprop='position', content='1')
+
+			li.breadcrumbs__item(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a.breadcrumbs__link(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books/sciencefiction')
+					span(itemprop='name') Пользователь
+					+icon('arrow-right', true).breadcrumbs__icon
+
+				meta(itemprop='position', content='2')
+
+			li.breadcrumbs__item.breadcrumbs__item_active(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a.breadcrumbs__link(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books/sciencefiction/ancillaryjustice')
+					span(itemprop='name') Комментарии
+				meta(itemprop='position', content='3')
+
+
+mixin breadcrumbs-user-news()
+	.breadcrumbs.breadcrumbs_fourth.breadcrumbs_five&attributes(attributes)
+		ol.breadcrumbs__list(itemscope='', itemtype='http://schema.org/BreadcrumbList')
+			li.breadcrumbs__item(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a.breadcrumbs__link(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books')
+					span(itemprop='name') Главная
+					+icon('arrow-right', true).breadcrumbs__icon
+				meta(itemprop='position', content='1')
+
+			li.breadcrumbs__item(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a.breadcrumbs__link(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books/sciencefiction')
+					span(itemprop='name') Пользователь
+					+icon('arrow-right', true).breadcrumbs__icon
+
+				meta(itemprop='position', content='2')
+
+			li.breadcrumbs__item.breadcrumbs__item_active(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a.breadcrumbs__link(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books/sciencefiction/ancillaryjustice')
+					span(itemprop='name') Новости
+				meta(itemprop='position', content='3')
+
+
+
+mixin breadcrumbs-user-video()
 	.breadcrumbs.breadcrumbs_five&attributes(attributes)
 		ol.breadcrumbs__list(itemscope='', itemtype='http://schema.org/BreadcrumbList')
 			li.breadcrumbs__item(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
@@ -163,19 +208,14 @@ mixin breadcrumbs-user-comm()
 					+icon('arrow-right', true).breadcrumbs__icon
 				meta(itemprop='position', content='1')
 
-			li.breadcrumbs__item.breadcrumbs__item_hide(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+			li.breadcrumbs__item(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
 				a.breadcrumbs__link(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books/sciencefiction')
 					span(itemprop='name') Пользователь
 					+icon('arrow-right', true).breadcrumbs__icon
 
 				meta(itemprop='position', content='2')
 
-			li.breadcrumbs__item.breadcrumbs__item_more.breadcrumbs__item_siblings.breadcrumbs__item_active(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+			li.breadcrumbs__item.breadcrumbs__item_active(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
 				a.breadcrumbs__link(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books/sciencefiction/ancillaryjustice')
-					span(itemprop='name') Комментарии
-					+icon('arrow-down', true).breadcrumbs__more-icon
+					span(itemprop='name') Видео
 				meta(itemprop='position', content='3')
-
-
-
-

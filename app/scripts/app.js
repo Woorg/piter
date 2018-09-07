@@ -526,7 +526,9 @@ import 'simplebar';
 		'address',
 		'questionare',
 		'question',
-		'user-comments'
+		'user-comments',
+		'user-news',
+		'user-videos'
 		]);
 	});
 
