@@ -20,11 +20,12 @@
 		margin-right 16px
 		+r($tM)
 			max-width 105px
+			width 105px
 		img
 			respimg()
 
 	&__w
-		flex 1 0 auto
+		flex 1
 	&__item-title
 		margin-bottom 5px
 		color #001d49
@@ -37,6 +38,9 @@
 		flex-flow row wrap
 		justify-content space-between
 		color #a0a7b2
+		font-size 14px
+		+r($tM)
+			max-width 160px
 	&__date,
 	&__views,
 	&__comments
