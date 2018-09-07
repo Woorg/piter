@@ -1,0 +1,229 @@
+include ../icon/icon
+
+mixin user()
+	seciton.user.category&attributes(attributes)
+		header.user__header.category__header
+			h1.category__title.title.title_full Пользователь
+
+		.user__top
+			.user__data
+				dl.user__list
+					.user__item
+						dt.user__term Псевдоним:
+						dd.user__desc Alena_Zinovieva
+					.user__item
+						dt.user__term ФИО:
+						dd.user__desc Зиновьева Алена
+					.user__item.user__item_row
+						dt.user__term Дата регистрации:
+						dd.user__desc 09-04-2018, 10:33:11
+					.user__item
+						dt.user__term Последний визит:
+						dd.user__desc 27-06-2018 14:23:43
+					.user__item
+						dt.user__term Кол-во авторизаций:
+						dd.user__desc 3
+					.user__item.user__item_row
+						dt.user__term Комментариев:
+						dd.user__desc 0
+					.user__item.user__item_row
+						dt.user__term Рейтинг:
+						dd.user__desc
+							.user__rating
+								.user__val 0.5
+								.user__track
+									.user__minus
+										.user__slide(style="width:0%")
+										a.user__minus-val(href="#") -2
+									.user__plus
+										.user__slide(style="width:37.5%")
+										a.user__plus-val(href="#") +2
+					.user__item.user__item_row
+						dt.user__term О себе:
+						dd.user__desc.user__desc_about Описание — композиционная форма, которую используют в литературоведении и лингвистике для подробной характеристики предметов или явлений в целях создания художественного образа.
+
+				a.user__button.button.button_form(href="#button") Отправить сообщение
+
+			.user__avatar
+				img(src="assets/images/content/user/user-avatar.jpg", alt="")
+
+
+
+		.user__bottom
+			.user__col
+				section.user__comments.user-comm.user-comm_userarea.category.category_userarea&attributes(attributes)
+					header.user-comm__header.category__header
+						h2.category__title.title.title_side Комментарии (20)
+						a.category__all(href="#")
+							| Смотреть все
+							+icon('arrow-right', true).category__all-icon
+					ul.user-comm__list.category__list
+						li.user-comm__item
+							a.user-comm__item-link(href="#link") Минтранс предложил хранить данные авиапассажиров в России
+
+							.user-comm__text Это ДОЛЖНО навредить системам бронирования, иначе это не российский закон
+
+							.user-comm__meta
+								.user-comm__date 21.03.2017 23:26
+								.user-comm__rating 2
+
+						li.user-comm__item
+							a.user-comm__item-link(href="#link") Минтранс предложил хранить данные авиапассажиров в России
+
+							.user-comm__text Это ДОЛЖНО навредить системам бронирования, иначе это не российский закон
+
+							.user-comm__meta
+								.user-comm__date 21.03.2017 23:26
+								.user-comm__rating 2
+
+						li.user-comm__item
+							a.user-comm__item-link(href="#link") Минтранс предложил хранить данные авиапассажиров в России
+
+							.user-comm__text Это ДОЛЖНО навредить системам бронирования, иначе это не российский закон
+
+							.user-comm__meta
+								.user-comm__date 21.03.2017 23:26
+								.user-comm__rating 2
+
+						li.user-comm__item
+							a.user-comm__item-link(href="#link") Минтранс предложил хранить данные авиапассажиров в России
+
+							.user-comm__text Это ДОЛЖНО навредить системам бронирования, иначе это не российский закон
+
+							.user-comm__meta
+								.user-comm__date 21.03.2017 23:26
+								.user-comm__rating 2
+
+
+
+
+
+			.user__col
+				section.user__news.category.category_userarea&attributes(attributes)
+					header.category__header
+						h2.category__title.title.title_side Новости (5)
+						a.category__all(href="#")
+							| Смотреть все
+							+icon('arrow-right', true).category__all-icon
+					ul.category__list
+						li.category__item
+							article.news-article.news-article_category
+								a.news-article__link(href="#" title='Рэпер Мот о своем самом романтическом свидании')
+									.news-article__image
+										img(src="assets/images/content/category/category-img-1.jpg", alt="")
+										+icon('video-icon', true).news-article__video-icon
+									.news-article__w
+										.news-article__title Сборная России проиграла Словакии, хотя выигрывала 2:0
+										.news-article__text Сборная России по хоккею стартовала на Олимпиаде в Южной Корее.
+										.news-article__meta
+											.news-article__date
+												+icon('date-icon', true).news-article__date-icon
+												| Вчера 18:56
+											.news-article__views
+												+icon('views-icon', true).news-article__views-icon
+												| 256
+											.news-article__comments
+												+icon('comments-icon', true).news-article__comments-icon
+												| 12
+
+						li.category__item
+							article.news-article.news-article_category
+								a.news-article__link(href="#" title='Рэпер Мот о своем самом романтическом свидании')
+									.news-article__image
+										img(src="assets/images/content/category/category-img-2.jpg", alt="")
+									.news-article__w
+										.news-article__title Пхёнчхан: В месте проведения ОИ 2018 начался ураган
+										.news-article__text В сети появилось видео из Олимпийской деревни.
+										.news-article__meta
+											.news-article__date
+												+icon('date-icon', true).news-article__date-icon
+												| Вчера 18:56
+											.news-article__views
+												+icon('views-icon', true).news-article__views-icon
+												| 256
+											.news-article__comments
+												+icon('comments-icon', true).news-article__comments-icon
+												| 12
+
+						li.category__item
+							article.news-article.news-article_category
+								a.news-article__link(href="#" title='Рэпер Мот о своем самом романтическом свидании')
+									.news-article__image
+										img(src="assets/images/content/category/category-img-3.jpg", alt="")
+									.news-article__w
+										.news-article__title Российские фигуристы Тарасова и Морозов заняли второе место за короткую программу
+										.news-article__text Российские фигуристы получили первое "серебро" в Южной Корее.
+										.news-article__meta
+											.news-article__date
+												+icon('date-icon', true).news-article__date-icon
+												| Вчера 18:56
+											.news-article__views
+												+icon('views-icon', true).news-article__views-icon
+												| 256
+											.news-article__comments
+												+icon('comments-icon', true).news-article__comments-icon
+												| 12
+
+
+				section.user__videos.u-video.category.category_userarea
+					header.category__header
+						h2.category__title.title.title_side Видео (5)
+
+						a.category__all(href="#")
+							| Смотреть все
+							+icon('arrow-right', true).category__all-icon
+
+					ul.u-video__list
+						li.u-video__item
+							a.u-video__category(href="#") дети
+
+							a.u-video__link(href="#")
+								.u-video__image
+									img(src="assets/images/content/uservideo-img-1.jpg", alt="")
+									.u-video__video-icon
+								.u-video__meta
+									.u-video__views
+										+icon('views-icon', true).broadcast__views-icon
+										| 256
+								.u-video__item-title 01 Январь
+
+						li.u-video__item
+							a.u-video__category(href="#") юмор
+
+							a.u-video__link(href="#")
+								.u-video__image
+									img(src="assets/images/content/uservideo-img-2.jpg", alt="")
+									.u-video__video-icon
+								.u-video__meta
+									.u-video__views
+										+icon('views-icon', true).broadcast__views-icon
+										| 256
+								.u-video__item-title Тамада Одесса, ведущая в образе рыбачки Сони
+
+
+						li.u-video__item
+							a.u-video__category(href="#") спорт
+
+							a.u-video__link(href="#")
+								.u-video__image
+									img(src="assets/images/content/uservideo-img-3.jpg", alt="")
+									.u-video__video-icon
+								.u-video__meta
+									.u-video__views
+										+icon('views-icon', true).broadcast__views-icon
+										| 256
+								.u-video__item-title Хоккей
+
+						li.u-video__item
+							a.u-video__category(href="#") другое
+
+							a.u-video__link(href="#")
+								.u-video__image
+									img(src="assets/images/content/uservideo-img-4.jpg", alt="")
+								.u-video__meta
+									.u-video__views
+										+icon('views-icon', true).broadcast__views-icon
+										| 256
+								.u-video__item-title китайская монета
+
+

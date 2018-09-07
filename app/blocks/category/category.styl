@@ -231,3 +231,44 @@
 
 
 
+.category_userarea
+	.category__header
+		position relative
+	.category__all
+		color #0790d1
+		font-size 15px
+		text-decoration none
+		+r($tM)
+			text-indent -9999px
+		&:hover
+			text-decoration underline
+	.category__all-icon
+		display none
+		+r($tM)
+			display block
+
+	.category__list
+		margin-bottom 0
+	.category__item
+		&:first-child
+			border-top none
+			padding-top 0
+
+	.news-article_category
+		.news-article__image
+			max-width 192px
+			width 192px
+
+	.news-article__w
+		flex 1
+
+	.news-article__title
+		font-size 20px
+
+	.u-video__list
+		margin-left 0
+	.u-video__item
+		width 192px
+		width ratio-percentage(190,864)
+		&:last-child
+			margin-right 0

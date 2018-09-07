@@ -416,6 +416,12 @@ import 'simplebar';
 		}
 
 
+		// User rating
+
+		$('.user__plus-val, .user__minus-val').on('click', function (e) {
+			e.preventDefault();
+		});
+
 
 		// Category text
 
@@ -528,7 +534,8 @@ import 'simplebar';
 		'question',
 		'user-comments',
 		'user-news',
-		'user-videos'
+		'user-videos',
+		'user'
 		]);
 	});
 

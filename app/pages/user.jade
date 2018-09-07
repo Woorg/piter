@@ -1,0 +1,23 @@
+extends /blocks/layout/layout-user
+
+include /blocks/header/header
+include /blocks/main/main
+include /blocks/breadcrumbs/breadcrumbs
+include /blocks/user/user
+
+
+include /blocks/footer/footer
+
+
+block head
+	- var pageTitle = 'Piter.tv - Пользователь';
+
+block content
+	+header()
+	+main()
+		.main__in
+			.main__breadcrumbs
+				+breadcrumbs-person()
+			.main__w
+				+user()
+	+footer()

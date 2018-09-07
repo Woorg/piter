@@ -1,0 +1,183 @@
+.user
+	width 100%
+	&__header
+		margin-bottom 15px
+		+r($tL)
+			margin-bottom 30px
+		+r($tM)
+			margin-bottom 15px
+	&__top
+		position relative
+		margin-bottom 45px
+		padding-top 16px
+		padding-right 16px
+		padding-bottom 50px
+		padding-left 30px
+		display flex
+		flex-flow row wrap
+		justify-content space-between
+		background-color #ffffff
+		box-shadow 0 2px 24px rgba(0, 0, 0, 0.1)
+		+r($tL)
+			padding-right 0
+			padding-bottom 40px
+			padding-left 0
+			box-shadow none
+		+r($tM)
+			padding-bottom 30px
+		&:after
+			position absolute
+			z-index -1
+			top 0
+			left 50%
+			width 1000%
+			height 100%
+			content ''
+			display none
+			background-color #ffffff
+			box-shadow 0 2px 24px rgba(0, 0, 0, 0.1)
+			transform translateX(-50%)
+			+r($tL)
+				display block
+	&__data
+		padding-top 11px
+		max-width 720px
+		flex 1
+	&__list
+		margin-bottom 18px
+		color #1f2630
+		font-size 15px
+
+	&__item
+		margin-bottom 15px
+		display flex
+		flex-flow row wrap
+		justify-content flex-start
+		align-items flex-start
+		&:last-child
+			margin-bottom 0
+
+	&__item_row
+		border-bottom 1px solid #f3f3f3
+		margin-bottom 20px
+		padding-bottom 20px
+
+	&__term
+		margin-right 40px
+		min-width 196px
+		font-family $hM
+		+r($tM)
+			margin-right 16px
+			min-width 36px
+	// &__term_about
+	// 	+r($tM)
+	// 		width 100%
+	&__desc
+		flex 1
+	&__desc_about
+		+r($tM)
+			margin-top 5px
+			flex auto
+	&__rating
+		margin-top -15px
+		margin-left 20px
+		width 128px
+		text-align center
+		+r($tM)
+			margin-top -10px
+			margin-right auto
+			margin-left auto
+	&__track
+		height 8px
+		display flex
+		flex-flow row
+		background #f3f3f3
+		border-radius 4px
+	&__minus,
+	&__plus
+		position relative
+		flex 1
+
+	&__slide
+		position absolute
+		top 0
+		width 100%
+		height 100%
+	&__minus
+		.user__slide
+			right 0
+			background-color #ff3055
+			border-radius 4px 0 0 4px
+	&__plus
+		.user__slide
+			left 0
+			background-color #79de77
+			border-radius 0 4px 4px 0
+
+	&__minus-val,
+	&__plus-val
+		position absolute
+		top -1px
+		color #AFB2B5
+		font-size 12px
+		line-height 1
+		text-decoration none
+
+	&__minus-val
+		left -20px
+	&__plus-val
+		right -20px
+
+	&__button
+		padding-left 12px
+		padding-right 12px
+
+	&__avatar
+		max-width 400px
+		overflow hidden
+		flex 1
+		+r($tL)
+			margin-top 10px
+			margin-bottom 16px
+			max-width 244px
+		+r($tM)
+			max-width 100%
+			flex auto
+			order -1
+		img
+			respimg()
+
+
+	&__bottom
+		display flex
+		flex-flow row wrap
+		justify-content space-between
+		+r($tL)
+			display block
+	&__col
+		margin-right 30px
+		+r($tL)
+			margin-right 0
+		&:last-child
+			margin-right 0
+			flex 1
+
+	&__comments
+		max-width 410px
+		+r($tL)
+			margin-bottom 30px
+			max-width 100%
+			width 100%
+	&__news
+		margin-bottom 18px
+		max-width 860px
+		+r($tL)
+			margin-bottom 30px
+			max-width 100%
+			width 100%
+
+
+	&__videos
+		+r($tL)
+			max-width 100%
+			width 100%
