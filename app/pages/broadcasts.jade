@@ -1,4 +1,4 @@
-extends /blocks/layout/layout-sub-persons
+extends /blocks/layout/layout-sub-broadcasts
 
 include /blocks/header/header
 include /blocks/main/main
@@ -32,8 +32,21 @@ block content
 			//- 	+breadcrumbs-cat()
 			.main__w
 				+content().main__content
-					+category-broadcasts().main__category
+					//- +category-broadcasts()
+					section.category.main__category
+						.main__in
+							header.category__header
+								h1.category__title.title.title_full Трансляции
+								//- a.category__button.button.button_form(href="#") Прислать видео
+							.category__text
+								p Сайт Piter.TV предлагает всем посетителям последние новости России и мира. Граждане нашей страны, проживающие в любом городе, имеют право знать обо всех важных событиях, которые происходят в государстве, будь то принятие нового закона или выступление звезды мирового уровня. <a class="category__text-more" href="#">Подробнее</a>
+
+						.category__broadcasts
+							.main__in
+								+broadcasts()
+
 					+pagination().main__pagination
+
 				+sidebar().sidebar__cat.main__sidebar
 					+sidenav-videos().sidebar__row.sidenav_wide
 					+poll-side-videos().sidebar__row.poll_s-wide

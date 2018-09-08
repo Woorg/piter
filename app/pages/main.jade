@@ -1,0 +1,82 @@
+extends /blocks/layout/layout-default
+
+include /blocks/header/header
+include /blocks/main/main
+include /blocks/section/section
+
+include /blocks/news-article/news-article
+include /blocks/day-pic/day-pic
+include /blocks/latest-news/latest-news
+include /blocks/map/map
+include /blocks/chanels/chanels
+include /blocks/where/where
+include /blocks/polls/polls
+include /blocks/broadcast/broadcast
+include /blocks/u-video/u-video
+include /blocks/movie/movie
+
+
+
+include /blocks/footer/footer
+
+
+block head
+	- var pageTitle = 'Piter.tv - Все, что интересно!';
+
+block content
+	+header()
+	+main()
+		.main__news-article
+			.main__in
+				+news-article()
+
+		.main__day-pic
+			.main__in
+				+day-pic()
+
+		.main__latest-news
+			.main__in
+				+latest-news()
+
+		.main__map
+			section.map
+				.main__in
+					.map__top
+						h2.map__title Интерактивная карта города
+						a.map__all-news(href="#")
+							+icon('arrow-right', true).map__all-icon
+							| Все новости
+				.map__map-w
+					.main__in
+						.map__object-w
+							#map.map__object
+
+
+
+				//- +map()
+
+		.main__chanels
+			.main__in
+				+chanels()
+
+		.main__where
+			.main__in
+				+where()
+
+		.main__polls
+			.main__in
+				+polls()
+
+		.main__broadcast
+			.main__in
+				+broadcast()
+
+		.main__u-video
+			.main__in
+				+u-video()
+
+		.main__movie
+			.main__in
+				+movie()
+
+	+footer()

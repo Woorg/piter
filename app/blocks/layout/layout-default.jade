@@ -8,7 +8,33 @@ html(lang='ru')
 	include ../head/head
 	+page
 		block content
+
+		//- script(src="assets/scripts/jquery.min.js")
+		//- script(src="assets/scripts/owl.carousel.min.js")
+		//- script(src="assets/scripts/owl-scrollbar.js")
+
 		+scripts(['//maps.googleapis.com/maps/api/js?key=AIzaSyAhZzO9IX_HC9UNK7zprYBqGYPCzTI8nPE&callback=initMap', 'app.min.js'])
+
+		//- script.
+		//- 	$(function() {
+
+		//- 		$('.where__day-list').owlCarousel({
+		//- 			items: 3,
+		//- 			nav: true,
+		//- 			scrollBar: true,
+		//- 			scrollWrapId : "owl-carousel-scrollWrap",
+		//- 			scrollBarClass : "owl-carousel-scrollBar"
+		//- 		});
+
+		//- 		var customScroll = new customSliderScroll({
+		//- 			slider: '.where__day-list',
+		//- 			container: '.js-custom-pagination',
+		//- 			anchor: 'span'
+		//- 		});
+
+		//- 	});
+
+
 
 		script.
 			var map;

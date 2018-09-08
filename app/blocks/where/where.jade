@@ -9,81 +9,80 @@ mixin where()
 				| Все новости
 
 		.where__body
-			ul.where__days
-				li.where__days-item
+			.where__days
+				.where__days-item
 					.where__day
 						.where__day-w
 							.where__day-val 14.02
 							.where__day-t сегодня
 
-					.where__day-list-w
+					.where__day-list-w.wrap
 
-						#where__day-basic-1.where__day-frame
+						#where__day-basic-1.where__day-frame.frame
 
-							ul.where__day-list
-								li.where__day-item
+							.where__day-list
+								.where__day-item
 									a.where__day-link(href="#")
 										.where__day-img
 											img(src="assets/images/content/theater-img-1.jpg", alt="")
 											.where__day-badge 00:02
 										.where__day-title Спектакль "Любовные кружева"
-								li.where__day-item
+								.where__day-item
 									a.where__day-link(href="#")
 										.where__day-img
 											img(src="assets/images/content/theater-img-2.jpg", alt="")
 											.where__day-badge 00:02
 										.where__day-title Спектакль "Париж для двоих"
-								li.where__day-item
+								.where__day-item
 									a.where__day-link(href="#")
 										.where__day-img
 											img(src="assets/images/content/theater-img-3.jpg", alt="")
 											.where__day-badge 00:02
 										.where__day-title Спектакль "Я боюсь любви"
-								li.where__day-item
+								.where__day-item
 									a.where__day-link(href="#")
 										.where__day-img
 											img(src="assets/images/content/theater-img-4.jpg", alt="")
 											.where__day-badge 00:02
 										.where__day-title Спектакль "Преступление и наказание"
-								li.where__day-item
+								.where__day-item
 									a.where__day-link(href="#")
 										.where__day-img
 											img(src="assets/images/content/theater-img-5.jpg", alt="")
 											.where__day-badge 00:02
 										.where__day-title Спектакль "Преступление и наказание"
-								li.where__day-item
+								.where__day-item
 									a.where__day-link(href="#")
 										.where__day-img
 											img(src="assets/images/content/theater-img-6.jpg", alt="")
 											.where__day-badge 00:02
 										.where__day-title Спектакль "Преступление и наказание"
-								li.where__day-item
+								.where__day-item
 									a.where__day-link(href="#")
 										.where__day-img
 											img(src="assets/images/content/theater-img-5.jpg", alt="")
 											.where__day-badge 00:02
 										.where__day-title Спектакль "Преступление и наказание"
-								li.where__day-item
+								.where__day-item
 									a.where__day-link(href="#")
 										.where__day-img
 											img(src="assets/images/content/theater-img-6.jpg", alt="")
 											.where__day-badge 00:02
 										.where__day-title Спектакль "Преступление и наказание"
-								li.where__day-item
+								.where__day-item
 									a.where__day-link(href="#")
 										.where__day-img
 											img(src="assets/images/content/theater-img-6.jpg", alt="")
 											.where__day-badge 00:02
 										.where__day-title Спектакль "Преступление и наказание"
 
-						.where__day-scrollbar
-							.where__day-handle
-								.where__day-mousearea
-
+						.where__day-scrollbar.scrollbar
+							.where__day-handle.handle
+								.where__day-mousearea.mousearea
 
 						.where__day-controls
-							//- button.where__day-button.where__day-prev
-								//- +icon('arrow-right', true).where__day-button-icon
+							button.where__day-button.where__day-prev
+								+icon('arrow-right', true).where__day-button-icon
 
 							button.where__day-button.where__day-next
 								+icon('arrow-right', true).where__day-button-icon
@@ -97,127 +96,152 @@ mixin where()
 
 					.where__day-list-w
 
-						#where__day-basic-2.where__day-frame
+						#where__day-basic-2.where__day-frame.frame
 
-							ul.where__day-list
-								li.where__day-item
+							.where__day-list
+								.where__day-item
 									a.where__day-link(href="#")
 										.where__day-img
 											img(src="assets/images/content/theater-img-1.jpg", alt="")
 											.where__day-badge 00:02
 										.where__day-title Спектакль "Любовные кружева"
-								li.where__day-item
+								.where__day-item
 									a.where__day-link(href="#")
 										.where__day-img
 											img(src="assets/images/content/theater-img-2.jpg", alt="")
 											.where__day-badge 00:02
 										.where__day-title Спектакль "Париж для двоих"
-								li.where__day-item
+								.where__day-item
 									a.where__day-link(href="#")
 										.where__day-img
 											img(src="assets/images/content/theater-img-3.jpg", alt="")
 											.where__day-badge 00:02
 										.where__day-title Спектакль "Я боюсь любви"
-
-
-						.where__day-scrollbar
-							.where__day-handle
-								.where__day-mousearea
-
-
-						.where__day-controls
-							button.where__day-button.where__day-next
-								+icon('arrow-right', true).where__day-button-icon
-
-
-				li.where__days-item
-					.where__day
-						.where__day-w
-							.where__day-val 18.02
-							.where__day-t воскресенье
-
-					.where__day-list-w
-
-						#where__day-basic-3.where__day-frame
-
-							ul.where__day-list
-								li.where__day-item
-									a.where__day-link(href="#")
-										.where__day-img
-											img(src="assets/images/content/theater-img-1.jpg", alt="")
-											.where__day-badge 00:02
-										.where__day-title Спектакль "Любовные кружева"
-
-
-						.where__day-scrollbar
-							.where__day-handle
-								.where__day-mousearea
-
-						.where__day-controls
-							button.where__day-button.where__day-next
-								+icon('arrow-right', true).where__day-button-icon
-
-
-
-				li.where__days-item
-					.where__day
-						.where__day-w
-							.where__day-val 18.02
-							.where__day-t воскресенье
-
-					.where__day-list-w
-
-
-
-						#where__day-basic-4.where__day-frame
-
-							ul.where__day-list
-								li.where__day-item
-									a.where__day-link(href="#")
-										.where__day-img
-											img(src="assets/images/content/theater-img-1.jpg", alt="")
-											.where__day-badge 00:02
-										.where__day-title Спектакль "Любовные кружева"
-								li.where__day-item
-									a.where__day-link(href="#")
-										.where__day-img
-											img(src="assets/images/content/theater-img-2.jpg", alt="")
-											.where__day-badge 00:02
-										.where__day-title Спектакль "Париж для двоих"
-								li.where__day-item
-									a.where__day-link(href="#")
-										.where__day-img
-											img(src="assets/images/content/theater-img-3.jpg", alt="")
-											.where__day-badge 00:02
-										.where__day-title Спектакль "Я боюсь любви"
-								li.where__day-item
+								.where__day-item
 									a.where__day-link(href="#")
 										.where__day-img
 											img(src="assets/images/content/theater-img-4.jpg", alt="")
 											.where__day-badge 00:02
 										.where__day-title Спектакль "Преступление и наказание"
-								li.where__day-item
+								.where__day-item
 									a.where__day-link(href="#")
 										.where__day-img
 											img(src="assets/images/content/theater-img-5.jpg", alt="")
 											.where__day-badge 00:02
 										.where__day-title Спектакль "Преступление и наказание"
-								li.where__day-item
+								.where__day-item
+									a.where__day-link(href="#")
+										.where__day-img
+											img(src="assets/images/content/theater-img-6.jpg", alt="")
+											.where__day-badge 00:02
+										.where__day-title Спектакль "Преступление и наказание"
+								.where__day-item
+									a.where__day-link(href="#")
+										.where__day-img
+											img(src="assets/images/content/theater-img-5.jpg", alt="")
+											.where__day-badge 00:02
+										.where__day-title Спектакль "Преступление и наказание"
+								.where__day-item
+									a.where__day-link(href="#")
+										.where__day-img
+											img(src="assets/images/content/theater-img-6.jpg", alt="")
+											.where__day-badge 00:02
+										.where__day-title Спектакль "Преступление и наказание"
+								.where__day-item
 									a.where__day-link(href="#")
 										.where__day-img
 											img(src="assets/images/content/theater-img-6.jpg", alt="")
 											.where__day-badge 00:02
 										.where__day-title Спектакль "Преступление и наказание"
 
-						.where__day-scrollbar
-							.where__day-handle
-								.where__day-mousearea
+						.where__day-scrollbar.scrollbar
+							.where__day-handle.handle
+								.where__day-mousearea.mousearea
 
 						.where__day-controls
+							button.where__day-button.where__day-prev
+								+icon('arrow-right', true).where__day-button-icon
+
 							button.where__day-button.where__day-next
 								+icon('arrow-right', true).where__day-button-icon
 
 
+				li.where__days-item
+					.where__day
+						.where__day-w
+							.where__day-val 18.02
+							.where__day-t воскресенье
+
+					.where__day-list-w
+
+						#where__day-basic-3.where__day-frame.frame
+
+							.where__day-list
+								.where__day-item
+									a.where__day-link(href="#")
+										.where__day-img
+											img(src="assets/images/content/theater-img-1.jpg", alt="")
+											.where__day-badge 00:02
+										.where__day-title Спектакль "Любовные кружева"
+								.where__day-item
+									a.where__day-link(href="#")
+										.where__day-img
+											img(src="assets/images/content/theater-img-2.jpg", alt="")
+											.where__day-badge 00:02
+										.where__day-title Спектакль "Париж для двоих"
+								.where__day-item
+									a.where__day-link(href="#")
+										.where__day-img
+											img(src="assets/images/content/theater-img-3.jpg", alt="")
+											.where__day-badge 00:02
+										.where__day-title Спектакль "Я боюсь любви"
+								.where__day-item
+									a.where__day-link(href="#")
+										.where__day-img
+											img(src="assets/images/content/theater-img-4.jpg", alt="")
+											.where__day-badge 00:02
+										.where__day-title Спектакль "Преступление и наказание"
+								.where__day-item
+									a.where__day-link(href="#")
+										.where__day-img
+											img(src="assets/images/content/theater-img-5.jpg", alt="")
+											.where__day-badge 00:02
+										.where__day-title Спектакль "Преступление и наказание"
+								.where__day-item
+									a.where__day-link(href="#")
+										.where__day-img
+											img(src="assets/images/content/theater-img-6.jpg", alt="")
+											.where__day-badge 00:02
+										.where__day-title Спектакль "Преступление и наказание"
+								.where__day-item
+									a.where__day-link(href="#")
+										.where__day-img
+											img(src="assets/images/content/theater-img-5.jpg", alt="")
+											.where__day-badge 00:02
+										.where__day-title Спектакль "Преступление и наказание"
+								.where__day-item
+									a.where__day-link(href="#")
+										.where__day-img
+											img(src="assets/images/content/theater-img-6.jpg", alt="")
+											.where__day-badge 00:02
+										.where__day-title Спектакль "Преступление и наказание"
+								.where__day-item
+									a.where__day-link(href="#")
+										.where__day-img
+											img(src="assets/images/content/theater-img-6.jpg", alt="")
+											.where__day-badge 00:02
+										.where__day-title Спектакль "Преступление и наказание"
+
+						.where__day-scrollbar.scrollbar
+							.where__day-handle.handle
+								.where__day-mousearea.mousearea
+
+						.where__day-controls
+							button.where__day-button.where__day-prev
+								+icon('arrow-right', true).where__day-button-icon
+
+							button.where__day-button.where__day-next
+								+icon('arrow-right', true).where__day-button-icon
 
 
 				li.where__days-item
@@ -229,51 +253,150 @@ mixin where()
 					.where__day-list-w
 
 
-						#where__day-basic-5.where__day-frame
 
-							ul.where__day-list
-								li.where__day-item
+						#where__day-basic-4.where__day-frame.frame
+
+							.where__day-list
+								.where__day-item
 									a.where__day-link(href="#")
 										.where__day-img
 											img(src="assets/images/content/theater-img-1.jpg", alt="")
 											.where__day-badge 00:02
 										.where__day-title Спектакль "Любовные кружева"
-								li.where__day-item
+								.where__day-item
 									a.where__day-link(href="#")
 										.where__day-img
 											img(src="assets/images/content/theater-img-2.jpg", alt="")
 											.where__day-badge 00:02
 										.where__day-title Спектакль "Париж для двоих"
-								li.where__day-item
+								.where__day-item
 									a.where__day-link(href="#")
 										.where__day-img
 											img(src="assets/images/content/theater-img-3.jpg", alt="")
 											.where__day-badge 00:02
 										.where__day-title Спектакль "Я боюсь любви"
-								li.where__day-item
+								.where__day-item
 									a.where__day-link(href="#")
 										.where__day-img
 											img(src="assets/images/content/theater-img-4.jpg", alt="")
 											.where__day-badge 00:02
 										.where__day-title Спектакль "Преступление и наказание"
-								li.where__day-item
+								.where__day-item
 									a.where__day-link(href="#")
 										.where__day-img
 											img(src="assets/images/content/theater-img-5.jpg", alt="")
 											.where__day-badge 00:02
 										.where__day-title Спектакль "Преступление и наказание"
-								li.where__day-item
+								.where__day-item
+									a.where__day-link(href="#")
+										.where__day-img
+											img(src="assets/images/content/theater-img-6.jpg", alt="")
+											.where__day-badge 00:02
+										.where__day-title Спектакль "Преступление и наказание"
+								.where__day-item
+									a.where__day-link(href="#")
+										.where__day-img
+											img(src="assets/images/content/theater-img-5.jpg", alt="")
+											.where__day-badge 00:02
+										.where__day-title Спектакль "Преступление и наказание"
+								.where__day-item
+									a.where__day-link(href="#")
+										.where__day-img
+											img(src="assets/images/content/theater-img-6.jpg", alt="")
+											.where__day-badge 00:02
+										.where__day-title Спектакль "Преступление и наказание"
+								.where__day-item
 									a.where__day-link(href="#")
 										.where__day-img
 											img(src="assets/images/content/theater-img-6.jpg", alt="")
 											.where__day-badge 00:02
 										.where__day-title Спектакль "Преступление и наказание"
 
-						.where__day-scrollbar
-							.where__day-handle
-								.where__day-mousearea
+						.where__day-scrollbar.scrollbar
+							.where__day-handle.handle
+								.where__day-mousearea.mousearea
 
 						.where__day-controls
+							button.where__day-button.where__day-prev
+								+icon('arrow-right', true).where__day-button-icon
+
+							button.where__day-button.where__day-next
+								+icon('arrow-right', true).where__day-button-icon
+
+				li.where__days-item
+					.where__day
+						.where__day-w
+							.where__day-val 18.02
+							.where__day-t воскресенье
+
+					.where__day-list-w
+
+						#where__day-basic-5.where__day-frame.frame
+
+							.where__day-list
+								.where__day-item
+									a.where__day-link(href="#")
+										.where__day-img
+											img(src="assets/images/content/theater-img-1.jpg", alt="")
+											.where__day-badge 00:02
+										.where__day-title Спектакль "Любовные кружева"
+								.where__day-item
+									a.where__day-link(href="#")
+										.where__day-img
+											img(src="assets/images/content/theater-img-2.jpg", alt="")
+											.where__day-badge 00:02
+										.where__day-title Спектакль "Париж для двоих"
+								.where__day-item
+									a.where__day-link(href="#")
+										.where__day-img
+											img(src="assets/images/content/theater-img-3.jpg", alt="")
+											.where__day-badge 00:02
+										.where__day-title Спектакль "Я боюсь любви"
+								.where__day-item
+									a.where__day-link(href="#")
+										.where__day-img
+											img(src="assets/images/content/theater-img-4.jpg", alt="")
+											.where__day-badge 00:02
+										.where__day-title Спектакль "Преступление и наказание"
+								.where__day-item
+									a.where__day-link(href="#")
+										.where__day-img
+											img(src="assets/images/content/theater-img-5.jpg", alt="")
+											.where__day-badge 00:02
+										.where__day-title Спектакль "Преступление и наказание"
+								.where__day-item
+									a.where__day-link(href="#")
+										.where__day-img
+											img(src="assets/images/content/theater-img-6.jpg", alt="")
+											.where__day-badge 00:02
+										.where__day-title Спектакль "Преступление и наказание"
+								.where__day-item
+									a.where__day-link(href="#")
+										.where__day-img
+											img(src="assets/images/content/theater-img-5.jpg", alt="")
+											.where__day-badge 00:02
+										.where__day-title Спектакль "Преступление и наказание"
+								.where__day-item
+									a.where__day-link(href="#")
+										.where__day-img
+											img(src="assets/images/content/theater-img-6.jpg", alt="")
+											.where__day-badge 00:02
+										.where__day-title Спектакль "Преступление и наказание"
+								.where__day-item
+									a.where__day-link(href="#")
+										.where__day-img
+											img(src="assets/images/content/theater-img-6.jpg", alt="")
+											.where__day-badge 00:02
+										.where__day-title Спектакль "Преступление и наказание"
+
+						.where__day-scrollbar.scrollbar
+							.where__day-handle.handle
+								.where__day-mousearea.mousearea
+
+						.where__day-controls
+							button.where__day-button.where__day-prev
+								+icon('arrow-right', true).where__day-button-icon
+
 							button.where__day-button.where__day-next
 								+icon('arrow-right', true).where__day-button-icon
 

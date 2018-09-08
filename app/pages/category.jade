@@ -1,4 +1,4 @@
-extends /blocks/layout/layout-sub
+extends /blocks/layout/layout-sub-category
 
 include /blocks/header/header
 include /blocks/main/main
@@ -23,10 +23,282 @@ block content
 	+main()
 		.main__in
 			.main__breadcrumbs
-				+breadcrumbs-cat()
+				.main__in
+					+breadcrumbs-cat()
 			.main__w
 				+content().main__content
-					+category()
+					//- +category()
+					section.category.main__category
+						.main__in
+							header.category__header
+								h1.category__title.title.title_full Новости России
+							.category__text
+								p Сайт Piter.TV предлагает всем посетителям последние новости России и мира. Граждане нашей страны, проживающие в любом городе, имеют право знать обо всех важных событиях, которые происходят в государстве, будь то принятие нового закона или выступление звезды мирового уровня. <a href="#">Подробнее</a>
+
+						.category__videos
+							.main__in
+								ul.category__list
+									li.category__item
+										article.news-article.news-article_category
+											a.news-article__link(href="#" title='Рэпер Мот о своем самом романтическом свидании')
+												.news-article__image
+													img(src="assets/images/content/category/category-img-1.jpg", alt="")
+													+icon('video-icon', true).news-article__video-icon
+												.news-article__w
+													.news-article__title Сборная России проиграла Словакии, хотя выигрывала 2:0
+													.news-article__text Сборная России по хоккею стартовала на Олимпиаде в Южной Корее.
+													.news-article__meta
+														.news-article__date
+															+icon('date-icon', true).news-article__date-icon
+															| Вчера 18:56
+														.news-article__views
+															+icon('views-icon', true).news-article__views-icon
+															| 256
+														.news-article__comments
+															+icon('comments-icon', true).news-article__comments-icon
+															| 12
+
+									li.category__item
+										article.news-article.news-article_category
+											a.news-article__link(href="#" title='Рэпер Мот о своем самом романтическом свидании')
+												.news-article__image
+													img(src="assets/images/content/category/category-img-2.jpg", alt="")
+													+icon('video-icon', true).news-article__video-icon
+												.news-article__w
+													.news-article__title Пхёнчхан: В месте проведения ОИ 2018 начался ураган
+													.news-article__text В сети появилось видео из Олимпийской деревни.
+													.news-article__meta
+														.news-article__date
+															+icon('date-icon', true).news-article__date-icon
+															| Вчера 18:56
+														.news-article__views
+															+icon('views-icon', true).news-article__views-icon
+															| 256
+														.news-article__comments
+															+icon('comments-icon', true).news-article__comments-icon
+															| 12
+
+									li.category__item
+										article.news-article.news-article_category
+											a.news-article__link(href="#" title='Рэпер Мот о своем самом романтическом свидании')
+												.news-article__image
+													img(src="assets/images/content/category/category-img-3.jpg", alt="")
+													+icon('video-icon', true).news-article__video-icon
+												.news-article__w
+													.news-article__title Российские фигуристы Тарасова и Морозов заняли второе место за короткую программу
+													.news-article__text Российские фигуристы получили первое "серебро" в Южной Корее.
+													.news-article__meta
+														.news-article__date
+															+icon('date-icon', true).news-article__date-icon
+															| Вчера 18:56
+														.news-article__views
+															+icon('views-icon', true).news-article__views-icon
+															| 256
+														.news-article__comments
+															+icon('comments-icon', true).news-article__comments-icon
+															| 12
+
+									li.category__item
+										article.news-article.news-article_category
+											a.news-article__link(href="#" title='Рэпер Мот о своем самом романтическом свидании')
+												.news-article__image
+													img(src="assets/images/content/category/category-img-4.jpg", alt="")
+													+icon('video-icon', true).news-article__video-icon
+												.news-article__w
+													.news-article__title Олимпиада в Пхенчхане 2018: расписание соревнований на 13 февраля
+													.news-article__text Расписание Олимпийских игр в Пхёнчхане 13 февраля.
+													.news-article__meta
+														.news-article__date
+															+icon('date-icon', true).news-article__date-icon
+															| Вчера 18:56
+														.news-article__views
+															+icon('views-icon', true).news-article__views-icon
+															| 256
+														.news-article__comments
+															+icon('comments-icon', true).news-article__comments-icon
+															| 12
+
+									li.category__item
+										article.news-article.news-article_category
+											a.news-article__link(href="#" title='Рэпер Мот о своем самом романтическом свидании')
+												.news-article__image
+													img(src="assets/images/content/category/category-img-1.jpg", alt="")
+													+icon('video-icon', true).news-article__video-icon
+												.news-article__w
+													.news-article__title Сборная России проиграла Словакии, хотя выигрывала 2:0
+													.news-article__text Сборная России по хоккею стартовала на Олимпиаде в Южной Корее.
+													.news-article__meta
+														.news-article__date
+															+icon('date-icon', true).news-article__date-icon
+															| Вчера 18:56
+														.news-article__views
+															+icon('views-icon', true).news-article__views-icon
+															| 256
+														.news-article__comments
+															+icon('comments-icon', true).news-article__comments-icon
+															| 12
+
+									li.category__item
+										article.news-article.news-article_category
+											a.news-article__link(href="#" title='Рэпер Мот о своем самом романтическом свидании')
+												.news-article__image
+													img(src="assets/images/content/category/category-img-1.jpg", alt="")
+													+icon('video-icon', true).news-article__video-icon
+												.news-article__w
+													.news-article__title Сборная России проиграла Словакии, хотя выигрывала 2:0
+													.news-article__text Сборная России по хоккею стартовала на Олимпиаде в Южной Корее.
+													.news-article__meta
+														.news-article__date
+															+icon('date-icon', true).news-article__date-icon
+															| Вчера 18:56
+														.news-article__views
+															+icon('views-icon', true).news-article__views-icon
+															| 256
+														.news-article__comments
+															+icon('comments-icon', true).news-article__comments-icon
+															| 12
+
+									li.category__item
+										article.news-article.news-article_category
+											a.news-article__link(href="#" title='Рэпер Мот о своем самом романтическом свидании')
+												.news-article__image
+													img(src="assets/images/content/category/category-img-1.jpg", alt="")
+													+icon('video-icon', true).news-article__video-icon
+												.news-article__w
+													.news-article__title Сборная России проиграла Словакии, хотя выигрывала 2:0
+													.news-article__text Сборная России по хоккею стартовала на Олимпиаде в Южной Корее.
+													.news-article__meta
+														.news-article__date
+															+icon('date-icon', true).news-article__date-icon
+															| Вчера 18:56
+														.news-article__views
+															+icon('views-icon', true).news-article__views-icon
+															| 256
+														.news-article__comments
+															+icon('comments-icon', true).news-article__comments-icon
+															| 12
+
+									li.category__item
+										article.news-article.news-article_category
+											a.news-article__link(href="#" title='Рэпер Мот о своем самом романтическом свидании')
+												.news-article__image
+													img(src="assets/images/content/category/category-img-1.jpg", alt="")
+													+icon('video-icon', true).news-article__video-icon
+												.news-article__w
+													.news-article__title Сборная России проиграла Словакии, хотя выигрывала 2:0
+													.news-article__text Сборная России по хоккею стартовала на Олимпиаде в Южной Корее.
+													.news-article__meta
+														.news-article__date
+															+icon('date-icon', true).news-article__date-icon
+															| Вчера 18:56
+														.news-article__views
+															+icon('views-icon', true).news-article__views-icon
+															| 256
+														.news-article__comments
+															+icon('comments-icon', true).news-article__comments-icon
+															| 12
+
+									li.category__item
+										article.news-article.news-article_category
+											a.news-article__link(href="#" title='Рэпер Мот о своем самом романтическом свидании')
+												.news-article__image
+													img(src="assets/images/content/category/category-img-1.jpg", alt="")
+													+icon('video-icon', true).news-article__video-icon
+												.news-article__w
+													.news-article__title Сборная России проиграла Словакии, хотя выигрывала 2:0
+													.news-article__text Сборная России по хоккею стартовала на Олимпиаде в Южной Корее.
+													.news-article__meta
+														.news-article__date
+															+icon('date-icon', true).news-article__date-icon
+															| Вчера 18:56
+														.news-article__views
+															+icon('views-icon', true).news-article__views-icon
+															| 256
+														.news-article__comments
+															+icon('comments-icon', true).news-article__comments-icon
+															| 12
+
+									li.category__item
+										article.news-article.news-article_category
+											a.news-article__link(href="#" title='Рэпер Мот о своем самом романтическом свидании')
+												.news-article__image
+													img(src="assets/images/content/category/category-img-1.jpg", alt="")
+													+icon('video-icon', true).news-article__video-icon
+												.news-article__w
+													.news-article__title Сборная России проиграла Словакии, хотя выигрывала 2:0
+													.news-article__text Сборная России по хоккею стартовала на Олимпиаде в Южной Корее.
+													.news-article__meta
+														.news-article__date
+															+icon('date-icon', true).news-article__date-icon
+															| Вчера 18:56
+														.news-article__views
+															+icon('views-icon', true).news-article__views-icon
+															| 256
+														.news-article__comments
+															+icon('comments-icon', true).news-article__comments-icon
+															| 12
+									li.category__item
+										article.news-article.news-article_category
+											a.news-article__link(href="#" title='Рэпер Мот о своем самом романтическом свидании')
+												.news-article__image
+													img(src="assets/images/content/category/category-img-1.jpg", alt="")
+													+icon('video-icon', true).news-article__video-icon
+												.news-article__w
+													.news-article__title Сборная России проиграла Словакии, хотя выигрывала 2:0
+													.news-article__text Сборная России по хоккею стартовала на Олимпиаде в Южной Корее.
+													.news-article__meta
+														.news-article__date
+															+icon('date-icon', true).news-article__date-icon
+															| Вчера 18:56
+														.news-article__views
+															+icon('views-icon', true).news-article__views-icon
+															| 256
+														.news-article__comments
+															+icon('comments-icon', true).news-article__comments-icon
+															| 12
+
+									li.category__item
+										article.news-article.news-article_category
+											a.news-article__link(href="#" title='Рэпер Мот о своем самом романтическом свидании')
+												.news-article__image
+													img(src="assets/images/content/category/category-img-1.jpg", alt="")
+													+icon('video-icon', true).news-article__video-icon
+												.news-article__w
+													.news-article__title Сборная России проиграла Словакии, хотя выигрывала 2:0
+													.news-article__text Сборная России по хоккею стартовала на Олимпиаде в Южной Корее.
+													.news-article__meta
+														.news-article__date
+															+icon('date-icon', true).news-article__date-icon
+															| Вчера 18:56
+														.news-article__views
+															+icon('views-icon', true).news-article__views-icon
+															| 256
+														.news-article__comments
+															+icon('comments-icon', true).news-article__comments-icon
+															| 12
+
+									li.category__item
+										article.news-article.news-article_category
+											a.news-article__link(href="#" title='Рэпер Мот о своем самом романтическом свидании')
+												.news-article__image
+													img(src="assets/images/content/category/category-img-1.jpg", alt="")
+													+icon('video-icon', true).news-article__video-icon
+												.news-article__w
+													.news-article__title Сборная России проиграла Словакии, хотя выигрывала 2:0
+													.news-article__text Сборная России по хоккею стартовала на Олимпиаде в Южной Корее.
+													.news-article__meta
+														.news-article__date
+															+icon('date-icon', true).news-article__date-icon
+															| Вчера 18:56
+														.news-article__views
+															+icon('views-icon', true).news-article__views-icon
+															| 256
+														.news-article__comments
+															+icon('comments-icon', true).news-article__comments-icon
+															| 12
+
+
+
 					+pagination().main__pagination
 				+sidebar().sidebar__cat.main__sidebar
 					+sidenav().sidebar__row.sidenav_wide

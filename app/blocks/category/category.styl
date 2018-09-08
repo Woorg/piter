@@ -1,4 +1,13 @@
 .category
+	.main__in
+		padding-right 0
+		padding-left 0
+		max-width 100%
+		+r($tM)
+			padding-left 8px
+			padding-right 8px
+			max-width 320px
+
 	&__header
 		border-bottom 1px solid #f3f3f3
 		padding-bottom 1px
@@ -70,11 +79,18 @@
 		+r($tM)
 			border-top none
 			padding-top 0
+			padding-right 0
+			padding-left 0
+		.main__in
+			+r($tM)
+				// padding-right 0
+				// padding-left 0
+				max-width 100%
 
 	&__list
 		margin-bottom 43px
 		+r($tM)
-			margin-bottom 28px
+			margin-bottom 0
 
 	&__item
 		border-top 1px solid #f3f3f3
@@ -229,6 +245,12 @@
 		padding-right 24px
 		width 240px
 
+	&__broadcasts
+		.main__in
+			+r($tM)
+				padding-right 0
+				padding-left 0
+				max-width 100%
 
 
 .category_userarea
@@ -258,6 +280,9 @@
 		.news-article__image
 			max-width 192px
 			width 192px
+			+r($tM)
+				max-width 100%
+				width 100%
 
 	.news-article__w
 		flex 1
@@ -268,7 +293,11 @@
 	.u-video__list
 		margin-left 0
 	.u-video__item
+		margin-left 0
+		margin-right 16px
 		width 192px
 		width ratio-percentage(190,864)
 		&:last-child
 			margin-right 0
+		+r($tL)
+			margin-right 16px

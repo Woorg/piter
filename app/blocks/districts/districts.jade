@@ -4,104 +4,106 @@ include ../videos/videos
 
 mixin districts()
 	section.districts.category&attributes(attributes)
-		header.districts__header.category__header
-			h1.districts__title.category__title.title.title_full Районы
+		.main__in
+			header.districts__header.category__header
+				h1.districts__title.category__title.title.title_full Районы
+
+			.districts__list-w(data-district-choose="Выберите район")
+				ul.districts__list
+					li.districts__item
+						a.districts__link(href="#") Санкт-Петербург
+					li.districts__item
+						a.districts__link(href="#") Адмиралтейский
+					li.districts__item
+						a.districts__link(href="#") Василеостровский
+					li.districts__item
+						a.districts__link(href="#") Выборгский
+					li.districts__item
+						a.districts__link(href="#") Калининский
+					li.districts__item
+						a.districts__link(href="#") Кировский
+					li.districts__item
+						a.districts__link(href="#") Колпинский
+					li.districts__item
+						a.districts__link(href="#") Красногвардейский
+					li.districts__item
+						a.districts__link(href="#") Красносельский
+					li.districts__item
+						a.districts__link(href="#") Кронштадтский
+					li.districts__item
+						a.districts__link(href="#") Курортный
+					li.districts__item
+						a.districts__link(href="#") Московский
+					li.districts__item
+						a.districts__link(href="#") Невский
+					li.districts__item
+						a.districts__link(href="#") Петроградский
+					li.districts__item
+						a.districts__link(href="#") Петродворцовый
+					li.districts__item
+						a.districts__link(href="#") Приморский
+					li.districts__item
+						a.districts__link(href="#") Пушкинский
+					li.districts__item
+						a.districts__link(href="#") Фрунзенский
+					li.districts__item
+						a.districts__link(href="#") Центральный
+
+			header.districts__header.category__header
+				h2.districts__title.title.title_full Интерактивная карта города
+				a.districts__all-news.category__all-news(href="#")
+					+icon('arrow-right', true).category__all-icon
+					| Все новости
 
 
-		.districts__list-w(data-district-choose="Выберите район")
-			ul.districts__list
-				li.districts__item
-					a.districts__link(href="#") Санкт-Петербург
-				li.districts__item
-					a.districts__link(href="#") Адмиралтейский
-				li.districts__item
-					a.districts__link(href="#") Василеостровский
-				li.districts__item
-					a.districts__link(href="#") Выборгский
-				li.districts__item
-					a.districts__link(href="#") Калининский
-				li.districts__item
-					a.districts__link(href="#") Кировский
-				li.districts__item
-					a.districts__link(href="#") Колпинский
-				li.districts__item
-					a.districts__link(href="#") Красногвардейский
-				li.districts__item
-					a.districts__link(href="#") Красносельский
-				li.districts__item
-					a.districts__link(href="#") Кронштадтский
-				li.districts__item
-					a.districts__link(href="#") Курортный
-				li.districts__item
-					a.districts__link(href="#") Московский
-				li.districts__item
-					a.districts__link(href="#") Невский
-				li.districts__item
-					a.districts__link(href="#") Петроградский
-				li.districts__item
-					a.districts__link(href="#") Петродворцовый
-				li.districts__item
-					a.districts__link(href="#") Приморский
-				li.districts__item
-					a.districts__link(href="#") Пушкинский
-				li.districts__item
-					a.districts__link(href="#") Фрунзенский
-				li.districts__item
-					a.districts__link(href="#") Центральный
+		.districts__map-w
+			.main__in
+				.districts__map-object
 
-		header.districts__header.category__header
-			h2.districts__title.title.title_full Интерактивная карта города
-
-			a.districts__all-news.category__all-news(href="#")
-				+icon('arrow-right', true).category__all-icon
-				| Все новости
-
-		.districts__map-object
-
-			ul.districts__map-list#map-side
-				li.districts__map-item
-					a.districts__map-link(href="#")
-						img(src="assets/images/general/map-icons/map-list-feed.svg", alt="")
-						span Лента новостей
-				li.districts__map-item
-					a.districts__map-link(href="#")
-						img(src="assets/images/general/map-icons/map-list-pharm.svg", alt="")
-						span Адреса петербурга
-				li.districts__map-item
-					a.districts__map-link(href="#")
-						img(src="assets/images/general/map-icons/map-list-pharm.svg", alt="")
-						span Рестораны, кафе
-				li.districts__map-item
-					a.districts__map-link(href="#")
-						img(src="assets/images/general/map-icons/map-list-pharm.svg", alt="")
-						span Развлечения
-				li.districts__map-item
-					a.districts__map-link(href="#")
-						img(src="assets/images/general/map-icons/map-list-pharm.svg", alt="")
-						span Спорт, туризм, отдых
-				li.districts__map-item
-					a.districts__map-link(href="#")
-						img(src="assets/images/general/map-icons/map-list-pharm.svg", alt="")
-						span Фитнес
-				li.districts__map-item
-					a.districts__map-link(href="#")
-						img(src="assets/images/general/map-icons/map-list-pharm.svg", alt="")
-						span Кинотеатры
-				li.districts__map-item
-					a.districts__map-link(href="#")
-						img(src="assets/images/general/map-icons/map-list-pharm.svg", alt="")
-						span Музеи
-				li.districts__map-item
-					a.districts__map-link(href="#")
-						img(src="assets/images/general/map-icons/map-list-pharm.svg", alt="")
-						span Театры
-				li.districts__map-item
-					a.districts__map-link(href="#")
-						img(src="assets/images/general/map-icons/map-list-pharm.svg", alt="")
-						span Радары
+					ul.districts__map-list#map-side
+						li.districts__map-item
+							a.districts__map-link(href="#")
+								img(src="assets/images/general/map-icons/map-list-feed.svg", alt="")
+								span Лента новостей
+						li.districts__map-item
+							a.districts__map-link(href="#")
+								img(src="assets/images/general/map-icons/map-list-pharm.svg", alt="")
+								span Адреса петербурга
+						li.districts__map-item
+							a.districts__map-link(href="#")
+								img(src="assets/images/general/map-icons/map-list-pharm.svg", alt="")
+								span Рестораны, кафе
+						li.districts__map-item
+							a.districts__map-link(href="#")
+								img(src="assets/images/general/map-icons/map-list-pharm.svg", alt="")
+								span Развлечения
+						li.districts__map-item
+							a.districts__map-link(href="#")
+								img(src="assets/images/general/map-icons/map-list-pharm.svg", alt="")
+								span Спорт, туризм, отдых
+						li.districts__map-item
+							a.districts__map-link(href="#")
+								img(src="assets/images/general/map-icons/map-list-pharm.svg", alt="")
+								span Фитнес
+						li.districts__map-item
+							a.districts__map-link(href="#")
+								img(src="assets/images/general/map-icons/map-list-pharm.svg", alt="")
+								span Кинотеатры
+						li.districts__map-item
+							a.districts__map-link(href="#")
+								img(src="assets/images/general/map-icons/map-list-pharm.svg", alt="")
+								span Музеи
+						li.districts__map-item
+							a.districts__map-link(href="#")
+								img(src="assets/images/general/map-icons/map-list-pharm.svg", alt="")
+								span Театры
+						li.districts__map-item
+							a.districts__map-link(href="#")
+								img(src="assets/images/general/map-icons/map-list-pharm.svg", alt="")
+								span Радары
 
 
-			#map.districts__map
+					#map.districts__map
 
 
 
@@ -109,117 +111,119 @@ mixin districts()
 
 mixin district()
 	section.districts.category&attributes(attributes)
-		header.districts__header.category__header
-			h1.districts__title.category__title.title.title_full Районы
+		.main__in
+			header.districts__header.category__header
+				h1.districts__title.category__title.title.title_full Районы
 
-		.districts__list-w(data-district-choose="Выберите район")
-			ul.districts__list
-				li.districts__item
-					a.districts__link(href="#") Санкт-Петербург
-				li.districts__item
-					a.districts__link(href="#") Адмиралтейский
-				li.districts__item
-					a.districts__link(href="#") Василеостровский
-				li.districts__item
-					a.districts__link(href="#") Выборгский
-				li.districts__item
-					a.districts__link(href="#") Калининский
-				li.districts__item.districts__item_active
-					a.districts__link(href="#") Кировский
-				li.districts__item
-					a.districts__link(href="#") Колпинский
-				li.districts__item
-					a.districts__link(href="#") Красногвардейский
-				li.districts__item
-					a.districts__link(href="#") Красносельский
-				li.districts__item
-					a.districts__link(href="#") Кронштадтский
-				li.districts__item
-					a.districts__link(href="#") Курортный
-				li.districts__item
-					a.districts__link(href="#") Московский
-				li.districts__item
-					a.districts__link(href="#") Невский
-				li.districts__item
-					a.districts__link(href="#") Петроградский
-				li.districts__item
-					a.districts__link(href="#") Петродворцовый
-				li.districts__item
-					a.districts__link(href="#") Приморский
-				li.districts__item
-					a.districts__link(href="#") Пушкинский
-				li.districts__item
-					a.districts__link(href="#") Фрунзенский
-				li.districts__item
-					a.districts__link(href="#") Центральный
+			.districts__list-w(data-district-choose="Выберите район")
+				ul.districts__list
+					li.districts__item
+						a.districts__link(href="#") Санкт-Петербург
+					li.districts__item
+						a.districts__link(href="#") Адмиралтейский
+					li.districts__item
+						a.districts__link(href="#") Василеостровский
+					li.districts__item
+						a.districts__link(href="#") Выборгский
+					li.districts__item
+						a.districts__link(href="#") Калининский
+					li.districts__item.districts__item_active
+						a.districts__link(href="#") Кировский
+					li.districts__item
+						a.districts__link(href="#") Колпинский
+					li.districts__item
+						a.districts__link(href="#") Красногвардейский
+					li.districts__item
+						a.districts__link(href="#") Красносельский
+					li.districts__item
+						a.districts__link(href="#") Кронштадтский
+					li.districts__item
+						a.districts__link(href="#") Курортный
+					li.districts__item
+						a.districts__link(href="#") Московский
+					li.districts__item
+						a.districts__link(href="#") Невский
+					li.districts__item
+						a.districts__link(href="#") Петроградский
+					li.districts__item
+						a.districts__link(href="#") Петродворцовый
+					li.districts__item
+						a.districts__link(href="#") Приморский
+					li.districts__item
+						a.districts__link(href="#") Пушкинский
+					li.districts__item
+						a.districts__link(href="#") Фрунзенский
+					li.districts__item
+						a.districts__link(href="#") Центральный
 
-		header.districts__header.category__header
-			h2.districts__title.title.title_full Кировский район
+			header.districts__header.category__header
+				h2.districts__title.title.title_full Кировский район
 
-			a.districts__all-news.category__all-news(href="#")
-				+icon('arrow-right', true).category__all-icon
-				| Все новости
+				a.districts__all-news.category__all-news(href="#")
+					+icon('arrow-right', true).category__all-icon
+					| Все новости
 
-		.districts__desc
-			.districts__img
-				img(src="assets/images/content/district/district-leader.jpg", alt="")
-			.districts__text
-				p Кировский район находится на юго-западе Санкт-Петербурга. Назван в честь С. М. Кирова. Имеет выход к берегу Невской губы Финского залива. На севере граница района с Адмиралтейским районом проходит по реке Екатерингофке и площади Стачек, на востоке — с Московским районом — по линии железной дороги на Ломоносов, и на юге — с Красносельским районом — по проспекту Маршала Жукова и реке Красненькой.
-				p По состоянию на 2016 год в Кировском районе проживают 339724 петербуржцев.  Площадь района составляет более 48 квадратных километров.
-				p Администрация Кировского района расположена по адресу проспект Стачек, дом 18. Телефон: 252-30-17
-				p Глава Кировского района - Сергей Владимирович Иванов
-
-
-
-
-
-		.districts__map-object
-
-			ul.districts__map-list#map-side
-				li.districts__map-item
-					a.districts__map-link(href="#")
-						img(src="assets/images/general/map-icons/map-list-feed.svg", alt="")
-						span Лента новостей
-				li.districts__map-item
-					a.districts__map-link(href="#")
-						img(src="assets/images/general/map-icons/map-list-pharm.svg", alt="")
-						span Адреса петербурга
-				li.districts__map-item
-					a.districts__map-link(href="#")
-						img(src="assets/images/general/map-icons/map-list-pharm.svg", alt="")
-						span Рестораны, кафе
-				li.districts__map-item
-					a.districts__map-link(href="#")
-						img(src="assets/images/general/map-icons/map-list-pharm.svg", alt="")
-						span Развлечения
-				li.districts__map-item
-					a.districts__map-link(href="#")
-						img(src="assets/images/general/map-icons/map-list-pharm.svg", alt="")
-						span Спорт, туризм, отдых
-				li.districts__map-item
-					a.districts__map-link(href="#")
-						img(src="assets/images/general/map-icons/map-list-pharm.svg", alt="")
-						span Фитнес
-				li.districts__map-item
-					a.districts__map-link(href="#")
-						img(src="assets/images/general/map-icons/map-list-pharm.svg", alt="")
-						span Кинотеатры
-				li.districts__map-item
-					a.districts__map-link(href="#")
-						img(src="assets/images/general/map-icons/map-list-pharm.svg", alt="")
-						span Музеи
-				li.districts__map-item
-					a.districts__map-link(href="#")
-						img(src="assets/images/general/map-icons/map-list-pharm.svg", alt="")
-						span Театры
-				li.districts__map-item
-					a.districts__map-link(href="#")
-						img(src="assets/images/general/map-icons/map-list-pharm.svg", alt="")
-						span Радары
-
-
-			#map.districts__map
+			.districts__desc
+				.districts__img
+					img(src="assets/images/content/district/district-leader.jpg", alt="")
+				.districts__text
+					p Кировский район находится на юго-западе Санкт-Петербурга. Назван в честь С. М. Кирова. Имеет выход к берегу Невской губы Финского залива. На севере граница района с Адмиралтейским районом проходит по реке Екатерингофке и площади Стачек, на востоке — с Московским районом — по линии железной дороги на Ломоносов, и на юге — с Красносельским районом — по проспекту Маршала Жукова и реке Красненькой.
+					p По состоянию на 2016 год в Кировском районе проживают 339724 петербуржцев.  Площадь района составляет более 48 квадратных километров.
+					p Администрация Кировского района расположена по адресу проспект Стачек, дом 18. Телефон: 252-30-17
+					p Глава Кировского района - Сергей Владимирович Иванов
 
 
 
-		+videos-district().videos_district.districts__videos
+
+		.districts__map-w
+			.main__in
+				.districts__map-object
+
+					ul.districts__map-list#map-side
+						li.districts__map-item
+							a.districts__map-link(href="#")
+								img(src="assets/images/general/map-icons/map-list-feed.svg", alt="")
+								span Лента новостей
+						li.districts__map-item
+							a.districts__map-link(href="#")
+								img(src="assets/images/general/map-icons/map-list-pharm.svg", alt="")
+								span Адреса петербурга
+						li.districts__map-item
+							a.districts__map-link(href="#")
+								img(src="assets/images/general/map-icons/map-list-pharm.svg", alt="")
+								span Рестораны, кафе
+						li.districts__map-item
+							a.districts__map-link(href="#")
+								img(src="assets/images/general/map-icons/map-list-pharm.svg", alt="")
+								span Развлечения
+						li.districts__map-item
+							a.districts__map-link(href="#")
+								img(src="assets/images/general/map-icons/map-list-pharm.svg", alt="")
+								span Спорт, туризм, отдых
+						li.districts__map-item
+							a.districts__map-link(href="#")
+								img(src="assets/images/general/map-icons/map-list-pharm.svg", alt="")
+								span Фитнес
+						li.districts__map-item
+							a.districts__map-link(href="#")
+								img(src="assets/images/general/map-icons/map-list-pharm.svg", alt="")
+								span Кинотеатры
+						li.districts__map-item
+							a.districts__map-link(href="#")
+								img(src="assets/images/general/map-icons/map-list-pharm.svg", alt="")
+								span Музеи
+						li.districts__map-item
+							a.districts__map-link(href="#")
+								img(src="assets/images/general/map-icons/map-list-pharm.svg", alt="")
+								span Театры
+						li.districts__map-item
+							a.districts__map-link(href="#")
+								img(src="assets/images/general/map-icons/map-list-pharm.svg", alt="")
+								span Радары
+
+
+					#map.districts__map
+
+
+		.main__in
+			+videos-district().videos_district.districts__videos

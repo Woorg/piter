@@ -35,17 +35,51 @@
 		transform translateY(-50%)
 
 	&__body
+		position relative
 		box-shadow 0 2px 24px rgba(0, 0, 0, 0.1)
 		background-color #ffffff
 		+r($tM)
-			margin-left -8px
-			margin-right -8px
+			background none
+			box-shadow none
+		&:after
+			position absolute
+			z-index 0
+			top 0
+			left 50%
+			width 1000%
+			height 100%
+			display none
+			content ''
+			background-color #ffffff
+			box-shadow 0 2px 24px rgba(0, 0, 0, 0.1)
+			transform translateX(-50%)
+			+r($tM)
+				display block
+
+			// margin-left -8px
+			// margin-right -8px
+
 	&__days
 		+r($tM)
+			z-index 1
 			padding-bottom 40px
 
+	.slick-slide
+		+r($tM)
+			position relative
+		&:after
+			position absolute
+			bottom 0
+			left 50px
+			width 1000%
+			height 1px
+			content ''
+			display none
+			background #e9ebf0
+			transform translateX(-50%) 
+			+r($tM)
+				display block
 	&__days-item
-		// border-top 1px solid #f3f3f3
 		height 240px
 		display flex
 		flex-flow row wrap
@@ -54,17 +88,28 @@
 		font-size 0
 		line-height 1
 		+r($tM)
-			border-bottom 1px solid #e9ebf0
+			position relative
+			// border-bottom 1px solid #e9ebf0
 			display block
-			height 268px
-
+			// height 268px
+		// &:after
+		// 	position absolute
+		// 	bottom 0
+		// 	left 50px
+		// 	width 1000%
+		// 	height 1px
+		// 	content ''
+		// 	background #e9ebf0
+		// 	transform translateX(-50%) 
 	&__day
 		position relative
-		margin-right 37px
+		// margin-right 37px
+		margin-right 44px
 		width 192px
 		height 100%
 		background-color #f9f9f9
 		+r($d)
+			margin-right 38px
 			width 187px
 		+r($tL)
 			margin-right 17px
@@ -72,8 +117,10 @@
 		+r($tM)
 			margin-right 0
 			padding-top 20px
-			padding-left 17px
-			padding-right 17px
+			padding-right 8px
+			padding-left 8px
+			// padding-left 17px
+			// padding-right 17px
 			width 100%
 			height auto
 			background-color #fff
@@ -115,6 +162,7 @@
 
 	&__day-list-w
 		position relative
+		flex 1
 		overflow hidden
 		max-width 808px
 		max-width ratio-percentage(1088,1315)
@@ -127,7 +175,8 @@
 			// width 623px
 			max-width ratio-percentage(620,750)
 		+r($tM)
-			padding-left 17px
+			// padding-left 17px
+			padding-left 8px
 			max-width 100%
 			width 100%
 
@@ -143,29 +192,35 @@
 		z-index 1
 		top 0
 		cursor pointer
-
-	// &__day-prev
-	// 	top 0
-	// 	right auto
-	// 	left 0
-	// 	border none
-	// 	width 88px
-	// 	height 100%
-	// 	background-color transparent
-	// 	background-image linear-gradient(270deg, #fff 0%, rgba(255, 255, 255, 0) 100%)
-
+		&.disabled
+			display none
+	&__day-prev
+		top 0
+		right auto
+		left 0
+		border none
+		width 88px
+		height 188px
+		background-color transparent
+		background-image linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #fff 100%)
+		.where__day-button-icon
+			right auto
+			// left 27px
+			left 15px
+			transform translateY(-50%) rotate(180deg)
 
 	&__day-next
 		right 0
 		border none
 		width 88px
-		height 200px
+		height 188px
 		background-color transparent
 		background-image linear-gradient(270deg, #fff 0%, rgba(255, 255, 255, 0) 100%)
 	&__day-button-icon
 		position absolute
 		top calc(50% - 30px)
-		right 27px
+		// right 27px
+		right 15px
 		width 16px
 		height 30px
 		fill transparent
@@ -196,20 +251,26 @@
 
 	&__day-frame
 		// width 808px
-		height 205px
+		padding-top 20px
+		padding-bottom 20px
+		width 100%
+		// min-height 205px
+		min-height 234px
 		// line-height 215px
 		overflow hidden
 		+r($tM)
-			height 220px
+			min-height 195px
+		// 	height 220px
 
 	&__day-list
 		height 100%
 
 	&__day-item
-		margin-right 23px
-		padding-top 20px
+		// padding-top 20px
+		padding-right 20px
 		float left
 		width 160px
+		width 172px
 		height 100%
 		cursor pointer
 		// &.active
@@ -252,10 +313,15 @@
 			display none
 
 	.slick-slide
+		border none
 		line-height 0
-		height 215px
-		+r($tM)
-			height 268px
+		// height 215px
+		// +r($tM)
+		// 	height 268px
+		& > 
+			div
+				line-height 0
+				font-size 0
 
 
 	.slick-current
@@ -266,20 +332,26 @@
 
 
 	.slick-arrow
+		z-index 1
+		left 83px
 		width 24px
 		height 24px
+		background url('../images/general/arrow-down.svg') 0 0 / cover no-repeat
+		+r($tL)
+			left 45px
+		&.slick-disabled
+			display none !important
+		
 
 	.slick-prev
-		display none
-
+		top 15px
+		transform rotate(180deg)
+		+r($tM)
+			display none !important
 	.slick-next
 		top auto
 		right auto
-		left 83px
 		bottom 0
-		background url('../images/general/arrow-down.svg') 0 0 / cover no-repeat
-		+r($tL)
-			left 42px
 		+r($tM)
 			bottom 8px
 			left 50%
@@ -297,6 +369,81 @@
 				font-family $hL
 				font-size 16px
 
-	.slick-next
+		
+	.slick-next,
+	.slick-prev
 		&:before
 			display none
+
+
+
+
+// .wrap
+// 	position relative
+// 	margin 3em 0
+
+// .frame
+// 	height 250px
+// 	line-height 250px
+// 	overflow hidden
+// 	ul
+// 		list-style none
+// 		margin 0
+// 		padding 0
+// 		height 100%
+// 		font-size 50px
+// 		li
+// 			float left
+// 			width 227px
+// 			height 100%
+// 			margin 0 1px 0 0
+// 			padding 0
+// 			background #333
+// 			color #ddd
+// 			text-align center
+// 			cursor pointer
+// 			&.active
+// 				color #fff
+// 				background #a03232
+
+// .scrollbar
+// 	margin 0 0 1em 0
+// 	height 2px
+// 	background #ccc
+// 	line-height 0
+// 	.handle
+// 		width 100px
+// 		height 100%
+// 		background #292a33
+// 		cursor pointer
+// 		.mousearea
+// 			position absolute
+// 			top -9px
+// 			left 0
+// 			width 100%
+// 			height 20px
+
+// .pages
+// 	list-style none
+// 	margin 20px 0
+// 	padding 0
+// 	text-align center
+// 	li
+// 		display inline-block
+// 		width 14px
+// 		height 14px
+// 		margin 0 4px
+// 		text-indent -999px
+// 		border-radius 10px
+// 		cursor pointer
+// 		overflow hidden
+// 		background #fff
+// 		box-shadow inset 0 0 0 1px rgba(0,0,0,.2)
+// 		&:hover
+// 			background #aaa
+// 		&.active
+// 			background #666
+
+// .controls
+// 	margin 25px 0
+// 	text-align center

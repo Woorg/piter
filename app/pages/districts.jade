@@ -1,4 +1,4 @@
-extends /blocks/layout/layout-default
+extends /blocks/layout/layout-districts
 
 include /blocks/header/header
 include /blocks/main/main
@@ -17,7 +17,8 @@ block content
 	+main()
 		.main__in
 			.main__breadcrumbs
-				+breadcrumbs-districts()
+				.main__in
+					+breadcrumbs-districts()
 			.main__w
 				+districts()
 	+footer()

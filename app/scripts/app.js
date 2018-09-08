@@ -4,6 +4,8 @@ import slick from 'slick-carousel';
 import 'jquery-easing';
 import 'sly-scrolling/src/sly';
 import 'simplebar';
+
+
 // import LazyLoad from "vanilla-lazyload";
 // import 'magnific-popup';
 
@@ -12,7 +14,6 @@ import 'simplebar';
 	svg4everybody();
 
 	$(function() {
-
 
 		// console.log(jQuery.fn.jquery);
 
@@ -30,22 +31,6 @@ import 'simplebar';
 		].join(';');
 
 		console.log('%c developed by igor gorlov https://webjeb.ru', styles);
-
-		/*Callback*/
-
-		// $('.popup-open').magnificPopup({
-		// 	type: 'inline',
-		// 	midClick: true,
-		// 	mainClass: 'popup-callback'
-		// });
-
-		// Lazy load
-
-		// let piterLazyLoad = new LazyLoad({
-		// 	elements_selector: "img"
-		// });
-
-
 
 		// Nav more
 
@@ -86,6 +71,7 @@ import 'simplebar';
 		});
 
 
+		// Close more nav 
 
 		let $navMoreTrigger = $('.nav__item_more .nav__link');
 
@@ -100,8 +86,7 @@ import 'simplebar';
 			});
 		});
 
-
-
+		// Where slider
 
 		const $whereSlider = $('.where__days');
 
@@ -111,18 +96,23 @@ import 'simplebar';
 				dots: false,
 				arrows: true,
 				speed: 900,
-				infinite: true,
+				infinite: false,
 				vertical: true,
 				touchMove: false,
 				draggable: false,
 				focusOnSelect: false,
 				pauseOnFocus: false,
 				pauseOnHover: false,
-				verticalSwiping: false,
-				adaptiveHeight: true
+				verticalSwiping: false
 
 			});
 		}
+
+	
+
+
+
+		// Best slider
 
 		const $bestSlider = $('.best__list');
 
@@ -143,35 +133,10 @@ import 'simplebar';
 
 
 
+		var $frame  = $('#basic');
+		var $wrap   = $frame.parent();
 
-		var $frame = $('#where__day-basic-1');
-		var $wrap  = $frame.parent();
-
-		$frame.sly({
-			horizontal: 1,
-			itemNav: 'basic',
-			smart: 1,
-			activateOn: 'click',
-			mouseDragging: 1,
-			touchDragging: 1,
-			releaseSwing: 1,
-			startAt: 1,
-			scrollBar: $wrap.find('.where__day-scrollbar'),
-			scrollBy: 1,
-			speed: 300,
-			elasticBounds: 1,
-			easing: 'easeOutExpo',
-			dragHandle: 1,
-			dynamicHandle: 1,
-			clickBar: 1,
-			// prev: $wrap.find('.where__day-prev'),
-			next: $wrap.find('.where__day-next')
-		});
-
-
-		var $frame = $('#where__day-basic-2');
-		var $wrap  = $frame.parent();
-
+		// Call Sly on frame
 		$frame.sly({
 			horizontal: 1,
 			itemNav: 'basic',
@@ -181,23 +146,31 @@ import 'simplebar';
 			touchDragging: 1,
 			releaseSwing: 1,
 			startAt: 0,
-			scrollBar: $wrap.find('.where__day-scrollbar'),
+			scrollBar: $wrap.find('.scrollbar'),
 			scrollBy: 1,
+			pagesBar: $wrap.find('.pages'),
+			activatePageOn: 'click',
 			speed: 300,
 			elasticBounds: 1,
 			easing: 'easeOutExpo',
 			dragHandle: 1,
 			dynamicHandle: 1,
 			clickBar: 1,
-			prev: $wrap.find('.where__day-prev'),
-			next: $wrap.find('.where__day-next')
+
+			// Buttons
+			// forward: $wrap.find('.forward'),
+			// backward: $wrap.find('.backward'),
+			// prev: $wrap.find('.prev'),
+			// next: $wrap.find('.next')
+			prevPage: $wrap.find('.prevPage'),
+			nextPage: $wrap.find('.nextPage')
 		});
 
 
+		var $frame  = $('#basic-2');
+		var $wrap   = $frame.parent();
 
-		var $frame = $('#where__day-basic-3');
-		var $wrap  = $frame.parent();
-
+		// Call Sly on frame
 		$frame.sly({
 			horizontal: 1,
 			itemNav: 'basic',
@@ -207,23 +180,31 @@ import 'simplebar';
 			touchDragging: 1,
 			releaseSwing: 1,
 			startAt: 0,
-			scrollBar: $wrap.find('.where__day-scrollbar'),
+			scrollBar: $wrap.find('.scrollbar'),
 			scrollBy: 1,
+			pagesBar: $wrap.find('.pages'),
+			activatePageOn: 'click',
 			speed: 300,
 			elasticBounds: 1,
 			easing: 'easeOutExpo',
 			dragHandle: 1,
 			dynamicHandle: 1,
 			clickBar: 1,
-			prev: $wrap.find('.where__day-prev'),
-			next: $wrap.find('.where__day-next')
+
+			// Buttons
+			// forward: $wrap.find('.forward'),
+			// backward: $wrap.find('.backward'),
+			// prev: $wrap.find('.prev'),
+			// next: $wrap.find('.next')
+			prevPage: $wrap.find('.prevPage'),
+			nextPage: $wrap.find('.nextPage')
 		});
 
 
+		var $frame  = $('#where__day-basic-1');
+		var $wrap   = $frame.parent();
 
-		var $frame = $('#where__day-basic-4');
-		var $wrap  = $frame.parent();
-
+		// Call Sly on frame
 		$frame.sly({
 			horizontal: 1,
 			itemNav: 'basic',
@@ -233,22 +214,31 @@ import 'simplebar';
 			touchDragging: 1,
 			releaseSwing: 1,
 			startAt: 0,
-			scrollBar: $wrap.find('.where__day-scrollbar'),
+			scrollBar: $wrap.find('.scrollbar'),
 			scrollBy: 1,
+			pagesBar: $wrap.find('.pages'),
+			activatePageOn: 'click',
 			speed: 300,
 			elasticBounds: 1,
 			easing: 'easeOutExpo',
 			dragHandle: 1,
 			dynamicHandle: 1,
 			clickBar: 1,
-			prev: $wrap.find('.where__day-prev'),
-			next: $wrap.find('.where__day-next')
+
+			// Buttons
+			// forward: $wrap.find('.forward'),
+			// backward: $wrap.find('.backward'),
+			// prev: $wrap.find('.prev'),
+			// next: $wrap.find('.next')
+			prevPage: $wrap.find('.where__day-prev'),
+			nextPage: $wrap.find('.where__day-next')
 		});
 
 
-		var $frame = $('#where__day-basic-5');
-		var $wrap  = $frame.parent();
+		var $frame  = $('#where__day-basic-2');
+		var $wrap   = $frame.parent();
 
+		// Call Sly on frame
 		$frame.sly({
 			horizontal: 1,
 			itemNav: 'basic',
@@ -258,48 +248,198 @@ import 'simplebar';
 			touchDragging: 1,
 			releaseSwing: 1,
 			startAt: 0,
-			scrollBar: $wrap.find('.where__day-scrollbar'),
+			scrollBar: $wrap.find('.scrollbar'),
 			scrollBy: 1,
+			pagesBar: $wrap.find('.pages'),
+			activatePageOn: 'click',
 			speed: 300,
 			elasticBounds: 1,
 			easing: 'easeOutExpo',
 			dragHandle: 1,
 			dynamicHandle: 1,
 			clickBar: 1,
-			prev: $wrap.find('.where__day-prev'),
-			next: $wrap.find('.where__day-next')
+
+			// Buttons
+			// forward: $wrap.find('.forward'),
+			// backward: $wrap.find('.backward'),
+			// prev: $wrap.find('.prev'),
+			// next: $wrap.find('.next')
+			prevPage: $wrap.find('.where__day-prev'),
+			nextPage: $wrap.find('.where__day-next')
+		});
+
+		var $frame  = $('#where__day-basic-3');
+		var $wrap   = $frame.parent();
+
+		// Call Sly on frame
+		$frame.sly({
+			horizontal: 1,
+			itemNav: 'basic',
+			smart: 1,
+			activateOn: 'click',
+			mouseDragging: 1,
+			touchDragging: 1,
+			releaseSwing: 1,
+			startAt: 0,
+			scrollBar: $wrap.find('.scrollbar'),
+			scrollBy: 1,
+			pagesBar: $wrap.find('.pages'),
+			activatePageOn: 'click',
+			speed: 300,
+			elasticBounds: 1,
+			easing: 'easeOutExpo',
+			dragHandle: 1,
+			dynamicHandle: 1,
+			clickBar: 1,
+
+			// Buttons
+			// forward: $wrap.find('.forward'),
+			// backward: $wrap.find('.backward'),
+			// prev: $wrap.find('.prev'),
+			// next: $wrap.find('.next')
+			prevPage: $wrap.find('.where__day-prev'),
+			nextPage: $wrap.find('.where__day-next')
+		});
+
+		var $frame  = $('#where__day-basic-4');
+		var $wrap   = $frame.parent();
+
+		// Call Sly on frame
+		$frame.sly({
+			horizontal: 1,
+			itemNav: 'basic',
+			smart: 1,
+			activateOn: 'click',
+			mouseDragging: 1,
+			touchDragging: 1,
+			releaseSwing: 1,
+			startAt: 0,
+			scrollBar: $wrap.find('.scrollbar'),
+			scrollBy: 1,
+			pagesBar: $wrap.find('.pages'),
+			activatePageOn: 'click',
+			speed: 300,
+			elasticBounds: 1,
+			easing: 'easeOutExpo',
+			dragHandle: 1,
+			dynamicHandle: 1,
+			clickBar: 1,
+
+			// Buttons
+			// forward: $wrap.find('.forward'),
+			// backward: $wrap.find('.backward'),
+			// prev: $wrap.find('.prev'),
+			// next: $wrap.find('.next')
+			prevPage: $wrap.find('.where__day-prev'),
+			nextPage: $wrap.find('.where__day-next')
+		});
+
+		var $frame  = $('#where__day-basic-5');
+		var $wrap   = $frame.parent();
+
+		// Call Sly on frame
+		$frame.sly({
+			horizontal: 1,
+			itemNav: 'basic',
+			smart: 1,
+			activateOn: 'click',
+			mouseDragging: 1,
+			touchDragging: 1,
+			releaseSwing: 1,
+			startAt: 0,
+			scrollBar: $wrap.find('.scrollbar'),
+			scrollBy: 1,
+			pagesBar: $wrap.find('.pages'),
+			activatePageOn: 'click',
+			speed: 300,
+			elasticBounds: 1,
+			easing: 'easeOutExpo',
+			dragHandle: 1,
+			dynamicHandle: 1,
+			clickBar: 1,
+
+			// Buttons
+			// forward: $wrap.find('.forward'),
+			// backward: $wrap.find('.backward'),
+			// prev: $wrap.find('.prev'),
+			// next: $wrap.find('.next')
+			prevPage: $wrap.find('.where__day-prev'),
+			nextPage: $wrap.find('.where__day-next')
 		});
 
 
+		const $broadcastSlider = $('.broadcast__list');
+		const $uvideoSlider = $('.u-video__list');
+		const $movieSlider = $('.movie__list');
 
-		if ( $(window).width() < 800 ) {
 
-			$('.broadcast__list').slick({
-				dots: true,
-				infinite: false
-			});
 
-			$('.u-video__list').slick({
-				dots: true,
-				infinite: false
-			});
+		$broadcastSlider.slick({
+			mobileFirst: true,
+			dots: true,
+			infinite: false,
+			responsive: [
+				{
+					breakpoint: 800,
+					settings: "unslick"
+				}
+			]
+		});
 
-			$('.movie__list').slick({
-				dots: true,
-				infinite: false
-			});
+		$uvideoSlider.slick({
+			mobileFirst: true,
+			dots: true,
+			infinite: false,
+			responsive: [
+				{
+					breakpoint: 800,
+					settings: "unslick"
+				}
+			]
+		});
+
+		$movieSlider.slick({
+			mobileFirst: true,
+			dots: true,
+			infinite: false,
+			responsive: [
+				{
+					breakpoint: 800,
+					settings: "unslick"
+				}
+			]
+		});
+
+		
+
+		var resizeId;
+		$(window).on('resize', function() {
+			if ( $(window).width() < 800 ) {
+				clearTimeout(resizeId);
+				resizeId = setTimeout(doneResizing, 500);
+			} else {
+				// $broadcastSlider.slick('destroy');
+				// $uvideoSlider.slick('destroy');
+				// $movieSlider.slick('destroy');
+			}
+		});
+
+		function doneResizing(){
+			//whatever we want to do
+			location.reload();
 
 		}
 
-		if ( $(window).width() > 800 ) {
 
-			$('.broadcast__list').slick('unslick');
+		// if ( $(window).width() > 800 ) {
 
-			$('.u-video__list').slick('unslick');
+		// 	$('.broadcast__list').slick('unslick');
 
-			$('.movie__list').slick('unslick');
+		// 	$('.u-video__list').slick('unslick');
 
-		}
+		// 	$('.movie__list').slick('unslick');
+
+		// }
 
 
 		if ( $(window).width() < 800 ) {
@@ -394,6 +534,7 @@ import 'simplebar';
 		});
 
 
+		// District choose
 
 		$('.districts__link').on('click', function (e) {
 			// e.preventDefault();
@@ -516,7 +657,8 @@ import 'simplebar';
 	}
 
 	pageWidget([
-		'index',
+		// 'sly',
+		'main',
 		'category',
 		'article',
 		'videos',

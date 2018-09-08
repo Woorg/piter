@@ -1,0 +1,147 @@
+extends /blocks/layout/layout-user
+
+include /blocks/header/header
+include /blocks/main/main
+include /blocks/breadcrumbs/breadcrumbs
+include /blocks/user/user
+
+include /blocks/where/where
+
+include /blocks/footer/footer
+
+
+block head
+	- var pageTitle = 'Piter.tv - Sly';
+
+block content
+	+header()
+	+main()
+		.main__in
+
+			.wrap
+
+				.scrollbar
+					.handle
+						.mousearea
+
+				#basic.frame
+					ul.clearfix
+						li 0
+						li 1
+						li 2
+						li 3
+						li 4
+						li 5
+						li 6
+						li 7
+						li 8
+						li 9
+						li 10
+						li 11
+						li 12
+						li 13
+						li 14
+						li 15
+						li 16
+						li 17
+						li 18
+						li 19
+						li 20
+						li 21
+						li 22
+						li 23
+						li 24
+						li 25
+						li 26
+						li 27
+						li 28
+						li 29
+
+				ul.pages
+
+				.controls.center
+					button.btn.prevPage
+						|  item
+
+					button.btn.nextPage
+						| item
+
+
+
+
+
+
+			.wrap
+
+				.scrollbar
+					.handle
+						.mousearea
+
+				#basic-2.frame
+					.where__day-list
+							.where__day-item
+								a.where__day-link(href="#")
+									.where__day-img
+										img(src="assets/images/content/theater-img-1.jpg", alt="")
+										.where__day-badge 00:02
+									.where__day-title Спектакль "Любовные кружева"
+							.where__day-item
+								a.where__day-link(href="#")
+									.where__day-img
+										img(src="assets/images/content/theater-img-2.jpg", alt="")
+										.where__day-badge 00:02
+									.where__day-title Спектакль "Париж для двоих"
+							.where__day-item
+								a.where__day-link(href="#")
+									.where__day-img
+										img(src="assets/images/content/theater-img-3.jpg", alt="")
+										.where__day-badge 00:02
+									.where__day-title Спектакль "Я боюсь любви"
+							.where__day-item
+								a.where__day-link(href="#")
+									.where__day-img
+										img(src="assets/images/content/theater-img-4.jpg", alt="")
+										.where__day-badge 00:02
+									.where__day-title Спектакль "Преступление и наказание"
+							.where__day-item
+								a.where__day-link(href="#")
+									.where__day-img
+										img(src="assets/images/content/theater-img-5.jpg", alt="")
+										.where__day-badge 00:02
+									.where__day-title Спектакль "Преступление и наказание"
+							.where__day-item
+								a.where__day-link(href="#")
+									.where__day-img
+										img(src="assets/images/content/theater-img-6.jpg", alt="")
+										.where__day-badge 00:02
+									.where__day-title Спектакль "Преступление и наказание"
+							.where__day-item
+								a.where__day-link(href="#")
+									.where__day-img
+										img(src="assets/images/content/theater-img-5.jpg", alt="")
+										.where__day-badge 00:02
+									.where__day-title Спектакль "Преступление и наказание"
+							.where__day-item
+								a.where__day-link(href="#")
+									.where__day-img
+										img(src="assets/images/content/theater-img-6.jpg", alt="")
+										.where__day-badge 00:02
+									.where__day-title Спектакль "Преступление и наказание"
+							.where__day-item
+								a.where__day-link(href="#")
+									.where__day-img
+										img(src="assets/images/content/theater-img-6.jpg", alt="")
+										.where__day-badge 00:02
+									.where__day-title Спектакль "Преступление и наказание"
+
+
+
+
+				ul.pages
+
+				.controls.center
+					button.btn.prevPage
+						|  item
+
+					button.btn.nextPage
+						| item

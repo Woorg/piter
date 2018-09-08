@@ -6,7 +6,7 @@ include ../scripts/scripts
 doctype html
 html(lang='ru')
 	include ../head/head
-	+page._address
+	+page._address._article
 		block content
 		+scripts(['//maps.googleapis.com/maps/api/js?key=AIzaSyAhZzO9IX_HC9UNK7zprYBqGYPCzTI8nPE&callback=initMap', 'app.min.js'])
 

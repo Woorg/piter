@@ -37,38 +37,66 @@
 		justify-content flex-start
 		+r($tL)
 			justify-content space-between
-		+r($tM)
-			margin-left -8px
-			margin-right -8px
-	&__poll
+		// +r($tM)
+		// 	background #eaeaea
+	&__poll-w
+		position relative
 		margin-right 55px
+		flex 1
+		+r($tL)
+			margin-right 30px
+		&:after
+			position absolute
+			z-index -1
+			top auto
+			left 50%
+			bottom 0
+			width 1000%
+			height 100%
+			content ''
+			display none
+			background #fff
+			box-shadow 0 2px 4px rgba(0, 0, 0, 0.1)
+			transform translateX(-50%)
+			+r($tM)
+				display block
+	&__poll
+		
 		padding-top 30px
 		padding-left 30px
 		padding-right 0
-		padding-bottom 0
-		max-width 640px
-		max-width ratio-percentage(640,1315)
+		padding-bottom 30px
+		// max-width 640px
+		// max-width ratio-percentage(640,1315)
+		max-width 100%
 		height 352px
 		background-color #ffffff
 		box-shadow 0 2px 24px rgba(0, 0, 0, 0.1)
-		overflow hidden
-		+r($d)
-			max-width 416px
-			max-width ratio-percentage(416,1036)
+		// +r($d)
+		// 	max-width 416px
+		// 	max-width ratio-percentage(416,1036)
 		+r($tL)
 			margin-right 0
-			max-width ratio-percentage(368,750)
 		+r($tM)
+			position relative
 			margin-bottom 20px
+			padding-top 0
+			padding-bottom 20px
+			padding-left 0
 			max-width 100%
+			box-shadow none
+
 	&__list
 		padding-right 72px
 		+r($tL)
 			padding-right 0
 			max-width ratio-percentage(337,750)
 		+r($tM)
-			padding-right 15px
-			padding-left 15px
+			padding-top 20px
+			padding-right 0
+			padding-left 0
+			// padding-right 15px
+			// padding-left 15px
 			max-width 100%
 
 	&__list-item
