@@ -82,8 +82,13 @@
 		font-size 15px
 		line-height 1
 		text-decoration none
+		tr(all .3s ease)
 		+r($tM)
 			text-indent -9999px
+		&:hover
+			color darken(#FFF, 10)
+			tr(all .3s ease)
+			
 	&__auth-link_enter
 		+r($tM)
 			position absolute
