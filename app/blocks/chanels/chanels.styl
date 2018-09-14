@@ -41,7 +41,7 @@
 		text-decoration none
 		tr(all .3s ease)
 		&:hover
-			color darken(#6a7381, 10)
+			color darken(#6a7381, 20)
 			tr(all .3s ease)
 	&__list-w
 		overflow hidden
@@ -92,6 +92,8 @@
 		line-height 1
 		text-transform uppercase
 		text-decoration none
+		&:hover
+			color lighten(#001d49, 10)
 		&:after
 			position absolute
 			top 50%
@@ -177,7 +179,8 @@
 		line-height 1.5
 		+r($tM)
 			order -1
-
+		&:hover
+			color lighten(#001d49, 10)
 
 .chanels_side
 	.sidechanels__header

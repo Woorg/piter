@@ -8,6 +8,8 @@ import importIfExist from 'stylus-import-if-exist';
 import autoprefixer from 'autoprefixer-stylus';
 import gcmq from 'gulp-group-css-media-queries';
 import nano from 'gulp-cssnano';
+import gcc from 'gulp-clean-css';
+import csso from 'gulp-csso';
 import rename from 'gulp-rename';
 import sourcemaps from 'gulp-sourcemaps';
 import errorHandler from 'gulp-plumber-error-handler';
@@ -21,7 +23,7 @@ gulp.task('styles', () => (
 		.pipe(stylus({
 			use: [
 				importIfExist(),
-				rupture(),
+				// rupture(),
 				autoprefixer()
 			],
 			'include css': true,
@@ -30,7 +32,8 @@ gulp.task('styles', () => (
 				'__DEV__': isDebug
 			}
 		}))
-		.pipe(gulpIf(!isDebug, gcmq()))
+		// .pipe(gulpIf(!isDebug, gcmq()))
+		
 		.pipe(gulpIf(!isDebug, nano({zindex: false})))
 		.pipe(rename({suffix: '.min'}))
 		.pipe(gulpIf(isDebug, sourcemaps.write()))

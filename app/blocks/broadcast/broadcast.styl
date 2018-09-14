@@ -60,9 +60,10 @@
 			width ratio-percentage(170, 750)
 		+r($tM)
 			margin-left 0
-			margin-right 16px
-			width ratio-percentage(176, 304)
-			// width 100%
+			// margin-right 16px
+			margin-right 0
+			// width ratio-percentage(176, 304)
+			width 100%
 	&__item_hidden
 		display none
 		+r($tL)
@@ -71,6 +72,10 @@
 		display block
 		color #001d49
 		text-decoration none
+		&:hover
+			.broadcast__item-title
+				color lighten(#001d49, 10)
+				tr(all .3s ease)
 	&__image
 		position relative
 		margin-bottom 8px
@@ -82,8 +87,14 @@
 		+r($tL)
 			margin-bottom 10px
 			max-height 103px
+		+r($tM)
+			max-height 100%
+			// text-align center
+
 		img
 			respimg()
+			+r($tM)
+				margin auto
 
 	&__meta
 		margin-bottom 7px
@@ -125,9 +136,9 @@
 		+r($tM)
 			padding-right 20px
 
-	.slick-list
-		+r($tM)
-			padding:0 30% 0 0
+	// .slick-list
+	// 	+r($tM)
+	// 		padding:0 30% 0 0
 
 	.slick-dots
 		bottom 0

@@ -47,6 +47,7 @@
 			margin-left -16px
 		+r($tM)
 			margin-left 0
+			// min-height 370px
 	&__item
 		margin-left 25px
 		margin-bottom 37px
@@ -59,7 +60,10 @@
 			margin-left 0
 			margin-bottom 8px
 			width 100%
+			// min-height 170px
 			box-shadow 0 4px 20px rgba(0, 0, 0, 0.1)
+
+
 
 	&__item_hidden
 		+r($tL)
@@ -84,6 +88,12 @@
 		+r($tM)
 			position relative
 			padding-top ratio-percentage(171,304)
+		&:hover
+			.day-pic__item-title
+				color lighten(#001d49, 10)
+				tr(all .3s ease)
+				+r($tM)
+					color darken(#fff, 10)
 	&__img
 		position relative
 		margin-bottom 8px

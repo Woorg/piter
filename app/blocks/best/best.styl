@@ -18,6 +18,10 @@
 		background-color #ffffff
 		color #001d49
 		text-decoration none
+		&:hover
+			.best__item-title
+				color lighten(#001d49, 10)
+				tr(all .3s ease)
 	&__image
 		margin-bottom 12px
 		max-height 141px
@@ -86,6 +90,7 @@
 		width 19px
 		height 12px
 	&__comments-icon
+		top calc(50% + 1px)
 		width 15px
 		height 14px
 	&__item-title
@@ -126,6 +131,9 @@
 		fill #fff
 		stroke #6a7381
 		transform translateY(-50%)
+		&:hover
+			stroke darken(#6a7381, 20)
+			tr(all .3s ease)
 	&__prev-icon
 		transform translateY(-50%) rotate(180deg)
 

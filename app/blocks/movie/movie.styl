@@ -43,7 +43,9 @@
 		align-items flex-start
 		+r($tL)
 			margin-left -16px
-
+		+r($tM)
+			margin-left 0
+			
 	&__item
 		margin-left 30px
 
@@ -52,13 +54,13 @@
 		+r($d)
 			margin-left 25px
 			width ratio-percentage(232, 1036)
-
 		+r($tL)
 			margin-left 16px
 			width ratio-percentage(234, 750)
-
 		+r($tM)
-			width ratio-percentage(234, 304)
+			// width ratio-percentage(234, 304)
+			margin-left 0
+			width 100%
 
 	&__item_hidden
 		+r($tL)
@@ -68,6 +70,10 @@
 		display block
 		color #001d49
 		text-decoration none
+		&:hover
+			.movie__item-title
+				color lighten(#001d49, 10)
+				tr(all .3s ease)
 	&__img
 		position relative
 		margin-bottom 8px
@@ -78,6 +84,8 @@
 
 		img
 			respimg()
+			+r($tM)
+				margin auto
 
 	&__video-icon
 		position absolute
@@ -132,9 +140,9 @@
 		+r($tM)
 			padding-right 20px
 
-	.slick-list
-		+r($tM)
-			padding 0 18% 0 0
+	// .slick-list
+	// 	+r($tM)
+	// 		padding 0 18% 0 0
 
 	.slick-dots
 		bottom 10px

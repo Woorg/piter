@@ -208,7 +208,7 @@
 			// left 27px
 			left 15px
 			transform translateY(-50%) rotate(180deg)
-
+			
 	&__day-next
 		right 0
 		border none
@@ -220,14 +220,15 @@
 		position absolute
 		top calc(50% - 30px)
 		// right 27px
-		right 15px
+		right 25px
 		width 16px
 		height 30px
 		fill transparent
 		stroke #fff
 		pointer-events none
 		transform translateY(-50%)
-
+		+r($tM)
+			right 15px
 	&__day-scrollbar
 		margin 0 0 1em 0
 		height 2px
