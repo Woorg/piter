@@ -20,8 +20,11 @@
 		width 100%
 	&:hover
 		.news-article__title
-			color darken(#ffffff, 10)
+			color lighten(#001d49, 10)
 			tr(all .3s ease)
+			+r($d)
+				color darken(#fff, 10)
+
 	&:last-child
 		margin-bottom 0
 	&__link
@@ -289,7 +292,6 @@
 			width 100%
 			// max-height 171px
 			max-height 100%
-
 		&:after
 			display none
 	.news-article__w
@@ -356,7 +358,6 @@
 		+r($tM)
 			max-height 100%
 			width ratio-percentage(110,288)
-
 		&:after
 			display none
 	.news-article__video-icon
